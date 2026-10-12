@@ -22,14 +22,18 @@ def ingest_all(force_fetch=False):
         if not sch:
             print("SKIP unknown cds", row["cds_code"])
             continue
-        path, sha, ts = fetch(row["url"], row["cds_code"], force=force_fetch)
+        try:
+            path, sha, ts = fetch(row["url"], row["cds_code"], force=force_fetch)
+        except Exception as e:
+            print(f"FETCH FAILED {sch['name']}: {row['url']} ({e})")
+            continue
         con.execute("INSERT OR IGNORE INTO sources(school_id,url,source_type,parser,notes) VALUES (?,?,?,?,?)",
                     (sch["school_id"], row["url"], row["source_type"], row["parser"], row["notes"]))
         sid = con.execute("SELECT source_id FROM sources WHERE school_id=? AND url=?",
                           (sch["school_id"], row["url"])).fetchone()[0]
         con.execute("UPDATE sources SET fetched_at=?, raw_path=?, sha256=? WHERE source_id=?",
                     (ts, str(path.relative_to(ROOT)), sha, sid))
-        recs = PARSERS[row["parser"]](path, **json.loads(row["opts"] or "{}"))
+        recs = PARSERS[row["parser"]](path, resolver=res, **json.loads(row["opts"] or "{}"))
         con.execute("DELETE FROM matriculation WHERE source_id=?", (sid,))
         unresolved = 0
         for r in recs:
@@ -37,6 +41,10 @@ def ingest_all(force_fetch=False):
             if r["section"]:
                 r["section"] = repair_ligatures(r["section"], vocab)
             cid, method, score = res.resolve(r["college_raw"], r["section"])
+            if cid is None and method == "none":
+                cid = res.create_international(r["college_raw"], r["section"])
+                if cid:
+                    method, score = "intl", 100.0
             unresolved += cid is None
             con.execute(
                 "INSERT OR REPLACE INTO matriculation(school_id,source_id,grad_year,period_start,period_end,college_id,"

@@ -8,7 +8,7 @@ import requests
 
 from .db import RAW
 
-UA = "Mozilla/5.0 (compatible; school-ranking-research/0.1)"
+UA = "Mozilla/5.0"
 
 
 def fetch(url, subdir, force=False):
@@ -20,10 +20,10 @@ def fetch(url, subdir, force=False):
     if existing and not force:
         p = existing[-1]
         return p, hashlib.sha256(p.read_bytes()).hexdigest(), datetime.fromtimestamp(p.stat().st_mtime, timezone.utc).isoformat()
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=60, allow_redirects=True)
+    r = requests.get(url, headers={"User-Agent": UA, "Accept": "text/html,application/pdf,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}, timeout=60, allow_redirects=True)
     r.raise_for_status()
     ct = r.headers.get("content-type", "")
-    ext = "pdf" if ("pdf" in ct or r.content[:4] == b"%PDF") else "html"
+    ext = "pdf" if ("pdf" in ct or r.content[:4] == b"%PDF") else "csv" if "csv" in ct else "html"
     p = d / f"{stem}.{ext}"
     p.write_bytes(r.content)
     time.sleep(1)  # be polite

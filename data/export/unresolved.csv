@@ -1,39 +1,102 @@
 college_raw,section,n,total
 Wheaton,Private/Out of State,4,9
 Career Technical Programs,Other,2,6
+Col of CA,Private and Out-of-State,2,6
 Military Enlistment,Gap Year,2,5
 Other Two Year College,2-Year College,1,5
-The University of British Columbia,International Colleges,1,5
 Other Programs,Gap Year,1,4
 Trade School,,1,4
+Cogswell Polytechnical College,California Private Colleges & Universities,1,3
+Holy Names University,Private California Universities,2,3
+Minnesota State Twin Cities,Private and Out-of-State,1,3
 Vocational School,,2,3
-Austin Community College,2-Year College,2,2
+Atlanta,Private and Out-of-State,2,2
+CA Inst. of Tech McGill,Private and Out-of-State,1,2
 Christian Life College,,1,2
+Howard,Private and Out-of-State,1,2
+Kettering Stanford,Private and Out-of-State,1,2
+MD Inst. Col of Art Culinary Inst. of Am.,Private and Out-of-State,1,2
+Massachusetts College of Pharmacy and Health Sciences,Out Of State 4-Year Colleges & Universities (Private),1,2
+Mccalester University,Out-Of-State Colleges/Universities,1,2
+Missouri,Private and Out-of-State,1,2
 Oregon Culinary Institute,Private/Out of State,2,2
+Pacific University,Out Of State 4-Year Colleges & Universities (Private),1,2
+Political Science,Private and Out-of-State,1,2
+University of CO - Denver,Out Of State 4-Year Colleges & Universities (Public),1,2
+West Jessup Rocklin,Private and Out-of-State,1,2
+Wheaton College (Illinois),Out Of State 4-Year Colleges & Universities (Private),1,2
+AMDA,Out Of State 4-Year Colleges & Universities (Private),1,1
 AMDA College of the Performing Arts - Los Angeles,California - Private,1,1
-Concordia University - Montreal,International Colleges,1,1
-Constructor University - Germany,International Colleges,1,1
+BYU Idaho,Out Of State 4-Year Colleges & Universities (Private),1,1
+BYU Provo,Out Of State 4-Year Colleges & Universities (Private),1,1
+Cedar Valley,Community Colleges,1,1
+Cedar Valley,Private and Out-of-State,1,1
+Col. of C. J.,Private and Out-of-State,1,1
+Colburn Conservatory of Music,Private and Out-of-State,1,1
+Concordia University,Out Of State 4-Year Colleges & Universities (Private),1,1
+Concordia University,Private and Out-of-State,1,1
+Deep Springs College,2-Year Colleges California,1,1
+Dixie State University,Out Of State 4-Year Colleges & Universities (Public),1,1
+FIDM,California Private Colleges & Universities,1,1
+Fairleigh,Private and Out-of-State,1,1
+Fashion Inst. of Des & Mrch,Private and Out-of-State,1,1
+Fashion Inst. of Des & Mrch Rhode Is. Sch.,Private and Out-of-State,1,1
+Georgetown Penn Foster College,Private and Out-of-State,1,1
+"Hamline University, Minnesota",Out-Of-State Colleges/Universities,1,1
+Hayward,Private and Out-of-State,1,1
 Health Science,,1,1
-Karel de Grove - Hogeschool Antwerpen,International Colleges,1,1
-Lappeenranta University of Technology,International Colleges,1,1
-Oxford Brookes University,International Colleges,1,1
+Heartland Bible Baptist College,Private and Out-of-State,1,1
+Holy Names University,California Private Colleges & Universities,1,1
+Holy Names University Howard,Private and Out-of-State,1,1
+Indiana Ringling Col. of Art & D.,Private and Out-of-State,1,1
+Iowa University,Out Of State,1,1
+Ivy Tech Junior College,Out of State 2-Year Colleges,1,1
+Jessup University,Private and Out-of-State,1,1
+Johnson & Wales University,Out Of State 4-Year Colleges & Universities (Private),1,1
+La Seirra University,Private and Out-of-State,1,1
+Lewis And Clark University,Out-Of-State Colleges/Universities,1,1
+Long Island University – Post,Out Of State 4-Year Colleges & Universities (Private),1,1
+Los Church Mission,Community Colleges,1,1
+Massachusetts College of Pharmacy & Health Sciences,Private and Out-of-State,1,1
+Metropolitan Community College – Blue River,Community College,1,1
+Missouri State,Private and Out-of-State,1,1
+Mt San Jacinto Community College,2-Year Colleges California,1,1
+National Technical Institute for the Deaf,Out Of State 4-Year Colleges & Universities (Private),1,1
+Nova Doutheastern University,Private and Out-of-State,1,1
+OR Inst. of Tech,Private and Out-of-State,1,1
+Oberlin Conservatory of Music,Out Of State 4-Year Colleges & Universities (Private),1,1
+Ontario George Institute of Technology,Private and Out-of-State,1,1
 Paul Mitchell the School-East Bay,,1,1
+Pennsylvania State University-Erie-Behrend College,Out Of State 4-Year Colleges & Universities (Public),1,1
+Piedmont College,Out Of State,1,1
+Portland Biola Kent State,Private and Out-of-State,1,1
+SUNY ESF,Private and Out-of-State,1,1
+San Francisco Academy of Art Uni.,California Private Colleges & Universities,1,1
 San Francisco Art Institute,Private/Out of State,1,1
+Santa Rosa Jr College,Community College,1,1
 Sciences Po - Columbia University Dual Degree,,1,1
+Sierra Nevada College Simpson,Private and Out-of-State,1,1
+Sierra Nevada University,Private California Universities,1,1
+South Nevada Community College,Out of State 2-Year Colleges,1,1
 Southwestern Community College,2-Year College,1,1
-"Syddansk Universitet, Flensburg",International Colleges,1,1
-Tel Aviv University,International Colleges,1,1
-The American University of Rome,International Colleges,1,1
-The London Interdisciplinary School,International Colleges,1,1
+St. John’s College,,1,1
+The Master’s,Private and Out-of-State,1,1
+"Toronto, Ontario",Private and Out-of-State,1,1
 Trinity College,Out of State - Private,1,1
+U. of IIIinois,Private and Out-of-State,1,1
 Union College,,1,1
 Union College,Out of State - Private,1,1
-University College Cork,International Colleges,1,1
+"Universite De Montreal, Canada",,1,1
+University Of Hawaii,Out Of State,1,1
+University Of Hawaii,Out-Of-State Colleges/Universities,1,1
+"University Of Miami, Frost School Of Music",Out-Of-State Colleges/Universities,1,1
 University in India,,1,1
-University of British Columbia - Okanagan,International Colleges,1,1
-University of Gloucestershire,International Colleges,1,1
-University of Reading,International Colleges,1,1
-University of South Wales,International Colleges,1,1
 University of St. Thomas,Out of State - Private,1,1
-University of Surrey,International Colleges,1,1
-University of Toronto - Mississauga,International Colleges,1,1
+Virginia Tech University,Out-Of-State Colleges/Universities,1,1
+WA.,Private and Out-of-State,1,1
+Wheaton,Private and Out-of-State,1,1
+Wheaton College (Massachusetts),Out Of State 4-Year Colleges & Universities (Private),1,1
+Wheaton College Massachusetts,Private and Out-of-State,1,1
+"Wheaton College, MA",Private and Out-of-State,1,1
+"York St. John University, England",,1,1
+of Design,Private and Out-of-State,1,1

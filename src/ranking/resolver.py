@@ -83,7 +83,7 @@ class Resolver:
             self.keyidx[key(a)][form(a)].update(ids)
         self.keys = [k for k in self.keyidx if k]
 
-    def resolve(self, raw, section=None):
+    def resolve(self, raw, section=None, allow_fuzzy=True):
         """Return (college_id|None, method, score)."""
         n = norm(raw)
         cls = section_class(section)
@@ -94,7 +94,7 @@ class Resolver:
         ids = self.exact.get(n, set())
         if len(ids) == 1:
             return next(iter(ids)), "exact", 100.0
-        if cls:  # inside a CSU/UC section nothing else is trusted
+        if cls and len(raw.split()) < 2:  # bare names inside a CSU/UC section ("San Diego") are never guessed
             return None, "none", 0.0
         k, f = key(raw), form(raw)
         by_form = self.keyidx.get(k, {})
@@ -105,7 +105,7 @@ class Resolver:
             if len(cand) > 1:
                 return None, "ambiguous", 0.0
             return None, "none", 0.0
-        if len(k) >= 6:
+        if allow_fuzzy and len(k) >= 6:
             best = process.extract(k, self.keys, scorer=fuzz.token_sort_ratio, limit=2)
             if best and best[0][1] >= 93 and (len(best) == 1 or best[0][1] - best[1][1] >= 4):
                 by_form = self.keyidx[best[0][0]]
@@ -113,3 +113,22 @@ class Resolver:
                 if len(cand) == 1:
                     return next(iter(cand)), "fuzzy", float(best[0][1])
         return None, "none", 0.0
+
+    def create_international(self, raw, section):
+        """Unresolved names under an "International" section become their own (non-IPEDS) college rows, shared by name."""
+        import re
+        if not section or not re.search(r"interna", section, re.I):
+            return None
+        name = re.sub(r"\s+", " ", raw).strip().rstrip(",")
+        country = None
+        if "," in name:
+            name, _, tail = name.rpartition(",")
+            name, country = name.strip(), tail.strip() or None
+        n = norm(name)
+        ids = self.exact.get(n)
+        if ids and len(ids) == 1:
+            return next(iter(ids))
+        cid = self.con.execute("INSERT INTO colleges(name,country) VALUES (?,?)", (name, country)).lastrowid
+        self.con.execute("INSERT OR IGNORE INTO college_aliases VALUES (?,?,?, 'auto')", (n, cid, name))
+        self.exact[n].add(cid)
+        return cid
