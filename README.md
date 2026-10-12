@@ -1,0 +1,12 @@
+# school_ranking
+
+Bay Area public high school college matriculation data → SQLite with unified school/college IDs.
+
+    pip install -r requirements.txt
+    PYTHONPATH=src python3 -m ranking build-reference   # IPEDS colleges + CDE Bay Area public high schools
+    PYTHONPATH=src python3 -m ranking ingest             # fetch (cached in data/raw) + parse + resolve all rows of data/sources.csv
+
+- `schools.school_id` (CDS code), `colleges.college_id` (IPEDS UNITID; non-US colleges have `unitid` NULL).
+- Add a school: one row in `data/sources.csv` (parser: `html_table` or `pdf_list`).
+- Fix college naming: add a row to `data/aliases/college_aliases.csv`; see `data/export/unresolved.csv`.
+- Pooled windows (e.g. Lynbrook 2022-2025) overlap and must not be summed; use `period_start/period_end`.
