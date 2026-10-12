@@ -6,3 +6,7 @@ cds_code,url,source_type,parser,opts,notes
 43694684334421,https://lhs.fuhsd.org/fs/resource-manager/view/9ac66f1a-7e67-4c78-be9b-4c25d06113b9,pdf,pdf_list,"{""page"": 2, ""x_min"": 170}",Lynbrook School Profile 23-24; rolling pooled window; list not exhaustive
 43694684334421,https://lhs.fuhsd.org/fs/resource-manager/view/48792003-03f1-494c-a8fb-bbd67250af52,pdf,pdf_list,"{""page"": 2, ""x_min"": 170}",Lynbrook School Profile 22-23; rolling pooled window; list not exhaustive
 43696414335782,https://paly.net/campus-life/college-career-center/college-matriculation-summary,html,html_table,{},Paly per-year 2023-2026 (same PAUSD template as Gunn)
+43695344334371,https://lgsuhsdorg.finalsite.com/uploaded/Los_Gatos_HS/LGHS_School_Profile_2026-2027.pdf,pdf,pdf_list,"{""page"": 2}",Los Gatos HS profile 26-27; class of 2026 single year with counts
+43695344334371,https://www.lgsuhsd.org/uploaded/Los_Gatos_HS/LGHS_School_Profile_2025-2026.pdf,pdf,pdf_list,"{""page"": 2}",Los Gatos HS profile 2025-2026; single class year with counts
+43695344334371,https://www.lgsuhsd.org/uploaded/Los_Gatos_HS/LGHS_School_Profile_2024-2025.pdf,pdf,pdf_list,"{""page"": 2}",Los Gatos HS profile 2024-2025; single class year with counts
+43695344334371,https://www.lgsuhsd.org/uploaded/Los_Gatos_HS/LGHS_School_Profile_2023-2024.pdf,pdf,pdf_list,"{""page"": 2}",Los Gatos HS profile 2023-2024; single class year with counts

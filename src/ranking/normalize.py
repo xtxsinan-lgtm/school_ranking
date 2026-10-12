@@ -76,3 +76,34 @@ def fix_mojibake(s):
         return t
     except (UnicodeEncodeError, UnicodeDecodeError):
         return s
+
+
+_LIGS = ("ti", "tt", "ft", "fi", "ff", "fl", "ffi", "tti", "tf")
+
+
+def repair_ligatures(name, vocab):
+    """Some PDFs drop ti/tt/fi... ligature glyphs ("Pi sburgh", "Interna onal"). Re-join fragments when the
+    result is a known word (vocab = lowercase words of known college names)."""
+    toks = name.split()
+    out, i = [], 0
+    while i < len(toks):
+        if i + 1 < len(toks):
+            a, b = toks[i], toks[i + 1]
+            m = re.match(r"([A-Za-z]+)(.*)", b)  # "s-Amherst" -> head "s", tail "-Amherst"
+            b, tail = (m.group(1), m.group(2)) if m else (b, "")
+            plain = (a + b).lower()
+            if plain not in vocab:
+                for lig in _LIGS:
+                    cand = a + lig + b
+                    if cand.lower() in vocab:
+                        out.append(cand + tail); i += 2; break
+                else:
+                    b = toks[i + 1]
+                    for lig in _LIGS:  # ligature at the very end of a word ("Pra" + tt -> Pratt)
+                        if (a + lig).lower() in vocab and a.lower() not in vocab:
+                            out.append(a + lig); i += 1; break
+                    else:
+                        out.append(a); i += 1
+                continue
+        out.append(toks[i]); i += 1
+    return " ".join(out)

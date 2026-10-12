@@ -13,7 +13,9 @@ GAP = 9.0
 SECTION_RE = re.compile(
     r"(community colleges?|cal(ifornia)? state univ(ersitie)?s?( \(csu\))?|csu|univ(ersity)? of california( \(uc\))?|uc|"
     r"private( ?/ ?| and )?(out.of.state)?( colleges| universities)?|out.of.state( colleges| universities)?|"
-    r"international( colleges| universities)?|public( colleges| universities)?|other)", re.I)
+    r"(international|interna\s?onal)( colleges| universities)?|california\s*-\s*(private|public)|public( colleges| universities)?|other|"
+    r"[24].?year( colleges?| universities)?|work|military|gap year|undecided|unknown|employment|"
+    r"private (colleges|universities).*|out of state.*|(california state|cal state) universit(y|ies)|trade.*)", re.I)
 HEADING_RE = re.compile(r"matriculation|colleges? .*attend|where .* go", re.I)
 
 
@@ -46,8 +48,14 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
     ytitle, ttext = title
     m = re.search(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d)", ttext)
     ps, pe = (int(m.group(1)), int(m.group(2))) if m else (None, None)
+    gy = None
+    if not m:
+        m1 = re.search(r"class of\s*((?:19|20)\d\d)", ttext, re.I)
+        if m1:
+            ps = pe = gy = int(m1.group(1))
 
-    body = [(x0, y, x1, w) for x0, y, x1, w in words if y > ytitle + 5 and x0 >= float(x_min)]
+    junk = re.compile(r"(tt|ti|fi|ff|fl|tti|ffi|ft)+", re.I)  # stray ligature glyphs some PDFs emit as separate words
+    body = [(x0, y, x1, w) for x0, y, x1, w in words if y > ytitle + 5 and x0 >= float(x_min) and not junk.fullmatch(w)]
     # group into lines
     rows = {}
     for x0, y, x1, w in body:
@@ -84,8 +92,10 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
     for x0, y, text in segs:
         full = (pending + " " + text).strip()
         m = re.fullmatch(r"(.+?)\s*\((\d+)\)", full)
-        if m:
-            recs.append(dict(college_raw=m.group(1).strip(), section=section, grad_year=None,
+        if m and SECTION_RE.fullmatch(m.group(1).strip()):
+            section, pending = m.group(1).strip(), ""  # subtotal line, e.g. "University of California (64)"
+        elif m:
+            recs.append(dict(college_raw=m.group(1).strip(), section=section, grad_year=gy,
                              period_start=ps, period_end=pe, count=int(m.group(2))))
             pending = ""
         elif re.search(r"\(\d+\)", full):

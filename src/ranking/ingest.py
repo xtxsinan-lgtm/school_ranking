@@ -3,6 +3,7 @@ import json
 
 from .db import ROOT, connect
 from .fetch import fetch
+from .normalize import repair_ligatures
 from .resolver import Resolver
 from .sources import PARSERS
 
@@ -12,6 +13,8 @@ SOURCES_CSV = ROOT / "data" / "sources.csv"
 def ingest_all(force_fetch=False):
     con = connect()
     res = Resolver(con)
+    vocab = {w for (n,) in con.execute("SELECT alias_raw FROM college_aliases") for w in (n or "").lower().replace(",", " ").split()}
+    vocab |= {"pittsburgh", "international", "whittier", "pacific", "institute", "massachusetts", "austin", "scottsdale"}
     with open(SOURCES_CSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for row in rows:
@@ -30,6 +33,9 @@ def ingest_all(force_fetch=False):
         con.execute("DELETE FROM matriculation WHERE source_id=?", (sid,))
         unresolved = 0
         for r in recs:
+            r["college_raw"] = repair_ligatures(r["college_raw"], vocab)
+            if r["section"]:
+                r["section"] = repair_ligatures(r["section"], vocab)
             cid, method, score = res.resolve(r["college_raw"], r["section"])
             unresolved += cid is None
             con.execute(
