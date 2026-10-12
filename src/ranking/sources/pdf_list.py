@@ -10,6 +10,10 @@ import subprocess
 from html import unescape
 
 GAP = 9.0
+SECTION_RE = re.compile(
+    r"(community colleges?|cal(ifornia)? state univ(ersitie)?s?( \(csu\))?|csu|univ(ersity)? of california( \(uc\))?|uc|"
+    r"private( ?/ ?| and )?(out.of.state)?( colleges| universities)?|out.of.state( colleges| universities)?|"
+    r"international( colleges| universities)?|public( colleges| universities)?|other)", re.I)
 HEADING_RE = re.compile(r"matriculation|colleges? .*attend|where .* go", re.I)
 
 
@@ -58,7 +62,7 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
         ws.sort()
         cur = [ws[0]]
         for a in ws[1:]:
-            if a[0] - cur[-1][1] > GAP:
+            if a[0] - cur[-1][1] > GAP or re.fullmatch(r"\(\d+\)", cur[-1][2]):
                 segs.append((cur[0][0], y, " ".join(w for _, _, w in cur)))
                 cur = [a]
             else:
@@ -86,7 +90,7 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
             pending = ""
         elif re.search(r"\(\d+\)", full):
             continue
-        elif len(text) < 45 and not text.endswith(("-", ",")) and text[:1].isupper():
+        elif SECTION_RE.fullmatch(text.strip()):
             section, pending = text.strip(), ""
         else:
             pending = full

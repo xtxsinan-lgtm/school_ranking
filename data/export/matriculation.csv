@@ -582,6 +582,674 @@ cds_code,school,grad_year,period_start,period_end,college_id,college,unitid,coll
 43696414332904,Henry M. Gunn High,2026,2026,2026,3015,Whitman College,237057,Whitman College,,2,exact,100.0
 43696414332904,Henry M. Gunn High,2026,2026,2026,1277,Worcester Polytechnic Institute,168421,Worcester Polytechnic Institute,,1,exact,100.0
 43696414332904,Henry M. Gunn High,2026,2026,2026,493,Yale University,130794,Yale University,,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,140,Academy of Art University,108232,Academy of Art,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,499,American University,131159,American University,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,67,Arizona State University Campus Immersion,104151,Arizona State University,Private/Out of State,24,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,150,Art Center College of Design,109651,Art Center College of Design,Private/Out of State,4,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,151,Azusa Pacific University,109785,Azusa Pacific,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1730,Barnard College,189097,Barnard,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2719,Baylor University,223232,Baylor,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2018,2022,181,University of California-Berkeley,110635,Berkeley,Univ of California,110,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,156,Biola University,110097,Biola,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1192,Boston College,164924,Boston College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1193,Boston University,164988,Boston University,Private/Out of State,12,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1194,Brandeis University,165015,Brandeis,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2532,Brown University,217156,Brown,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2356,Bryn Mawr College,211273,Bryn Mawr,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1759,CUNY Bernard M Baruch College,190512,CUNY Bernard Baruch,Private/Out of State,1,fuzzy,95.0
+43694684334421,Lynbrook High,,2018,2022,160,Cabrillo College,110334,Cabrillo College,Community Colleges,5,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,162,California College of the Arts,110370,Cal College of the Arts,Private/Out of State,4,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,164,California Institute of Technology,110404,Cal Institute of Technology,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,171,California State Polytechnic University-Pomona,110529,"Cal Poly, Pomona",Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,166,California Polytechnic State University-San Luis Obispo,110422,"Cal Poly, SLO",Cal State Universities,34,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1371,Carleton College,173258,Carleton College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1371,Carleton College,173258,Carleton University,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2362,Carnegie Mellon University,211440,Carnegie Mellon,Private/Out of State,58,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2114,Case Western Reserve University,201645,Case Western Reserve,Private/Out of State,14,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,202,Chapman University,111948,Chapman,Private/Out of State,11,key,100.0
+43694684334421,Lynbrook High,,2018,2022,172,California State University-Chico,110538,Chico,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,210,Claremont McKenna College,112260,Claremont McKenna,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1749,Colgate University,190099,Colgate,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,429,Colorado School of Mines,126775,Colorado School of Mines,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1751,Columbia University in the City of New York,190150,Columbia,Private/Out of State,7,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1753,The Cooper Union for the Advancement of Science and Art,190372,Cooper Union,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1754,Cornell University,190415,Cornell,Private/Out of State,22,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1758,Culinary Institute of America,190503,Culinary Institute of America,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1600,Dartmouth College,182670,Dartmouth,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,182,University of California-Davis,110644,Davis,Univ of California,74,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,223,De Anza College,113333,DeAnza College,Community Colleges,285,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,737,DePaul University,144740,DePaul,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,228,Dominican University of California,113698,Dominican University of Cal,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2375,Drexel University,212054,Drexel,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1987,Duke University,198419,Duke,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2018,2022,176,California State University-East Bay,110574,East Bay,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1992,Elon University,198516,Elon,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,640,Emory University,139658,Emory,Private/Out of State,13,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1787,Fashion Institute of Technology,191126,Fashion Institute of Tech,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,239,Foothill College,114716,Foothill College,Community Colleges,39,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1790,Fordham University,191241,Fordham,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,3554,Franklin W Olin College of Engineering,441982,Franklin Olin College,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,175,California State University-Fullerton,110565,Fullerton,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,504,George Washington University,131469,George Washington,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2018,2022,505,Georgetown University,131496,Georgetown,Private/Out of State,10,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,3654,Georgia Gwinnett College,447689,Georgia Gwinnett College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Tech,Private/Out of State,10,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1219,Harvard University,166027,Harvard,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2018,2022,255,Harvey Mudd College,115409,Harvey Mudd,Private/Out of State,9,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,872,Indiana University-Bloomington,151351,"Indiana Univ, Bloominton",Private/Out of State,9,fuzzy,97.2972972972973
+43694684334421,Lynbrook High,,2018,2022,183,University of California-Irvine,110653,Irvine,Univ of California,52,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1153,Johns Hopkins University,162928,Johns Hopkins,Private/Out of State,10,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2534,Johnson & Wales University-Providence,217235,Johnson & Wales,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,4372,Keio University,,Keio University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,4369,KAIST,,Korea Advanced Institute of Science & Technology,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2305,Lewis & Clark College,209056,Lewis & Clark,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,177,California State University-Long Beach,110583,Long Beach,Cal State Universities,5,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,290,Loyola Marymount University,117946,Loyola Marymount,Private/Out of State,9,key,100.0
+43694684334421,Lynbrook High,,2018,2022,783,Loyola University Chicago,146719,"Loyola Univ, Chicago",Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1234,Massachusetts Institute of Technology,166683,MIT,Private/Out of State,21,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1386,Macalester College,173902,Macalester,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,3069,Marquette University,239105,Marquette,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1160,Maryland Institute College of Art,163295,Maryland Institute of Art,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,294,Menlo College,118693,Menlo College,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,3614,University of California-Merced,445188,Merced,Univ of California,11,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1329,Michigan State University,171100,Michigan State,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2876,Middlebury College,230959,Middlebury,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,299,Mission College,118930,Mission College,Community Colleges,12,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,3374,California State University-Monterey Bay,409698,Monterey Bay,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1243,Mount Holyoke College,166939,Mount Holyoke College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1850,New York University,193900,New York Univ,Private/Out of State,44,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,447,Northeastern Junior College,127732,Northeastern,Private/Out of State,8,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,82,Northern Arizona University,105330,Northern Arizona Univ,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,179,California State University-Northridge,110608,Northridge,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,804,Northwestern University,147767,Northwestern,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2191,Oberlin College,204501,Oberlin,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,316,Occidental College,120254,Occidental,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,,,,Oregon Culinary Institute,Private/Out of State,1,none,0.0
+43694684334421,Lynbrook High,,2018,2022,319,Otis College of Art and Design,120403,Otis College of Art & Design,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1153,Johns Hopkins University,162928,Peabody Conservatory of JHU,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2454,Pennsylvania State University-Main Campus,214777,Penn State Univ–Main Campus,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2018,2022,332,Pepperdine University,121150,Pepperdine,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,333,Pitzer College,121257,Pitzer,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2480,Point Park University,215442,Point Park University,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,335,Pomona College,121345,Pomona College,Private/Out of State,6,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1864,Pratt Institute-Main,194578,Pratt Institute,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1663,Princeton University,186131,Princeton,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2018,2022,3185,Purdue University-Main Campus,243780,Purdue,Private/Out of State,54,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2540,Rhode Island School of Design,217493,RISD,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2330,Reed College,209922,Reed,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic Institute,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2799,Rice University,227757,Rice,Private/Out of State,12,key,100.0
+43694684334421,Lynbrook High,,2018,2022,579,Ringling College of Art and Design,136774,Ringling College of Art/Design,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,185,University of California-Riverside,110671,Riverside,Univ of California,38,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1873,Rochester Institute of Technology,195003,Rochester Institute of Tech,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,887,Rose-Hulman Institute of Technology,152318,Rose Hulman Institute of Tech,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,180,California State University-Sacramento,110617,Sacramento,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,379,Saint Mary's College of California,123554,Saint Mary’s College of CA,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,350,San Diego State University,122409,San Diego,Cal State Universities,7,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,186,University of California-San Diego,110680,San Diego,Univ of California,44,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,353,San Francisco State University,122597,San Francisco,Cal State Universities,13,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,,,,San Francisco Art Institute,Private/Out of State,1,none,0.0
+43694684334421,Lynbrook High,,2018,2022,362,San Jose State University,122755,San Jose,Cal State Universities,87,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,188,University of California-Santa Barbara,110705,Santa Barbara,Univ of California,121,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,365,Santa Clara University,122931,Santa Clara,Private/Out of State,30,key,100.0
+43694684334421,Lynbrook High,,2018,2022,189,University of California-Santa Cruz,110714,Santa Cruz,Univ of California,59,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1946,School of Visual Arts,197151,School of Visual Arts,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,369,Scripps College,123165,Scripps,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2018,2022,3001,Seattle University,236595,Seattle University,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1264,Smith College,167835,Smith College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,381,Sonoma State University,123572,Sonoma,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1417,St Catherine University,175005,St Catherine University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1413,St Olaf College,174844,St Olaf College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,3184,Stanford University,243744,Stanford,Private/Out of State,22,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1907,Stony Brook University,196097,Stony Brook Univ,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1928,Syracuse University,196413,Syracuse,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2827,Texas A & M University-College Station,228723,Texas A & M,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1245,The New England Conservatory of Music,167057,The New England Conservatory,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1844,The New School,193654,The New School,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2204,Ohio State University-Main Campus,204796,The Ohio State,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1270,Tufts University,168148,Tufts,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2018,2022,1107,Tulane University of Louisiana,160755,Tulane,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,184,University of California-Los Angeles,110662,UCLA,Univ of California,74,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,461,United States Air Force Academy,128328,United States Air Force Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1174,United States Naval Academy,164155,United States Naval Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,4345,University of Alberta,,Univ of Alberta,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,69,University of Arizona,104179,Univ of Arizona,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,4338,University of British Columbia,,Univ of British Columbia,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,726,University of Chicago,144050,Univ of Chicago,Private/Out of State,11,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,423,University of Colorado Boulder,126614,Univ of Colorado Boulder,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,687,University of Hawaii at Manoa,141574,"Univ of Hawaii, Manoa",Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,756,University of Illinois Urbana-Champaign,145637,"Univ of Illinois, Urbana-Champaign",Private/Out of State,83,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1159,University of Maryland-College Park,163286,Univ of Maryland College Park,Private/Out of State,9,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1229,University of Massachusetts-Amherst,166629,Univ of Massachusetts Amherst,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1327,University of Michigan-Ann Arbor,170976,Univ of Michigan Ann Arbor,Private/Out of State,12,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1391,University of Minnesota-Twin Cities,174066,Univ of Minnesota Twin Cities,Private/Out of State,4,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1554,The University of Montana,180489,Univ of Montana,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1595,University of Nevada-Reno,182290,Univ of Nevada Reno,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1698,University of New Mexico-Main Campus,187985,Univ of New Mexico,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,2087,University of North Dakota,200280,Univ of North Dakota,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2319,University of Oregon,209551,Univ of Oregon,Private/Out of State,6,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2466,University of Pennsylvania,215062,Univ of Pennsylvania,Private/Out of State,20,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2474,University of Pittsburgh-Pittsburgh Campus,215293,Univ of Pittsburgh,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2329,University of Portland,209825,Univ of Portland,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,2995,University of Puget Sound,236328,Univ of Puget Sound,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,1874,University of Rochester,195030,Univ of Rochester,Private/Out of State,5,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,354,University of San Francisco,122612,Univ of San Francisco,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,391,University of Southern California,123961,Univ of Southern California,Private/Out of State,27,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2829,The University of Texas at Austin,228778,Univ of Texas Austin,Private/Out of State,26,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2830,The University of Texas at Dallas,228787,Univ of Texas Dallas,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,4339,University of Toronto,,Univ of Toronto,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,4343,University of Victoria,,Univ of Victoria,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,3011,University of Washington-Seattle Campus,236948,Univ of Washington Seattle,Private/Out of State,30,key,100.0
+43694684334421,Lynbrook High,,2018,2022,3102,University of Wisconsin-Madison,240444,Univ of Wisconsin Madison,Private/Out of State,14,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,328,University of the Pacific,120883,Univ of the Pacific,Private/Out of State,18,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,339,University of Redlands,121691,Univ or Redlands,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2701,Vanderbilt University,221999,Vanderbilt,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,4373,Vatel International Business School,,Vatel International Business School,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,2954,Virginia Polytechnic Institute and State University,233921,Virginia Tech,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,4371,Waseda University,,Waseda,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,3010,Washington State University,236939,Washington State Pullman,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1533,Washington University in St Louis,179867,Washington Univ in St Louis,Private/Out of State,16,manual,100.0
+43694684334421,Lynbrook High,,2018,2022,1271,Wellesley College,168218,Wellesley,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2018,2022,406,West Valley College,125499,West Valley College,Community Colleges,102,exact,100.0
+43694684334421,Lynbrook High,,2018,2022,,,,Wheaton,Private/Out of State,2,ambiguous,0.0
+43694684334421,Lynbrook High,,2018,2022,410,Whittier College,125763,Whittier,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2018,2022,493,Yale University,130794,Yale,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,140,Academy of Art University,108232,Academy of Art,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,499,American University,131159,American University,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,67,Arizona State University Campus Immersion,104151,Arizona State University,Private/Out of State,23,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,150,Art Center College of Design,109651,Art Center College of Design,Private/Out of State,4,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,151,Azusa Pacific University,109785,Azusa Pacific,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1730,Barnard College,189097,Barnard,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2719,Baylor University,223232,Baylor,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2019,2023,181,University of California-Berkeley,110635,Berkeley,Univ of California,93,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,156,Biola University,110097,Biola,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1192,Boston College,164924,Boston College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1193,Boston University,164988,Boston University,Private/Out of State,15,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1194,Brandeis University,165015,Brandeis,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2532,Brown University,217156,Brown,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2356,Bryn Mawr College,211273,Bryn Mawr,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1759,CUNY Bernard M Baruch College,190512,CUNY Bernard Baruch,Private/Out of State,1,fuzzy,95.0
+43694684334421,Lynbrook High,,2019,2023,160,Cabrillo College,110334,Cabrillo College,Community Colleges,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,162,California College of the Arts,110370,Cal College of the Arts,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,164,California Institute of Technology,110404,Cal Institute of Technology,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,171,California State Polytechnic University-Pomona,110529,"Cal Poly, Pomona",Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,166,California Polytechnic State University-San Luis Obispo,110422,"Cal Poly, SLO",Cal State Universities,32,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1371,Carleton College,173258,Carleton College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1371,Carleton College,173258,Carleton University,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2362,Carnegie Mellon University,211440,Carnegie Mellon,Private/Out of State,59,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2114,Case Western Reserve University,201645,Case Western Reserve,Private/Out of State,16,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,202,Chapman University,111948,Chapman,Private/Out of State,14,key,100.0
+43694684334421,Lynbrook High,,2019,2023,172,California State University-Chico,110538,Chico,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,210,Claremont McKenna College,112260,Claremont McKenna,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1749,Colgate University,190099,Colgate,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,425,Colorado College,126678,Colorado College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1751,Columbia University in the City of New York,190150,Columbia,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1753,The Cooper Union for the Advancement of Science and Art,190372,Cooper Union,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1754,Cornell University,190415,Cornell,Private/Out of State,20,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1758,Culinary Institute of America,190503,Culinary Institute of America,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1600,Dartmouth College,182670,Dartmouth,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,182,University of California-Davis,110644,Davis,Univ of California,76,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,223,De Anza College,113333,DeAnza College,Community Colleges,248,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,737,DePaul University,144740,DePaul,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,228,Dominican University of California,113698,Dominican University of Cal,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2375,Drexel University,212054,Drexel,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1987,Duke University,198419,Duke,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2019,2023,176,California State University-East Bay,110574,East Bay,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,640,Emory University,139658,Emory,Private/Out of State,16,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1787,Fashion Institute of Technology,191126,Fashion Institute of Tech,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,239,Foothill College,114716,Foothill College,Community Colleges,39,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1790,Fordham University,191241,Fordham,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,3554,Franklin W Olin College of Engineering,441982,Franklin Olin College,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,175,California State University-Fullerton,110565,Fullerton,Cal State Universities,5,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,504,George Washington University,131469,George Washington,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2019,2023,505,Georgetown University,131496,Georgetown,Private/Out of State,10,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Tech,Private/Out of State,10,key,100.0
+43694684334421,Lynbrook High,,2019,2023,916,Grinnell College,153384,Grinnell,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1219,Harvard University,166027,Harvard,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2019,2023,255,Harvey Mudd College,115409,Harvey Mudd,Private/Out of State,9,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,872,Indiana University-Bloomington,151351,"Indiana Univ, Bloominton",Private/Out of State,10,fuzzy,97.2972972972973
+43694684334421,Lynbrook High,,2019,2023,183,University of California-Irvine,110653,Irvine,Univ of California,48,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1153,Johns Hopkins University,162928,Johns Hopkins,Private/Out of State,11,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2534,Johnson & Wales University-Providence,217235,Johnson & Wales,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,4372,Keio University,,Keio University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,4369,KAIST,,Korea Advanced Institute of Science & Technology,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2305,Lewis & Clark College,209056,Lewis & Clark,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2019,2023,177,California State University-Long Beach,110583,Long Beach,Cal State Universities,7,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,290,Loyola Marymount University,117946,Loyola Marymount,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2019,2023,783,Loyola University Chicago,146719,"Loyola Univ, Chicago",Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1234,Massachusetts Institute of Technology,166683,MIT,Private/Out of State,17,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1386,Macalester College,173902,Macalester,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,3069,Marquette University,239105,Marquette,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1160,Maryland Institute College of Art,163295,Maryland Institute of Art,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,4341,McGill University,,McGill University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,294,Menlo College,118693,Menlo College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,3614,University of California-Merced,445188,Merced,Univ of California,14,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1329,Michigan State University,171100,Michigan State,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2876,Middlebury College,230959,Middlebury,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,299,Mission College,118930,Mission College,Community Colleges,6,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,3374,California State University-Monterey Bay,409698,Monterey Bay,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1243,Mount Holyoke College,166939,Mount Holyoke College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1850,New York University,193900,New York Univ,Private/Out of State,44,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,447,Northeastern Junior College,127732,Northeastern,Private/Out of State,12,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,82,Northern Arizona University,105330,Northern Arizona Univ,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,179,California State University-Northridge,110608,Northridge,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,804,Northwestern University,147767,Northwestern,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,316,Occidental College,120254,Occidental,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,,,,Oregon Culinary Institute,Private/Out of State,1,none,0.0
+43694684334421,Lynbrook High,,2019,2023,319,Otis College of Art and Design,120403,Otis College of Art & Design,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2454,Pennsylvania State University-Main Campus,214777,Penn State Univ–Main Campus,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2019,2023,332,Pepperdine University,121150,Pepperdine,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,333,Pitzer College,121257,Pitzer,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2480,Point Park University,215442,Point Park University,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,335,Pomona College,121345,Pomona College,Private/Out of State,5,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1864,Pratt Institute-Main,194578,Pratt Institute,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1663,Princeton University,186131,Princeton,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,864,Purdue University Fort Wayne,151102,Purdue-Fort Wayne,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,3185,Purdue University-Main Campus,243780,Purdue-main campus,Private/Out of State,72,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2540,Rhode Island School of Design,217493,RISD,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2799,Rice University,227757,Rice,Private/Out of State,13,key,100.0
+43694684334421,Lynbrook High,,2019,2023,579,Ringling College of Art and Design,136774,Ringling College of Art/Design,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,185,University of California-Riverside,110671,Riverside,Univ of California,50,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1873,Rochester Institute of Technology,195003,Rochester Institute of Tech,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,887,Rose-Hulman Institute of Technology,152318,Rose Hulman Institute of Tech,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1668,Rutgers University-New Brunswick,186380,Rutgers-New Brunswick,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,180,California State University-Sacramento,110617,Sacramento,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,379,Saint Mary's College of California,123554,Saint Mary’s College of CA,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,350,San Diego State University,122409,San Diego,Cal State Universities,6,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,186,University of California-San Diego,110680,San Diego,Univ of California,41,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,353,San Francisco State University,122597,San Francisco,Cal State Universities,6,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,362,San Jose State University,122755,San Jose,Cal State Universities,94,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,188,University of California-Santa Barbara,110705,Santa Barbara,Univ of California,121,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,365,Santa Clara University,122931,Santa Clara,Private/Out of State,31,key,100.0
+43694684334421,Lynbrook High,,2019,2023,189,University of California-Santa Cruz,110714,Santa Cruz,Univ of California,56,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1946,School of Visual Arts,197151,School of Visual Arts,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,4374,Sciences Po,,Sciences Po – UC Berkeley,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,369,Scripps College,123165,Scripps,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2019,2023,3001,Seattle University,236595,Seattle University,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1264,Smith College,167835,Smith College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,381,Sonoma State University,123572,Sonoma,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1413,St Olaf College,174844,St Olaf College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,3184,Stanford University,243744,Stanford,Private/Out of State,18,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1907,Stony Brook University,196097,Stony Brook Univ,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1928,Syracuse University,196413,Syracuse,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2827,Texas A & M University-College Station,228723,Texas A & M College Station,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2827,Texas A & M University-College Station,228723,Texas A & M Galveston,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1245,The New England Conservatory of Music,167057,The New England Conservatory,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1844,The New School,193654,The New School,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2204,Ohio State University-Main Campus,204796,The Ohio State,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1270,Tufts University,168148,Tufts,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1107,Tulane University of Louisiana,160755,Tulane,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,184,University of California-Los Angeles,110662,UCLA,Univ of California,73,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,461,United States Air Force Academy,128328,United States Air Force Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1174,United States Naval Academy,164155,United States Naval Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,4345,University of Alberta,,Univ of Alberta,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,69,University of Arizona,104179,Univ of Arizona,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,4338,University of British Columbia,,Univ of British Columbia,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,726,University of Chicago,144050,Univ of Chicago,Private/Out of State,9,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,423,University of Colorado Boulder,126614,Univ of Colorado Boulder,Private/Out of State,8,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,687,University of Hawaii at Manoa,141574,"Univ of Hawaii, Manoa",Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,756,University of Illinois Urbana-Champaign,145637,"Univ of Illinois, Urbana-Champaign",Private/Out of State,93,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1159,University of Maryland-College Park,163286,Univ of Maryland College Park,Private/Out of State,19,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1229,University of Massachusetts-Amherst,166629,Univ of Massachusetts Amherst,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1327,University of Michigan-Ann Arbor,170976,Univ of Michigan Ann Arbor,Private/Out of State,13,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1391,University of Minnesota-Twin Cities,174066,Univ of Minnesota Twin Cities,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1595,University of Nevada-Reno,182290,Univ of Nevada Reno,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1698,University of New Mexico-Main Campus,187985,Univ of New Mexico,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,2028,University of North Carolina at Chapel Hill,199120,"Univ of North Carolina, Chapel Hill",Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2087,University of North Dakota,200280,Univ of North Dakota,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2319,University of Oregon,209551,Univ of Oregon,Private/Out of State,7,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,2466,University of Pennsylvania,215062,Univ of Pennsylvania,Private/Out of State,19,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2474,University of Pittsburgh-Pittsburgh Campus,215293,Univ of Pittsburgh,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2995,University of Puget Sound,236328,Univ of Puget Sound,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,1874,University of Rochester,195030,Univ of Rochester,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,354,University of San Francisco,122612,Univ of San Francisco,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,391,University of Southern California,123961,Univ of Southern California,Private/Out of State,23,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2829,The University of Texas at Austin,228778,Univ of Texas Austin,Private/Out of State,29,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2830,The University of Texas at Dallas,228787,Univ of Texas Dallas,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,4339,University of Toronto,,Univ of Toronto,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2869,University of Utah,230764,Univ of Utah,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,4343,University of Victoria,,Univ of Victoria,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,3011,University of Washington-Seattle Campus,236948,Univ of Washington Seattle,Private/Out of State,38,key,100.0
+43694684334421,Lynbrook High,,2019,2023,4340,University of Waterloo,,Univ of Waterloo,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,3102,University of Wisconsin-Madison,240444,Univ of Wisconsin Madison,Private/Out of State,14,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,328,University of the Pacific,120883,Univ of the Pacific,Private/Out of State,15,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,339,University of Redlands,121691,Univ or Redlands,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2701,Vanderbilt University,221999,Vanderbilt,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,4373,Vatel International Business School,,Vatel International Business School,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,2954,Virginia Polytechnic Institute and State University,233921,Virginia Tech,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,4371,Waseda University,,Waseda,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,3010,Washington State University,236939,Washington State Pullman,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1533,Washington University in St Louis,179867,Washington Univ in St Louis,Private/Out of State,15,manual,100.0
+43694684334421,Lynbrook High,,2019,2023,1271,Wellesley College,168218,Wellesley,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2019,2023,406,West Valley College,125499,West Valley College,Community Colleges,87,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,,,,Wheaton,Private/Out of State,2,ambiguous,0.0
+43694684334421,Lynbrook High,,2019,2023,410,Whittier College,125763,Whittier,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2019,2023,1276,Williams College,168342,Williams College,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2019,2023,493,Yale University,130794,Yale,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2347,Allegheny College,210669,Allegheny College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,499,American University,131159,American University,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1181,Amherst College,164465,Amherst College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,67,Arizona State University Campus Immersion,104151,Arizona State University,Private/Out of State,16,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,150,Art Center College of Design,109651,Art Center College of Design,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1184,Babson College,164580,Babson College,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1730,Barnard College,189097,Barnard,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,2719,Baylor University,223232,Baylor,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,181,University of California-Berkeley,110635,Berkeley,Univ of California,87,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,402,Berkeley City College,125170,Berkeley City College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1188,Berklee College of Music,164748,Berklee College of Music,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,156,Biola University,110097,Biola,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1193,Boston University,164988,Boston University,Private/Out of State,18,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1194,Brandeis University,165015,Brandeis,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2857,Brigham Young University,230038,Brigham Young,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2532,Brown University,217156,Brown,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2021,2024,160,Cabrillo College,110334,Cabrillo College,Community Colleges,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,164,California Institute of Technology,110404,Cal Institute of Technology,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,171,California State Polytechnic University-Pomona,110529,"Cal Poly, Pomona",Cal State Universities,6,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,166,California Polytechnic State University-San Luis Obispo,110422,"Cal Poly, SLO",Cal State Universities,28,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,195,Canada College,111434,Canada College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1371,Carleton College,173258,Carleton University,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2362,Carnegie Mellon University,211440,Carnegie Mellon,Private/Out of State,49,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2114,Case Western Reserve University,201645,Case Western Reserve,Private/Out of State,12,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,202,Chapman University,111948,Chapman,Private/Out of State,14,key,100.0
+43694684334421,Lynbrook High,,2021,2024,172,California State University-Chico,110538,Chico,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,210,Claremont McKenna College,112260,Claremont McKenna,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,425,Colorado College,126678,Colorado College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,431,Colorado State University-Fort Collins,126818,Colorado State,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1751,Columbia University in the City of New York,190150,Columbia,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1754,Cornell University,190415,Cornell,Private/Out of State,21,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2974,Cornish College of the Arts,235024,Cornish College of the Arts,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,182,University of California-Davis,110644,Davis,Univ of California,68,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,223,De Anza College,113333,DeAnza College,Community Colleges,93,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,737,DePaul University,144740,DePaul,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2375,Drexel University,212054,Drexel,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1987,Duke University,198419,Duke,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,176,California State University-East Bay,110574,East Bay,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,528,Embry-Riddle Aeronautical University-Daytona Beach,133553,"Embry-Riddle Aeronautical, AZ",Private/Out of State,1,fuzzy,94.33962264150944
+43694684334421,Lynbrook High,,2021,2024,640,Emory University,139658,Emory,Private/Out of State,14,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1787,Fashion Institute of Technology,191126,Fashion Institute of Tech,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,239,Foothill College,114716,Foothill College,Community Colleges,13,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1790,Fordham University,191241,Fordham,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,3554,Franklin W Olin College of Engineering,441982,Franklin Olin College,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,174,California State University-Fresno,110556,Fresno,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,175,California State University-Fullerton,110565,Fullerton,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,505,Georgetown University,131496,Georgetown,Private/Out of State,11,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Tech,Private/Out of State,12,key,100.0
+43694684334421,Lynbrook High,,2021,2024,916,Grinnell College,153384,Grinnell,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1219,Harvard University,166027,Harvard,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,255,Harvey Mudd College,115409,Harvey Mudd,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,872,Indiana University-Bloomington,151351,"Indiana U, Bloomington",Private/Out of State,15,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,183,University of California-Irvine,110653,Irvine,Univ of California,48,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1153,Johns Hopkins University,162928,Johns Hopkins,Private/Out of State,8,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2534,Johnson & Wales University-Providence,217235,Johnson & Wales,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,4372,Keio University,,Keio University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,4369,KAIST,,Korea Advanced Institute of Science & Technology,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2305,Lewis & Clark College,209056,Lewis & Clark,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2306,Linfield University,209065,Linfield University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,177,California State University-Long Beach,110583,Long Beach,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,290,Loyola Marymount University,117946,Loyola Marymount,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,783,Loyola University Chicago,146719,"Loyola Univ, Chicago",Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1234,Massachusetts Institute of Technology,166683,MIT,Private/Out of State,16,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,4341,McGill University,,McGill University,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,294,Menlo College,118693,Menlo College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,3614,University of California-Merced,445188,Merced,Univ of California,16,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1329,Michigan State University,171100,Michigan State,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,299,Mission College,118930,Mission College,Community Colleges,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,304,Mt San Antonio College,119164,Mt San Antonio College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1245,The New England Conservatory of Music,167057,New England Music Conservatory,Private/Out of State,1,fuzzy,100.0
+43694684334421,Lynbrook High,,2021,2024,1850,New York University,193900,New York Univ,Private/Out of State,47,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,447,Northeastern Junior College,127732,Northeastern,Private/Out of State,21,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,82,Northern Arizona University,105330,Northern Arizona Univ,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,179,California State University-Northridge,110608,Northridge,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,804,Northwestern University,147767,Northwestern,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,569,Nova Southeastern University,136215,Nova Southeastern,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,316,Occidental College,120254,Occidental,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,4057,Emory University-Oxford College,487092,Oxford College of Emory,Private/Out of State,2,fuzzy,100.0
+43694684334421,Lynbrook High,,2021,2024,1153,Johns Hopkins University,162928,Peabody Conservatory JHU,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2454,Pennsylvania State University-Main Campus,214777,Penn State Univ–Main Campus,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2021,2024,332,Pepperdine University,121150,Pepperdine,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,333,Pitzer College,121257,Pitzer,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,2480,Point Park University,215442,Point Park University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,335,Pomona College,121345,Pomona College,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1864,Pratt Institute-Main,194578,Pratt Institute,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,3185,Purdue University-Main Campus,243780,Purdue-main campus,Private/Out of State,71,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2540,Rhode Island School of Design,217493,RISD,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2799,Rice University,227757,Rice,Private/Out of State,11,key,100.0
+43694684334421,Lynbrook High,,2021,2024,4357,Ritsumeikan University,,Ritsumeikan University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,185,University of California-Riverside,110671,Riverside,Univ of California,55,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1873,Rochester Institute of Technology,195003,Rochester Institute of Tech,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,887,Rose-Hulman Institute of Technology,152318,Rose Hulman Institute of Tech,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1668,Rutgers University-New Brunswick,186380,Rutgers-New Brunswick,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1669,Rutgers University-Newark,186399,Rutgers-Newark,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,180,California State University-Sacramento,110617,Sacramento,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,379,Saint Mary's College of California,123554,Saint Mary’s College of CA,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,350,San Diego State University,122409,San Diego,Cal State Universities,4,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,186,University of California-San Diego,110680,San Diego,Univ of California,33,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,353,San Francisco State University,122597,San Francisco,Cal State Universities,7,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,362,San Jose State University,122755,San Jose,Cal State Universities,93,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,3265,California State University-San Marcos,366711,San Marcos,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,188,University of California-Santa Barbara,110705,Santa Barbara,Univ of California,108,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,365,Santa Clara University,122931,Santa Clara,Private/Out of State,31,key,100.0
+43694684334421,Lynbrook High,,2021,2024,189,University of California-Santa Cruz,110714,Santa Cruz,Univ of California,51,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,369,Scripps College,123165,Scripps,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,4342,Simon Fraser University,,Simon Fraser University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1264,Smith College,167835,Smith College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,381,Sonoma State University,123572,Sonoma,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,3184,Stanford University,243744,Stanford,Private/Out of State,13,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1907,Stony Brook University,196097,Stony Brook Univ,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,4352,Technical University of Munich,,Technical Univ of Munich,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2827,Texas A & M University-College Station,228723,Texas A & M College Station,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,2834,Texas Christian University,228875,Texas Christian University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1753,The Cooper Union for the Advancement of Science and Art,190372,The Cooper Union,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1758,Culinary Institute of America,190503,The Culinary Institute,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,504,George Washington University,131469,The George Washington Univ,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1245,The New England Conservatory of Music,167057,The New England Conservatory,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1844,The New School,193654,The New School,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2204,Ohio State University-Main Campus,204796,The Ohio State,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1270,Tufts University,168148,Tufts,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1107,Tulane University of Louisiana,160755,Tulane,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,184,University of California-Los Angeles,110662,UCLA,Univ of California,55,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1942,United States Military Academy,197036,United States Military Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1174,United States Naval Academy,164155,United States Naval Academy,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,69,University of Arizona,104179,Univ of Arizona,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,4338,University of British Columbia,,Univ of British Columbia,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,726,University of Chicago,144050,Univ of Chicago,Private/Out of State,8,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,423,University of Colorado Boulder,126614,Univ of Colorado Boulder,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,687,University of Hawaii at Manoa,141574,"Univ of Hawaii, Manoa",Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,753,University of Illinois Chicago,145600,"Univ of Illinois, Chicago",Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,756,University of Illinois Urbana-Champaign,145637,"Univ of Illinois, Urbana-Champaign",Private/Out of State,94,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1159,University of Maryland-College Park,163286,Univ of Maryland College Park,Private/Out of State,24,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1229,University of Massachusetts-Amherst,166629,Univ of Massachusetts Amherst,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1327,University of Michigan-Ann Arbor,170976,"Univ of Michigan, Ann Arbor",Private/Out of State,12,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1391,University of Minnesota-Twin Cities,174066,Univ of Minnesota Twin Cities,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1554,The University of Montana,180489,Univ of Montana,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,2028,University of North Carolina at Chapel Hill,199120,"Univ of North Carolina, Chapel Hill",Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2319,University of Oregon,209551,Univ of Oregon,Private/Out of State,8,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,2466,University of Pennsylvania,215062,Univ of Pennsylvania,Private/Out of State,17,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2474,University of Pittsburgh-Pittsburgh Campus,215293,Univ of Pittsburgh,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2995,University of Puget Sound,236328,Univ of Puget Sound,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,339,University of Redlands,121691,Univ of Redlands,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,1874,University of Rochester,195030,Univ of Rochester,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,354,University of San Francisco,122612,Univ of San Francisco,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,391,University of Southern California,123961,Univ of Southern California,Private/Out of State,22,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2829,The University of Texas at Austin,228778,Univ of Texas Austin,Private/Out of State,32,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2830,The University of Texas at Dallas,228787,Univ of Texas Dallas,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2233,University of Toledo,206084,Univ of Toledo,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,4339,University of Toronto,,Univ of Toronto,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2869,University of Utah,230764,Univ of Utah,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,4343,University of Victoria,,Univ of Victoria,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,3011,University of Washington-Seattle Campus,236948,Univ of Washington Seattle,Private/Out of State,44,key,100.0
+43694684334421,Lynbrook High,,2021,2024,4340,University of Waterloo,,Univ of Waterloo,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,3102,University of Wisconsin-Madison,240444,Univ of Wisconsin Madison,Private/Out of State,25,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,328,University of the Pacific,120883,Univ of the Pacific,Private/Out of State,8,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2701,Vanderbilt University,221999,Vanderbilt,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,4373,Vatel International Business School,,Vatel International Business School,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,2954,Virginia Polytechnic Institute and State University,233921,Virginia Tech,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,4371,Waseda University,,Waseda,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1533,Washington University in St Louis,179867,Washington Univ in St Louis,Private/Out of State,9,manual,100.0
+43694684334421,Lynbrook High,,2021,2024,1271,Wellesley College,168218,Wellesley,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,406,West Valley College,125499,West Valley College,Community Colleges,30,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,,,,Wheaton,Private/Out of State,3,ambiguous,0.0
+43694684334421,Lynbrook High,,2021,2024,410,Whittier College,125763,Whittier,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2021,2024,1276,Williams College,168342,Williams College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2021,2024,493,Yale University,130794,Yale,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1181,Amherst College,164465,Amherst College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,67,Arizona State University Campus Immersion,104151,Arizona State University,Private/Out of State,14,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,150,Art Center College of Design,109651,Art Center College of Design,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1184,Babson College,164580,Babson College,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1730,Barnard College,189097,Barnard,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,2719,Baylor University,223232,Baylor,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,181,University of California-Berkeley,110635,Berkeley,Univ of California,94,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1193,Boston University,164988,Boston University,Private/Out of State,16,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1194,Brandeis University,165015,Brandeis,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2857,Brigham Young University,230038,Brigham Young,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2532,Brown University,217156,Brown,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2022,2025,160,Cabrillo College,110334,Cabrillo College,Community Colleges,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,164,California Institute of Technology,110404,Cal Institute of Technology,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,171,California State Polytechnic University-Pomona,110529,"Cal Poly, Pomona",Cal State Universities,6,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,166,California Polytechnic State University-San Luis Obispo,110422,"Cal Poly, SLO",Cal State Universities,31,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1371,Carleton College,173258,Carleton University,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2362,Carnegie Mellon University,211440,Carnegie Mellon,Private/Out of State,42,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2114,Case Western Reserve University,201645,Case Western Reserve,Private/Out of State,19,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,202,Chapman University,111948,Chapman,Private/Out of State,9,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2554,Citadel Military College of South Carolina,217864,"Citadel Military, SC",Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,210,Claremont McKenna College,112260,Claremont McKenna,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1749,Colgate University,190099,Colgate,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,425,Colorado College,126678,Colorado College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,431,Colorado State University-Fort Collins,126818,Colorado State,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1751,Columbia University in the City of New York,190150,Columbia,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1753,The Cooper Union for the Advancement of Science and Art,190372,Cooper Union,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1754,Cornell University,190415,Cornell,Private/Out of State,25,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,182,University of California-Davis,110644,Davis,Univ of California,49,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,223,De Anza College,113333,DeAnza College,Community Colleges,85,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,737,DePaul University,144740,DePaul,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2375,Drexel University,212054,Drexel,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1987,Duke University,198419,Duke,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,528,Embry-Riddle Aeronautical University-Daytona Beach,133553,"Embry-Riddle Aeronautical, AZ",Private/Out of State,1,fuzzy,94.33962264150944
+43694684334421,Lynbrook High,,2022,2025,640,Emory University,139658,Emory,Private/Out of State,14,key,100.0
+43694684334421,Lynbrook High,,2022,2025,4057,Emory University-Oxford College,487092,Emory-Oxford,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,234,Evergreen Valley College,114266,Evergreen Valley College,Community Colleges,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1787,Fashion Institute of Technology,191126,Fashion Institute of Tech,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,239,Foothill College,114716,Foothill College,Community Colleges,17,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,3554,Franklin W Olin College of Engineering,441982,Franklin Olin College,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,175,California State University-Fullerton,110565,Fullerton,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,505,Georgetown University,131496,Georgetown,Private/Out of State,10,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Tech,Private/Out of State,10,key,100.0
+43694684334421,Lynbrook High,,2022,2025,916,Grinnell College,153384,Grinnell,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1219,Harvard University,166027,Harvard,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,255,Harvey Mudd College,115409,Harvey Mudd,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,872,Indiana University-Bloomington,151351,"Indiana U, Bloomington",Private/Out of State,14,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,183,University of California-Irvine,110653,Irvine,Univ of California,48,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1153,Johns Hopkins University,162928,Johns Hopkins,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2534,Johnson & Wales University-Providence,217235,Johnson & Wales,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2305,Lewis & Clark College,209056,Lewis & Clark,Private/Out of State,4,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2306,Linfield University,209065,Linfield University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,177,California State University-Long Beach,110583,Long Beach,Cal State Universities,5,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,290,Loyola Marymount University,117946,Loyola Marymount,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,783,Loyola University Chicago,146719,"Loyola Univ, Chicago",Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1234,Massachusetts Institute of Technology,166683,MIT,Private/Out of State,18,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1386,Macalester College,173902,Macalester,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,4341,McGill University,,McGill University,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,3614,University of California-Merced,445188,Merced,Univ of California,17,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1329,Michigan State University,171100,Michigan State,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,299,Mission College,118930,Mission College,Community Colleges,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1658,New Jersey Institute of Technology,185828,New Jersey Institute of Tech,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1850,New York University,193900,New York Univ,Private/Out of State,38,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,447,Northeastern Junior College,127732,Northeastern,Private/Out of State,25,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,179,California State University-Northridge,110608,Northridge,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,804,Northwestern University,147767,Northwestern,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,569,Nova Southeastern University,136215,Nova Southeastern,Private/Out of State,2,key,100.0
+43694684334421,Lynbrook High,,2022,2025,316,Occidental College,120254,Occidental,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2204,Ohio State University-Main Campus,204796,Ohio State,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,318,Orange Coast College,120342,Orange Coast College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1153,Johns Hopkins University,162928,Peabody Conservatory JHU,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2454,Pennsylvania State University-Main Campus,214777,Penn State Univ–Main Campus,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2480,Point Park University,215442,Point Park University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,335,Pomona College,121345,Pomona College,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1864,Pratt Institute-Main,194578,Pratt Institute,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,3185,Purdue University-Main Campus,243780,Purdue-Main Campus,Private/Out of State,89,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2540,Rhode Island School of Design,217493,RISD,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2799,Rice University,227757,Rice,Private/Out of State,12,key,100.0
+43694684334421,Lynbrook High,,2022,2025,4357,Ritsumeikan University,,Ritsumeikan University,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,185,University of California-Riverside,110671,Riverside,Univ of California,54,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1873,Rochester Institute of Technology,195003,Rochester Institute of Tech,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1668,Rutgers University-New Brunswick,186380,Rutgers-New Brunswick,Private/Out of State,5,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1669,Rutgers University-Newark,186399,Rutgers-Newark,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,180,California State University-Sacramento,110617,Sacramento,Cal State Universities,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,379,Saint Mary's College of California,123554,Saint Mary’s College of CA,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,350,San Diego State University,122409,San Diego,Cal State Universities,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,186,University of California-San Diego,110680,San Diego,Univ of California,35,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,353,San Francisco State University,122597,San Francisco,Cal State Universities,6,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,352,San Francisco Conservatory of Music,122506,San Francisco Conservatory,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,362,San Jose State University,122755,San Jose,Cal State Universities,75,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,361,San Jose City College,122746,San Jose City College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,188,University of California-Santa Barbara,110705,Santa Barbara,Univ of California,73,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,365,Santa Clara University,122931,Santa Clara,Private/Out of State,26,key,100.0
+43694684334421,Lynbrook High,,2022,2025,189,University of California-Santa Cruz,110714,Santa Cruz,Univ of California,55,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,366,Santa Monica College,122977,Santa Monica College,Community Colleges,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,369,Scripps College,123165,Scripps,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,4342,Simon Fraser University,,Simon Fraser University,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1264,Smith College,167835,Smith College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,381,Sonoma State University,123572,Sonoma,Cal State Universities,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1896,St. John's University-New York,195809,St. John’s University NY,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,3184,Stanford University,243744,Stanford,Private/Out of State,11,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1907,Stony Brook University,196097,Stony Brook Univ,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2505,Temple University,216339,Temple,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,2827,Texas A & M University-College Station,228723,Texas A & M College Station,Private/Out of State,6,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2834,Texas Christian University,228875,Texas Christian University,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,504,George Washington University,131469,The George Washington Univ,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1245,The New England Conservatory of Music,167057,The New England Conservatory,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1844,The New School,193654,The New School,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1270,Tufts University,168148,Tufts,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,1107,Tulane University of Louisiana,160755,Tulane,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,184,University of California-Los Angeles,110662,UCLA,Univ of California,45,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2028,University of North Carolina at Chapel Hill,199120,"UNC, Chapel Hill",Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1942,United States Military Academy,197036,US Military Academy,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1938,Union College,196866,Union College NY,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,461,United States Air Force Academy,128328,United States Air Force,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,69,University of Arizona,104179,Univ of Arizona,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,4338,University of British Columbia,,Univ of British Columbia,Private/Out of State,4,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,726,University of Chicago,144050,Univ of Chicago,Private/Out of State,6,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,423,University of Colorado Boulder,126614,Univ of Colorado Boulder,Private/Out of State,5,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,437,University of Denver,127060,Univ of Denver,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,687,University of Hawaii at Manoa,141574,"Univ of Hawaii, Manoa",Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,756,University of Illinois Urbana-Champaign,145637,"Univ of Illinois, Urbana-Champaign",Private/Out of State,75,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1159,University of Maryland-College Park,163286,Univ of Maryland College Park,Private/Out of State,24,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1229,University of Massachusetts-Amherst,166629,Univ of Massachusetts Amherst,Private/Out of State,8,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,565,University of Miami,135726,Univ of Miami,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1327,University of Michigan-Ann Arbor,170976,"Univ of Michigan, Ann Arbor",Private/Out of State,12,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,482,University of New Haven,129941,Univ of New Haven,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,2319,University of Oregon,209551,Univ of Oregon,Private/Out of State,7,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,4324,University of Oxford,,Univ of Oxford,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2466,University of Pennsylvania,215062,Univ of Pennsylvania,Private/Out of State,15,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2474,University of Pittsburgh-Pittsburgh Campus,215293,Univ of Pittsburgh,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2995,University of Puget Sound,236328,Univ of Puget Sound,Private/Out of State,3,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,339,University of Redlands,121691,Univ of Redlands,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,1874,University of Rochester,195030,Univ of Rochester,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,354,University of San Francisco,122612,Univ of San Francisco,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,592,University of South Florida,137351,Univ of South Florida,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,391,University of Southern California,123961,Univ of Southern California,Private/Out of State,19,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2829,The University of Texas at Austin,228778,Univ of Texas Austin,Private/Out of State,32,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2830,The University of Texas at Dallas,228787,Univ of Texas Dallas,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2233,University of Toledo,206084,Univ of Toledo,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,4339,University of Toronto,,Univ of Toronto,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2869,University of Utah,230764,Univ of Utah,Private/Out of State,2,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,4343,University of Victoria,,Univ of Victoria,Private/Out of State,2,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,3011,University of Washington-Seattle Campus,236948,Univ of Washington Seattle,Private/Out of State,49,key,100.0
+43694684334421,Lynbrook High,,2022,2025,4340,University of Waterloo,,Univ of Waterloo,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,3102,University of Wisconsin-Madison,240444,Univ of Wisconsin Madison,Private/Out of State,24,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,328,University of the Pacific,120883,Univ of the Pacific,Private/Out of State,9,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,4350,University of Amsterdam,,Universiteit van Amsterdam,Private/Out of State,1,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,2701,Vanderbilt University,221999,Vanderbilt,Private/Out of State,1,key,100.0
+43694684334421,Lynbrook High,,2022,2025,2954,Virginia Polytechnic Institute and State University,233921,Virginia Tech,Private/Out of State,6,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1533,Washington University in St Louis,179867,Washington Univ in St Louis,Private/Out of State,3,manual,100.0
+43694684334421,Lynbrook High,,2022,2025,1271,Wellesley College,168218,Wellesley,Private/Out of State,3,key,100.0
+43694684334421,Lynbrook High,,2022,2025,406,West Valley College,125499,West Valley College,Community Colleges,26,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,,,,Wheaton,Private/Out of State,2,ambiguous,0.0
+43694684334421,Lynbrook High,,2022,2025,1276,Williams College,168342,Williams College,Private/Out of State,1,exact,100.0
+43694684334421,Lynbrook High,,2022,2025,493,Yale University,130794,Yale,Private/Out of State,4,key,100.0
 43694684334421,Lynbrook High,,2024,2026,4330,Aberystwyth University,,Aberystwyth University,Private/Out of State,1,manual,100.0
 43694684334421,Lynbrook High,,2024,2026,67,Arizona State University Campus Immersion,104151,Arizona State University,Private/Out of State,4,manual,100.0
 43694684334421,Lynbrook High,,2024,2026,1730,Barnard College,189097,Barnard,Private/Out of State,1,exact,100.0
@@ -734,3 +1402,560 @@ cds_code,school,grad_year,period_start,period_end,college_id,college,unitid,coll
 43694684334421,Lynbrook High,,2024,2026,406,West Valley College,125499,West Valley College,Community Colleges,18,exact,100.0
 43694684334421,Lynbrook High,,2024,2026,2890,William & Mary,231624,William and Mary,Private/Out of State,1,manual,100.0
 43694684334421,Lynbrook High,,2024,2026,493,Yale University,130794,Yale,Private/Out of State,3,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,499,American University,131159,American University,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,67,Arizona State University Campus Immersion,104151,Arizona State University-Tempe,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,150,Art Center College of Design,109651,Art Center College of Design,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1730,Barnard College,189097,Barnard College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1110,Bates College,160977,Bates College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,156,Biola University,110097,Biola University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1192,Boston College,164924,Boston College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1193,Boston University,164988,Boston University,,11,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1112,Bowdoin College,161004,Bowdoin College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1194,Brandeis University,165015,Brandeis University,,5,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2857,Brigham Young University,230038,Brigham Young University,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2532,Brown University,217156,Brown University,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,162,California College of the Arts,110370,California College of the Arts,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,171,California State Polytechnic University-Pomona,110529,California Polytechnic State University-Pomona,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,166,California Polytechnic State University-San Luis Obispo,110422,California Polytechnic State University-San Luis Obispo,,8,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3553,California State University-Channel Islands,441937,California State University-Channel Islands,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,173,California State University-Dominguez Hills,110547,California State University-Dominguez Hills,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,176,California State University-East Bay,110574,California State University-East Bay,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,174,California State University-Fresno,110556,California State University-Fresno,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3265,California State University-San Marcos,366711,California State University-San Marcos,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,195,Canada College,111434,Canada College,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2362,Carnegie Mellon University,211440,Carnegie Mellon University,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2114,Case Western Reserve University,201645,Case Western Reserve University,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,202,Chapman University,111948,Chapman University,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,,,,Christian Life College,,2,none,0.0
+43696414335782,Palo Alto High,2023,2023,2023,208,City College of San Francisco,112190,City College of San Francisco,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2556,Clemson University,217882,Clemson University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2890,William & Mary,231624,College of William and Mary,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1222,College of the Holy Cross,166124,College of the Holy Cross,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,425,Colorado College,126678,Colorado College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,431,Colorado State University-Fort Collins,126818,Colorado State University,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1751,Columbia University in the City of New York,190150,Columbia University,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,468,Connecticut College,128902,Connecticut College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1753,The Cooper Union for the Advancement of Science and Art,190372,Cooper Union,,1,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1754,Cornell University,190415,Cornell University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1986,Davidson College,198385,Davidson College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,223,De Anza College,113333,De Anza College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2373,Dickinson College,212009,Dickinson University,,1,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2375,Drexel University,212054,Drexel University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1987,Duke University,198419,Duke University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1874,University of Rochester,195030,Eastman School of Music,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1208,Emerson College,165662,Emerson College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,640,Emory University,139658,Emory University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,239,Foothill College,114716,Foothill College,,47,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,504,George Washington University,131469,George Washington University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,505,Georgetown University,131496,Georgetown University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Technology,,1,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1793,Hamilton College,191515,Hamilton College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1218,Hampshire College,166018,Hampshire College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,255,Harvey Mudd College,115409,Harvey Mudd College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1799,Hofstra University,191649,Hofstra University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4332,Imperial College London,,Imperial College London,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,872,Indiana University-Bloomington,151351,Indiana University-Bloomington,,4,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1805,Ithaca College,191968,Ithaca College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2305,Lewis & Clark College,209056,Lewis & Clark College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2306,Linfield University,209065,Linfield University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,290,Loyola Marymount University,117946,Loyola Marymount University,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1386,Macalester College,173902,Macalester College,,5,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1160,Maryland Institute College of Art,163295,Maryland Institute College of Arts,,1,fuzzy,97.77777777777777
+43696414335782,Palo Alto High,2023,2023,2023,1329,Michigan State University,171100,Michigan State University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2876,Middlebury College,230959,Middlebury College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1243,Mount Holyoke College,166939,Mount Holyoke College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1850,New York University,193900,New York University,,10,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1252,Northeastern University,167358,Northeastern University,,13,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,804,Northwestern University,147767,Northwestern University,,6,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2191,Oberlin College,204501,Oberlin College,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,316,Occidental College,120254,Occidental College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2318,Oregon State University,209542,Oregon State University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2454,Pennsylvania State University-Main Campus,214777,Pennsylvania State University,,1,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,332,Pepperdine University,121150,Pepperdine University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,333,Pitzer College,121257,Pitzer College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1663,Princeton University,186131,Princeton University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3185,Purdue University-Main Campus,243780,Purdue University-Main Campus,,8,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2330,Reed College,209922,Reed College,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic Institute,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2540,Rhode Island School of Design,217493,Rhode Island School of Design,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2799,Rice University,227757,Rice University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,379,Saint Mary's College of California,123554,Saint Mary's College of California,,3,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,350,San Diego State University,122409,San Diego State University,,5,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,353,San Francisco State University,122597,San Francisco State University,,6,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,356,San Joaquin Delta College,122658,San Joaquin Delta College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,362,San Jose State University,122755,San Jose State University,,8,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,364,Santa Barbara City College,122889,Santa Barbara City College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,365,Santa Clara University,122931,Santa Clara University,,11,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1886,Sarah Lawrence College,195304,Sarah Lawrence College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,711,School of the Art Institute of Chicago,143048,School of the Art Institute of Chicago,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,375,Simpson University,123457,Simpson University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1264,Smith College,167835,Smith College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,381,Sonoma State University,123572,Sonoma State University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1413,St Olaf College,174844,St. Olaf College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3184,Stanford University,243744,Stanford University,,13,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1928,Syracuse University,196413,Syracuse University,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2834,Texas Christian University,228875,Texas Christian University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1844,The New School,193654,The New School,,3,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4360,Trinity College Dublin,,Trinity College Dublin,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2844,Trinity University,229267,Trinity University - Texas,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1270,Tufts University,168148,Tufts University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1107,Tulane University of Louisiana,160755,Tulane University of Louisiana,,5,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1942,United States Military Academy,197036,United States Military Academy,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4381,University College Dublin,,University College Dublin,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4345,University of Alberta,,University of Alberta,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,69,University of Arizona,104179,University of Arizona,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4346,University of Calgary,,University of Calgary,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,181,University of California-Berkeley,110635,University of California-Berkeley,,20,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,182,University of California-Davis,110644,University of California-Davis,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3614,University of California-Merced,445188,University of California-Merced,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,185,University of California-Riverside,110671,University of California-Riverside,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,186,University of California-San Diego,110680,University of California-San Diego,,9,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,188,University of California-Santa Barbara,110705,University of California-Santa Barbara,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,189,University of California-Santa Cruz,110714,University of California-Santa Cruz,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4325,University of Cambridge,,University of Cambridge,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1469,University of Central Missouri,176965,University of Central Missouri,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,726,University of Chicago,144050,University of Chicago,,3,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,423,University of Colorado Boulder,126614,University of Colorado Boulder,,17,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,469,University of Connecticut,129020,University of Connecticut,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,437,University of Denver,127060,University of Denver,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4333,University of Edinburgh,,University of Edinburgh,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,545,University of Florida,134130,University of Florida,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,649,University of Georgia,139959,University of Georgia,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,756,University of Illinois Urbana-Champaign,145637,University of Illinois at Urbana-Champaign,,10,key,100.0
+43696414335782,Palo Alto High,2023,2023,2023,927,University of Iowa,153658,University of Iowa,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1445,University of Mississippi,176017,University of MIssissippi,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1159,University of Maryland-College Park,163286,University of Maryland-College Park,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1229,University of Massachusetts-Amherst,166629,University of Massachusetts-Amherst,,3,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1327,University of Michigan-Ann Arbor,170976,University of Michigan-Ann Arbor,,4,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1391,University of Minnesota-Twin Cities,174066,University of Minnesota,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1580,University of Nebraska-Lincoln,181464,University of Nebraska,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1595,University of Nevada-Reno,182290,University of Nevada-Reno,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2319,University of Oregon,209551,University of Oregon,,7,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2995,University of Puget Sound,236328,University of Puget Sound,,4,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1874,University of Rochester,195030,University of Rochester,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,391,University of Southern California,123961,University of Southern California,,6,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2693,The University of Tennessee-Knoxville,221759,University of Tennessee,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,4339,University of Toronto,,University of Toronto,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2869,University of Utah,230764,University of Utah,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2884,University of Vermont,231174,University of Vermont,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3011,University of Washington-Seattle Campus,236948,University of Washington-Seattle Campus,,15,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3102,University of Wisconsin-Madison,240444,University of Wisconsin-Madison,,6,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,2701,Vanderbilt University,221999,Vanderbilt University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,,,,Vocational School,,2,none,0.0
+43696414335782,Palo Alto High,2023,2023,2023,1533,Washington University in St Louis,179867,Washington University in St Louis,,2,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1271,Wellesley College,168218,Wellesley College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,491,Wesleyan University,130697,Wesleyan University - CT,,1,manual,100.0
+43696414335782,Palo Alto High,2023,2023,2023,406,West Valley College,125499,West Valley College,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1273,Western New England University,168254,Western New England University,,1,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3013,Western Washington University,237011,Western Washington University,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,3015,Whitman College,237057,Whitman College,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,1277,Worcester Polytechnic Institute,168421,Worcester Polytechnic Institute,,2,exact,100.0
+43696414335782,Palo Alto High,2023,2023,2023,493,Yale University,130794,Yale University,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,150,Art Center College of Design,109651,Art Center College of Design,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1730,Barnard College,189097,Barnard College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1110,Bates College,160977,Bates College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2719,Baylor University,223232,Baylor University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1192,Boston College,164924,Boston College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1193,Boston University,164988,Boston University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1194,Brandeis University,165015,Brandeis University,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2857,Brigham Young University,230038,Brigham Young University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2532,Brown University,217156,Brown University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2356,Bryn Mawr College,211273,Bryn Mawr College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2357,Bucknell University,211291,Bucknell University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,162,California College of the Arts,110370,California College of the Arts,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,257,California State Polytechnic University-Humboldt,115755,California Polytechnic State University-Humboldt,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,171,California State Polytechnic University-Pomona,110529,California Polytechnic State University-Pomona,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,166,California Polytechnic State University-San Luis Obispo,110422,California Polytechnic State University-San Luis Obispo,,14,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,176,California State University-East Bay,110574,California State University-East Bay,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,175,California State University-Fullerton,110565,California State University-Fullerton,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,177,California State University-Long Beach,110583,California State University-Long Beach,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3374,California State University-Monterey Bay,409698,California State University-Monterey Bay,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,180,California State University-Sacramento,110617,California State University-Sacramento,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1371,Carleton College,173258,Carleton College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2362,Carnegie Mellon University,211440,Carnegie Mellon University,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2114,Case Western Reserve University,201645,Case Western Reserve University,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,202,Chapman University,111948,Chapman University,,5,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,172,California State University-Chico,110538,Chico State University,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1202,Clark University,165334,Clark University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1749,Colgate University,190099,Colgate University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,363,College of San Mateo,122791,College of San Mateo,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,425,Colorado College,126678,Colorado College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1751,Columbia University in the City of New York,190150,Columbia University,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1754,Cornell University,190415,Cornell University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1600,Dartmouth College,182670,Dartmouth College,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,223,De Anza College,113333,De Anza College,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2375,Drexel University,212054,Drexel University,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4377,Durham University,,Durham University,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1208,Emerson College,165662,Emerson College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,640,Emory University,139658,Emory University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,239,Foothill College,114716,Foothill College,,33,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1790,Fordham University,191241,Fordham University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3554,Franklin W Olin College of Engineering,441982,Franklin W Olin College of Engineering,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,504,George Washington University,131469,George Washington University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,644,Georgia Institute of Technology-Main Campus,139755,Georgia Institute of Technology,,1,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2980,Gonzaga University,235316,Gonzaga University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,916,Grinnell College,153384,Grinnell College,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,506,Howard University,131520,Howard University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4354,IE University,,IE University,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,872,Indiana University-Bloomington,151351,Indiana University-Bloomington,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2909,James Madison University,232423,James Madison University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1153,Johns Hopkins University,162928,Johns Hopkins University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3066,Lawrence University,239017,Lawrence University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2412,Lehigh University,213543,Lehigh University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2305,Lewis & Clark College,209056,Lewis & Clark College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,290,Loyola Marymount University,117946,Loyola Marymount University,,5,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,783,Loyola University Chicago,146719,Loyola University Chicago,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1386,Macalester College,173902,Macalester College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1823,Marist College,192819,Marist College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1234,Massachusetts Institute of Technology,166683,Massachusetts Institute of Technology,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,294,Menlo College,118693,Menlo College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2876,Middlebury College,230959,Middlebury College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,298,MiraCosta College,118912,MiraCosta College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,299,Mission College,118930,Mission College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1245,The New England Conservatory of Music,167057,New England Conservatory,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1850,New York University,193900,New York University,,11,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4380,Northeastern University London,,Northeastern London University,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1252,Northeastern University,167358,Northeastern University,,6,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,804,Northwestern University,147767,Northwestern University,,8,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,316,Occidental College,120254,Occidental College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2204,Ohio State University-Main Campus,204796,Ohio State University,,2,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2318,Oregon State University,209542,Oregon State University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,319,Otis College of Art and Design,120403,Otis College of Art and Design,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1860,Pace University,194310,"Pace University, New York City Campus",,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2454,Pennsylvania State University-Main Campus,214777,Pennsylvania State University,,3,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,332,Pepperdine University,121150,Pepperdine University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,333,Pitzer College,121257,Pitzer College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,335,Pomona College,121345,Pomona College,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1864,Pratt Institute-Main,194578,Pratt Institute-Main,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1663,Princeton University,186131,Princeton University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3185,Purdue University-Main Campus,243780,Purdue University-Main Campus,,6,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4344,Queen's University Kingston,,Queen's University Ontario,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1871,Rensselaer Polytechnic Institute,194824,Rensselaer Polytechnic Institute,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1873,Rochester Institute of Technology,195003,Rochester Institute of Technology,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1668,Rutgers University-New Brunswick,186380,Rutgers University,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,180,California State University-Sacramento,110617,Sacramento State University,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,379,Saint Mary's College of California,123554,Saint Mary's College of California,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,350,San Diego State University,122409,San Diego State University,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,353,San Francisco State University,122597,San Francisco State University,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,362,San Jose State University,122755,San Jose State University,,9,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,364,Santa Barbara City College,122889,Santa Barbara City College,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,365,Santa Clara University,122931,Santa Clara University,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,366,Santa Monica College,122977,Santa Monica Community College,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,369,Scripps College,123165,Scripps College,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1102,Southern University and A & M College,160621,Southern A&M University,,1,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2810,Southern Methodist University,228246,Southern Methodist University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3184,Stanford University,243744,Stanford University,,11,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1677,Stevens Institute of Technology,186867,Stevens Institute of Technology,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2502,Swarthmore College,216287,Swarthmore College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2834,Texas Christian University,228875,Texas Christian University,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,,,,Trade School,,4,none,0.0
+43696414335782,Palo Alto High,2024,2024,2024,1270,Tufts University,168148,Tufts University,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2495,UPMC Shadyside School of Nursing,215974,UPMC Shadyside School of Nursing,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1174,United States Naval Academy,164155,United States Naval Academy,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,,,,University in India,,1,none,0.0
+43696414335782,Palo Alto High,2024,2024,2024,69,University of Arizona,104179,University of Arizona,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4338,University of British Columbia,,University of British Columbia,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,181,University of California-Berkeley,110635,University of California-Berkeley,,35,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,182,University of California-Davis,110644,University of California-Davis,,5,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,183,University of California-Irvine,110653,University of California-Irvine,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,184,University of California-Los Angeles,110662,University of California-Los Angeles,,9,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3614,University of California-Merced,445188,University of California-Merced,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,185,University of California-Riverside,110671,University of California-Riverside,,4,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,186,University of California-San Diego,110680,University of California-San Diego,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,188,University of California-Santa Barbara,110705,University of California-Santa Barbara,,10,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,189,University of California-Santa Cruz,110714,University of California-Santa Cruz,,10,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,726,University of Chicago,144050,University of Chicago,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,423,University of Colorado Boulder,126614,University of Colorado Boulder,,11,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,437,University of Denver,127060,University of Denver,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2757,University of Houston,225511,University of Houston,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,753,University of Illinois Chicago,145600,University of Illinois Chicago,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,756,University of Illinois Urbana-Champaign,145637,University of Illinois at Urbana-Champaign,,8,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4382,University of King's College,,University of Kings College,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1159,University of Maryland-College Park,163286,University of Maryland-College Park,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,565,University of Miami,135726,University of Miami,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1327,University of Michigan-Ann Arbor,170976,University of Michigan-Ann Arbor,,3,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2319,University of Oregon,209551,University of Oregon,,2,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2466,University of Pennsylvania,215062,University of Pennsylvania,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2474,University of Pittsburgh-Pittsburgh Campus,215293,University of Pittsburgh-Pittsburgh Campus,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2995,University of Puget Sound,236328,University of Puget Sound,,3,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,354,University of San Francisco,122612,University of San Francisco,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,391,University of Southern California,123961,University of Southern California,,7,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4334,University of St Andrews,,University of St Andrews,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2829,The University of Texas at Austin,228778,University of Texas at Austin,,1,key,100.0
+43696414335782,Palo Alto High,2024,2024,2024,4339,University of Toronto,,University of Toronto,,6,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2869,University of Utah,230764,University of Utah,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2884,University of Vermont,231174,University of Vermont,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2957,University of Virginia-Main Campus,234076,University of Virginia,,1,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3011,University of Washington-Seattle Campus,236948,University of Washington-Seattle Campus,,10,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,3102,University of Wisconsin-Madison,240444,University of Wisconsin-Madison,,5,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,328,University of the Pacific,120883,University of the Pacific,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2701,Vanderbilt University,221999,Vanderbilt University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,,,,Vocational School,,1,none,0.0
+43696414335782,Palo Alto High,2024,2024,2024,2065,Wake Forest University,199847,Wake Forest University,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1533,Washington University in St Louis,179867,Washington University in St Louis,,2,manual,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1271,Wellesley College,168218,Wellesley College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,2598,Wofford College,218973,Wofford College,,1,exact,100.0
+43696414335782,Palo Alto High,2024,2024,2024,1277,Worcester Polytechnic Institute,168421,Worcester Polytechnic Institute,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,499,American University,131159,American University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1181,Amherst College,164465,Amherst College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,67,Arizona State University Campus Immersion,104151,Arizona State University-Tempe,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,150,Art Center College of Design,109651,Art Center College of Design,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1184,Babson College,164580,Babson College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1729,Bard College,189088,Bard College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1193,Boston University,164988,Boston University,,7,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1194,Brandeis University,165015,Brandeis University,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2532,Brown University,217156,Brown University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2356,Bryn Mawr College,211273,Bryn Mawr College,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,257,California State Polytechnic University-Humboldt,115755,California Polytechnic State University-Humboldt,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,171,California State Polytechnic University-Pomona,110529,California Polytechnic State University-Pomona,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,166,California Polytechnic State University-San Luis Obispo,110422,California Polytechnic State University-San Luis Obispo,,7,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,177,California State University-Long Beach,110583,California State University-Long Beach,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3374,California State University-Monterey Bay,409698,California State University-Monterey Bay,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,180,California State University-Sacramento,110617,California State University-Sacramento,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,195,Canada College,111434,Canada College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2362,Carnegie Mellon University,211440,Carnegie Mellon University,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2114,Case Western Reserve University,201645,Case Western Reserve University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,202,Chapman University,111948,Chapman University,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,210,Claremont McKenna College,112260,Claremont McKenna College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2556,Clemson University,217882,Clemson University,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,363,College of San Mateo,122791,College of San Mateo,,4,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1222,College of the Holy Cross,166124,College of the Holy Cross,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,425,Colorado College,126678,Colorado College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1751,Columbia University in the City of New York,190150,Columbia University,,3,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,217,Contra Costa College,112826,Contra Costa College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1754,Cornell University,190415,Cornell University,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1758,Culinary Institute of America,190503,Culinary Institute of America,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1600,Dartmouth College,182670,Dartmouth College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,223,De Anza College,113333,De Anza College,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2375,Drexel University,212054,Drexel University,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1987,Duke University,198419,Duke University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,528,Embry-Riddle Aeronautical University-Daytona Beach,133553,Embry-Riddle Aeronautical - Daytona Beach FL,,1,fuzzy,96.2962962962963
+43696414335782,Palo Alto High,2025,2025,2025,640,Emory University,139658,Emory University,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,4057,Emory University-Oxford College,487092,Emory University - Oxford College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,4378,Far Eastern University,,Far Eastern University,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,544,Florida State University,134097,Florida State University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,239,Foothill College,114716,Foothill College,,39,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1790,Fordham University,191241,Fordham University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,504,George Washington University,131469,George Washington University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,505,Georgetown University,131496,Georgetown University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,916,Grinnell College,153384,Grinnell College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1793,Hamilton College,191515,Hamilton College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1219,Harvard University,166027,Harvard University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,255,Harvey Mudd College,115409,Harvey Mudd College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2390,Haverford College,212911,Haverford College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,872,Indiana University-Bloomington,151351,Indiana University-Bloomington,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2412,Lehigh University,213543,Lehigh University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,290,Loyola Marymount University,117946,Loyola Marymount University,,7,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1386,Macalester College,173902,Macalester College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1234,Massachusetts Institute of Technology,166683,Massachusetts Institute of Technology,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2876,Middlebury College,230959,Middlebury College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,302,Monterey Peninsula College,119067,Monterey Peninsula College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,305,Mount Saint Mary's University,119173,Mount Saint Mary's University,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1702,New Mexico State University-Main Campus,188030,New Mexico State University,,1,key,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1850,New York University,193900,New York University,,11,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1252,Northeastern University,167358,Northeastern University,,15,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,804,Northwestern University,147767,Northwestern University,,6,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2191,Oberlin College,204501,Oberlin College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,332,Pepperdine University,121150,Pepperdine University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,85,Pima Community College,105525,Pima Community College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1007,Pittsburg State University,155681,Pittsburg State University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,333,Pitzer College,121257,Pitzer College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1864,Pratt Institute-Main,194578,Pratt Institute-Main,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3185,Purdue University-Main Campus,243780,Purdue University-Main Campus,,13,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2540,Rhode Island School of Design,217493,Rhode Island School of Design,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1873,Rochester Institute of Technology,195003,Rochester Institute of Technology,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1668,Rutgers University-New Brunswick,186380,Rutgers University,,3,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,180,California State University-Sacramento,110617,Sacramento State University,,2,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,379,Saint Mary's College of California,123554,Saint Mary's College of California,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,350,San Diego State University,122409,San Diego State University,,4,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,314,San Francisco Bay University,120166,San Francisco Bay University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,353,San Francisco State University,122597,San Francisco State University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,362,San Jose State University,122755,San Jose State University,,7,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,365,Santa Clara University,122931,Santa Clara University,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,369,Scripps College,123165,Scripps College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3001,Seattle University,236595,Seattle University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1264,Smith College,167835,Smith College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2810,Southern Methodist University,228246,Southern Methodist University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3184,Stanford University,243744,Stanford University,,12,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1928,Syracuse University,196413,Syracuse University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2505,Temple University,216339,Temple University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2827,Texas A & M University-College Station,228723,Texas A & M University-College Station,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2834,Texas Christian University,228875,Texas Christian University,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,4360,Trinity College Dublin,,Trinity College Dublin,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1270,Tufts University,168148,Tufts University,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1107,Tulane University of Louisiana,160755,Tulane University of Louisiana,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1942,United States Military Academy,197036,United States Military Academy,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,69,University of Arizona,104179,University of Arizona,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,4338,University of British Columbia,,University of British Columbia,,2,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,181,University of California-Berkeley,110635,University of California-Berkeley,,23,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,182,University of California-Davis,110644,University of California-Davis,,6,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,183,University of California-Irvine,110653,University of California-Irvine,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,184,University of California-Los Angeles,110662,University of California-Los Angeles,,11,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3614,University of California-Merced,445188,University of California-Merced,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,185,University of California-Riverside,110671,University of California-Riverside,,9,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,186,University of California-San Diego,110680,University of California-San Diego,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,188,University of California-Santa Barbara,110705,University of California-Santa Barbara,,12,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,189,University of California-Santa Cruz,110714,University of California-Santa Cruz,,11,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,726,University of Chicago,144050,University of Chicago,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,423,University of Colorado Boulder,126614,University of Colorado Boulder,,6,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,545,University of Florida,134130,University of Florida,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,687,University of Hawaii at Manoa,141574,University of Hawaii - Manoa,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,756,University of Illinois Urbana-Champaign,145637,University of Illinois at Urbana-Champaign,,7,key,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1159,University of Maryland-College Park,163286,University of Maryland-College Park,,2,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1327,University of Michigan-Ann Arbor,170976,University of Michigan-Ann Arbor,,3,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1391,University of Minnesota-Twin Cities,174066,University of Minnesota,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1606,University of New Hampshire-Main Campus,183044,University of New Hampshire,,1,key,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2319,University of Oregon,209551,University of Oregon,,5,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2466,University of Pennsylvania,215062,University of Pennsylvania,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2474,University of Pittsburgh-Pittsburgh Campus,215293,University of Pittsburgh-Pittsburgh Campus,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,391,University of Southern California,123961,University of Southern California,,9,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2829,The University of Texas at Austin,228778,University of Texas at Austin,,2,key,100.0
+43696414335782,Palo Alto High,2025,2025,2025,4339,University of Toronto,,University of Toronto,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2869,University of Utah,230764,University of Utah,,3,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3011,University of Washington-Seattle Campus,236948,University of Washington-Seattle Campus,,15,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3102,University of Wisconsin-Madison,240444,University of Wisconsin-Madison,,4,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,328,University of the Pacific,120883,University of the Pacific,,1,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3010,Washington State University,236939,Washington State University,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,1533,Washington University in St Louis,179867,Washington University in St Louis,,2,manual,100.0
+43696414335782,Palo Alto High,2025,2025,2025,406,West Valley College,125499,West Valley College,,2,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,3015,Whitman College,237057,Whitman College,,1,exact,100.0
+43696414335782,Palo Alto High,2025,2025,2025,2339,Willamette University,210401,Willamette College,,1,key,100.0
+43696414335782,Palo Alto High,2025,2025,2025,493,Yale University,130794,Yale University,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4375,American University of Paris,,American University of Paris,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,67,Arizona State University Campus Immersion,104151,Arizona State University-Tempe,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,10,Auburn University,100858,Auburn University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1184,Babson College,164580,Babson College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1730,Barnard College,189097,Barnard College,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2719,Baylor University,223232,Baylor University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,624,Berry College,139144,Berry College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4376,Bocconi University,,Bocconi University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1192,Boston College,164924,Boston College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1193,Boston University,164988,Boston University,,7,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1112,Bowdoin College,161004,Bowdoin College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1194,Brandeis University,165015,Brandeis University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2857,Brigham Young University,230038,Brigham Young University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2532,Brown University,217156,Brown University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2357,Bucknell University,211291,Bucknell University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,257,California State Polytechnic University-Humboldt,115755,California Polytechnic State University-Humboldt,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,171,California State Polytechnic University-Pomona,110529,California Polytechnic State University-Pomona,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,166,California Polytechnic State University-San Luis Obispo,110422,California Polytechnic State University-San Luis Obispo,,10,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,175,California State University-Fullerton,110565,California State University-Fullerton,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3374,California State University-Monterey Bay,409698,California State University-Monterey Bay,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3265,California State University-San Marcos,366711,California State University-San Marcos,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,195,Canada College,111434,Canada College,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1371,Carleton College,173258,Carleton College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2362,Carnegie Mellon University,211440,Carnegie Mellon University,,8,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2114,Case Western Reserve University,201645,Case Western Reserve University,,4,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,202,Chapman University,111948,Chapman University,,5,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,172,California State University-Chico,110538,Chico State University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,208,City College of San Francisco,112190,City College of San Francisco,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,210,Claremont McKenna College,112260,Claremont McKenna College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1115,Colby College,161086,Colby College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1749,Colgate University,190099,Colgate University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,363,College of San Mateo,122791,College of San Mateo,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,425,Colorado College,126678,Colorado College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,429,Colorado School of Mines,126775,Colorado School of Mines,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,431,Colorado State University-Fort Collins,126818,Colorado State University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1751,Columbia University in the City of New York,190150,Columbia University,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1754,Cornell University,190415,Cornell University,,6,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1600,Dartmouth College,182670,Dartmouth College,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,223,De Anza College,113333,De Anza College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2137,Denison University,202523,Denison University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1987,Duke University,198419,Duke University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,640,Emory University,139658,Emory University,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1787,Fashion Institute of Technology,191126,Fashion Institute of Technology,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,539,Florida International University,133951,Florida International University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,239,Foothill College,114716,Foothill College,,42,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1790,Fordham University,191241,Fordham University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,504,George Washington University,131469,George Washington University,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,255,Harvey Mudd College,115409,Harvey Mudd College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2390,Haverford College,212911,Haverford College,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4379,Hokkaido University,,Hokkaido University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1153,Johns Hopkins University,162928,Johns Hopkins University,,4,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2412,Lehigh University,213543,Lehigh University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,290,Loyola Marymount University,117946,Loyola Marymount University,,6,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,783,Loyola University Chicago,146719,Loyola University Chicago,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3069,Marquette University,239105,Marquette University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1233,Massachusetts College of Art and Design,166674,Massachusetts College of Art and Design,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1234,Massachusetts Institute of Technology,166683,Massachusetts Institute of Technology,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4341,McGill University,,McGill University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,294,Menlo College,118693,Menlo College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,564,Miami Dade College,135717,Miami Dade College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2876,Middlebury College,230959,Middlebury College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1850,New York University,193900,New York University,,12,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1252,Northeastern University,167358,Northeastern University,,9,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,804,Northwestern University,147767,Northwestern University,,6,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2191,Oberlin College,204501,Oberlin College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,316,Occidental College,120254,Occidental College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2204,Ohio State University-Main Campus,204796,Ohio State University,,1,key,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2318,Oregon State University,209542,Oregon State University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4362,Peking University,,Peking University,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,332,Pepperdine University,121150,Pepperdine University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,333,Pitzer College,121257,Pitzer College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1864,Pratt Institute-Main,194578,Pratt Institute-Main,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3185,Purdue University-Main Campus,243780,Purdue University-Main Campus,,6,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4344,Queen's University Kingston,,Queen's University Ontario,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2931,Radford University,233277,Radford University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2330,Reed College,209922,Reed College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2540,Rhode Island School of Design,217493,Rhode Island School of Design,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1668,Rutgers University-New Brunswick,186380,Rutgers University,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,379,Saint Mary's College of California,123554,Saint Mary's College of California,,3,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,350,San Diego State University,122409,San Diego State University,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,314,San Francisco Bay University,120166,San Francisco Bay University,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,353,San Francisco State University,122597,San Francisco State University,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,362,San Jose State University,122755,San Jose State University,,8,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,365,Santa Clara University,122931,Santa Clara University,,7,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,,,,Sciences Po - Columbia University Dual Degree,,1,none,0.0
+43696414335782,Palo Alto High,2026,2026,2026,369,Scripps College,123165,Scripps College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1889,Siena College,195474,Siena College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1890,Skidmore College,195526,Skidmore College,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1264,Smith College,167835,Smith College,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2810,Southern Methodist University,228246,Southern Methodist University,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3184,Stanford University,243744,Stanford University,,16,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2502,Swarthmore College,216287,Swarthmore College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1928,Syracuse University,196413,Syracuse University,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2827,Texas A & M University-College Station,228723,Texas A & M University-College Station,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1844,The New School,193654,The New School,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1107,Tulane University of Louisiana,160755,Tulane University of Louisiana,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,6,The University of Alabama,100751,University of Alabama,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,69,University of Arizona,104179,University of Arizona,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4346,University of Calgary,,University of Calgary,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,181,University of California-Berkeley,110635,University of California-Berkeley,,16,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,182,University of California-Davis,110644,University of California-Davis,,8,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,183,University of California-Irvine,110653,University of California-Irvine,,12,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,184,University of California-Los Angeles,110662,University of California-Los Angeles,,4,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3614,University of California-Merced,445188,University of California-Merced,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,185,University of California-Riverside,110671,University of California-Riverside,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,186,University of California-San Diego,110680,University of California-San Diego,,8,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,188,University of California-Santa Barbara,110705,University of California-Santa Barbara,,9,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,189,University of California-Santa Cruz,110714,University of California-Santa Cruz,,6,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,726,University of Chicago,144050,University of Chicago,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,423,University of Colorado Boulder,126614,University of Colorado Boulder,,7,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,469,University of Connecticut,129020,University of Connecticut,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4333,University of Edinburgh,,University of Edinburgh,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,687,University of Hawaii at Manoa,141574,University of Hawaii - Manoa,,3,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,756,University of Illinois Urbana-Champaign,145637,University of Illinois at Urbana-Champaign,,8,key,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4383,University of Leeds,,University of Leeds,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1159,University of Maryland-College Park,163286,University of Maryland-College Park,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,565,University of Miami,135726,University of Miami,,5,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1327,University of Michigan-Ann Arbor,170976,University of Michigan-Ann Arbor,,3,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,885,University of Notre Dame,152080,University of Notre Dame,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2319,University of Oregon,209551,University of Oregon,,3,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2466,University of Pennsylvania,215062,University of Pennsylvania,,2,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1874,University of Rochester,195030,University of Rochester,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,354,University of San Francisco,122612,University of San Francisco,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,391,University of Southern California,123961,University of Southern California,,11,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2829,The University of Texas at Austin,228778,University of Texas at Austin,,3,key,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4339,University of Toronto,,University of Toronto,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2869,University of Utah,230764,University of Utah,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2884,University of Vermont,231174,University of Vermont,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,4343,University of Victoria,,University of Victoria,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2957,University of Virginia-Main Campus,234076,University of Virginia,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3011,University of Washington-Seattle Campus,236948,University of Washington-Seattle Campus,,8,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3102,University of Wisconsin-Madison,240444,University of Wisconsin-Madison,,4,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,2701,Vanderbilt University,221999,Vanderbilt University,,2,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1533,Washington University in St Louis,179867,Washington University in St Louis,,4,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1271,Wellesley College,168218,Wellesley College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,491,Wesleyan University,130697,Wesleyan University - CT,,1,manual,100.0
+43696414335782,Palo Alto High,2026,2026,2026,3015,Whitman College,237057,Whitman College,,1,exact,100.0
+43696414335782,Palo Alto High,2026,2026,2026,1276,Williams College,168342,Williams College,,1,exact,100.0
