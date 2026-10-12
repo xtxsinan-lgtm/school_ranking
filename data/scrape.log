@@ -1,0 +1,26 @@
+99 schools, 4851 pairs to fetch (0 already done)
+200/4851  11.7 req/s  eta 7 min
+400/4851  12.5 req/s  eta 6 min
+600/4851  12.0 req/s  eta 6 min
+800/4851  11.6 req/s  eta 6 min
+1000/4851  10.9 req/s  eta 6 min
+1200/4851  10.6 req/s  eta 6 min
+1400/4851  10.0 req/s  eta 6 min
+1600/4851  10.0 req/s  eta 5 min
+1800/4851  9.6 req/s  eta 5 min
+2000/4851  9.2 req/s  eta 5 min
+2200/4851  9.2 req/s  eta 5 min
+2400/4851  9.2 req/s  eta 4 min
+2600/4851  9.1 req/s  eta 4 min
+2800/4851  8.9 req/s  eta 4 min
+3000/4851  8.8 req/s  eta 4 min
+3200/4851  8.8 req/s  eta 3 min
+3400/4851  8.7 req/s  eta 3 min
+3600/4851  8.7 req/s  eta 2 min
+3800/4851  8.8 req/s  eta 2 min
+4000/4851  8.8 req/s  eta 2 min
+4200/4851  8.8 req/s  eta 1 min
+4400/4851  8.8 req/s  eta 1 min
+4600/4851  8.7 req/s  eta 0 min
+4800/4851  8.7 req/s  eta 0 min
+done: 4851 pairs stored, 3299 with data

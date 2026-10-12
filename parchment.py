@@ -1,4 +1,5 @@
 """Shared helpers for talking to Parchment's cross-admit tool."""
+import html as htmllib
 import json
 import re
 import time
@@ -47,7 +48,7 @@ def parse_matchup(html, name_a, name_b):
     NOTE: an unknown school name makes the page silently fall back to its
     default (UCLA vs Berkeley), so the returned names MUST match the request.
     """
-    names = _NAME.findall(html)[:2]
+    names = [htmllib.unescape(n) for n in _NAME.findall(html)[:2]]
     pcts = _PCT.findall(html)
     cis = _CI.findall(html)
     if not (len(pcts) == 2 and len(cis) == 2 and len(names) == 2):

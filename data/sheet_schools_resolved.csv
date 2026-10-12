@@ -1,0 +1,100 @@
+abbr,query,parchment_name,match
+Harvard,Harvard University,Harvard University,exact
+Stanford,Stanford University,Stanford University,exact
+MIT,Massachusetts Institute of Technology,Massachusetts Institute of Technology,exact
+Yale,Yale University,Yale University,exact
+Naval,United States Naval Academy,United States Naval Academy,exact
+Princeton,Princeton University,Princeton University,exact
+Columbia,Columbia University,Columbia University in the City of New York,exact
+UPenn,University of Pennsylvania,University of Pennsylvania,exact
+Caltech,Caltech,Caltech,exact
+Brown,Brown University,Brown University,exact
+Duke,Duke University,Duke University,exact
+Chicago,University of Chicago,University of Chicago,exact
+West Point,United States Military Academy,United States Military Academy,exact
+Pomona,Pomona College,Pomona College,exact
+Dartmouth,Dartmouth College,Dartmouth College,exact
+Air Force,United States Air Force Academy,United States Air Force Academy,exact
+Notre Dame,University of Notre Dame,University of Notre Dame,exact
+Williams,Williams College,Williams College,exact
+Northwestern,Northwestern University,Northwestern University,exact
+Amherst,Amherst College,Amherst College,exact
+WashU,Washington University in St. Louis,Washington University in St. Louis,exact
+Bowdoin,Bowdoin College,Bowdoin College,exact
+UCB,"University of California, Berkeley","University of California, Berkeley",exact
+Swarthmore,Swarthmore College,Swarthmore College,exact
+Harvey Mudd,Harvey Mudd College,Harvey Mudd College,exact
+Cornell,Cornell University,Cornell University,exact
+Claremont,Claremont McKenna College,Claremont McKenna College,exact
+Rice,Rice University,Rice University,exact
+JHU,Johns Hopkins University,Johns Hopkins University,exact
+USC,University of Southern California,University of Southern California,exact
+Georgetown,Georgetown University,Georgetown University,exact
+Wellesley,Wellesley College,Wellesley College,exact
+Umich,University of Michigan - Ann Arbor,University of Michigan - Ann Arbor,exact
+Carleton,Carleton College,Carleton College,exact
+Vanderbilt,Vanderbilt University,Vanderbilt University,exact
+UCLA,"University of California, Los Angeles","University of California, Los Angeles",exact
+UVA,University of Virginia,University of Virginia,exact
+Tufts,Tufts University,Tufts University,exact
+Haverford,Haverford College,Haverford College,exact
+CMU,Carnegie Mellon University,Carnegie Mellon University,exact
+Middlebury,Middlebury College,Middlebury College,exact
+UT Austin,University of Texas at Austin,University of Texas at Austin,exact
+Gatech,Georgia Institute of Technology,Georgia Institute of Technology-Main Campus,exact
+Barnard,Barnard College,Barnard College,exact
+Wesleyan,Wesleyan University,Wesleyan University,exact
+Washington&Lee,Washington and Lee University,Washington and Lee University,exact
+Smith,Smith College,Smith College,exact
+Vassar,Vassar College,Vassar College,exact
+UIUC,University of Illinois at Urbana-Champaign,University of Illinois at Urbana-Champaign,exact
+UWM,University of Wisconsin - Madison,University of Wisconsin - Madison,exact
+UNC,University of North Carolina at Chapel Hill,University of North Carolina at Chapel Hill,exact
+UG,University of Georgia,University of Georgia,exact
+Emory,Emory University,Emory University,exact
+Pitzer,Pitzer College,Pitzer College,exact
+BC,Boston College,Boston College,exact
+NYU,New York University,New York University,exact
+Macalester,Macalester College,Macalester College,exact
+Scripps,Scripps College,Scripps College,exact
+Hamilton,Hamilton College,Hamilton College,exact
+Colgate,Colgate University,Colgate University,exact
+UCSB,"University of California, Santa Barbara","University of California, Santa Barbara",exact
+Grinnell,Grinnell College,Grinnell College,exact
+Purdue,Purdue University,Purdue University-Main Campus,exact
+UCD,"University of California, Davis","University of California, Davis",exact
+Berea,Berea College,Berea College,exact
+UCSD,"University of California, San Diego","University of California, San Diego",exact
+Trinity,Trinity College,Trinity College,exact
+Bates,Bates College,Bates College,exact
+Bucknell,Bucknell University,Bucknell University,exact
+Richmond,University of Richmond,University of Richmond,exact
+OSU,Ohio State University,Ohio State University-Main Campus,exact
+UCI,"University of California, Irvine","University of California, Irvine",exact
+Florida,University of Florida,University of Florida,exact
+Colorado,University of Colorado at Boulder,University of Colorado at Boulder,exact
+Santa Clara,Santa Clara University,Santa Clara University,exact
+GWU,George Washington University,George Washington University,exact
+VT,Virginia Tech,Virginia Tech,exact
+Colby,Colby College,Colby College,exact
+Tulane,Tulane University,Tulane University of Louisiana,exact
+WFU,Wake Forest University,Wake Forest University,exact
+W&M,College of William and Mary,College of William and Mary,exact
+TAMU,Texas A&M University,Texas A & M University-College Station,exact
+Davidson,Davidson College,Davidson College,exact
+UW,University of Washington,University of Washington,exact
+Lehigh,Lehigh University,Lehigh University,exact
+MSU,Michigan State University,Michigan State University,exact
+Villanova,Villanova University,Villanova University,exact
+Rochester,University of Rochester,University of Rochester,exact
+Pepperdine,Pepperdine University,Pepperdine University,exact
+Northeastern,Northeastern University,Northeastern University,exact
+Utah,University of Utah,University of Utah,exact
+Brandeis,Brandeis University,Brandeis University,exact
+UCSC,"University of California, Santa Cruz","University of California, Santa Cruz",exact
+ASU,Arizona State University,Arizona State University,exact
+Case Western,Case Western Reserve University,Case Western Reserve University,exact
+FSU,Florida State University,Florida State University,exact
+BU,Boston University,Boston University,exact
+IU,Indiana University,Indiana University - Bloomington,exact
+Clemson,Clemson University,Clemson University,exact
