@@ -25,3 +25,7 @@ FREthbyYr = by race/ethnicity, FRGndbyYr = by gender, FRGPAbyYr = mean GPA) for 
 `data/raw_uc/` (git-ignored, re-runnable). `python -m ranking load-uc` loads them into `uc_schools`, `uc_ethnicity`, `uc_gender`, `uc_gpa`
 (keyed by 6-digit CEEB code; `uc_schools.school_id` links to our `schools` table when matched). Measures: App = applicants, Adm = admits,
 Enr = enrolled freshmen. Cells with too few students are blank in the source and not stored.
+
+### Where the data lives
+The SQLite file `data/school_ranking.db` is git-ignored (rebuild: `build-reference`, `ingest`, `import-user-sheet`, `load-uc`).
+Committed full exports are in `data/export/*.csv.gz` (schools, colleges, matriculation_full, uc_schools, uc_ethnicity, uc_gender, uc_gpa).
