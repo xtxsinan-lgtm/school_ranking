@@ -10,3 +10,7 @@ Bay Area public high school college matriculation data → SQLite with unified s
 - Add a school: one row in `data/sources.csv` (parser: `html_table` or `pdf_list`).
 - Fix college naming: add a row to `data/aliases/college_aliases.csv`; see `data/export/unresolved.csv`.
 - Pooled windows (e.g. Lynbrook 2022-2025) overlap and must not be summed; use `period_start/period_end`.
+
+Ingested so far (per-college counts only): Henry M. Gunn, Palo Alto, Lynbrook, Los Gatos.
+Sources without per-college counts or that could not be fetched are listed in `data/LEADS_NOT_INGESTED.md`.
+Discovery tooling: `tools/discover.py`, `tools/deep_crawl.py`, `tools/probe_candidates.py`.
