@@ -63,3 +63,12 @@ CREATE INDEX IF NOT EXISTS idx_mat_college ON matriculation(college_id);
 CREATE VIEW IF NOT EXISTS unresolved AS
   SELECT college_raw, section, COUNT(*) n, SUM(count) total FROM matriculation
   WHERE college_id IS NULL GROUP BY college_raw, section ORDER BY total DESC;
+
+-- cohort size (number of graduates) for a source's period, when the source states it
+CREATE TABLE IF NOT EXISTS cohort_sizes (
+  source_id    INTEGER NOT NULL REFERENCES sources(source_id),
+  period_start INTEGER,
+  period_end   INTEGER,
+  graduates    REAL,
+  PRIMARY KEY (source_id, period_start, period_end)
+);
