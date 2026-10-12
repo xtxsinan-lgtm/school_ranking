@@ -15,7 +15,7 @@ SECTION_RE = re.compile(
     r"private( ?/ ?| and )?(out.of.state)?( colleges| universities)?|out.of.state( colleges| universities)?|"
     r"(international|interna\s?onal)( colleges| universities)?|california\s*-\s*(private|public)|public( colleges| universities)?|other|"
     r"[24].?year( colleges?| universities)?|work|military|gap year|undecided|unknown|employment|"
-    r"private (colleges|universities).*|out of state.*|(california state|cal state) universit(y|ies)|trade.*)", re.I)
+    r"private (colleges|universities).*|california independent.*|out.of.state.*|continued|(california state|cal state) universit(y|ies)|trade.*)", re.I)
 HEADING_RE = re.compile(r"matriculation|colleges? .*attend|where .* go", re.I)
 
 
@@ -26,11 +26,16 @@ def _words(path, page):
         r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="[\d.]+">(.*?)</word>', out)]
 
 
-def parse(path, page=None, title_re=None, x_min=0, x_max=None, y_max=None, bare_numbers=False, unnumbered=None,
-          y_min_offset=5, ignore=None, strip=None, period_start=None, period_end=None, **opts):
+def _parse_one(path, page=None, no_title=False, title_re=None, x_min=0, x_max=None, y_max=None, bare_numbers=False, unnumbered=None,
+          y_min_offset=5, y_start=None, ignore=None, strip=None, period_start=None, period_end=None, **opts):
     pages = [int(page)] if page else range(1, 4)
     heading = re.compile(title_re, re.I) if title_re else HEADING_RE
-    for pg in pages:
+    title = None
+    for pg in ([int(page)] if no_title else pages):
+        if no_title:
+            words = _words(path, pg)
+            title = (-1.0, "")
+            break
         words = _words(path, pg)
         # locate the title line
         lines = {}
@@ -47,6 +52,8 @@ def parse(path, page=None, title_re=None, x_min=0, x_max=None, y_max=None, bare_
     if not title:
         raise ValueError("matriculation heading not found")
     ytitle, ttext = title
+    if y_start is not None:
+        ytitle = float(y_start) - y_min_offset
     m = re.search(r"((?:19|20)\d\d)\s*[-–—]\s*((?:19|20)?\d\d)", ttext.replace("O", "0"))
     ps, pe = (None, None)
     if m:
@@ -137,4 +144,13 @@ def parse(path, page=None, title_re=None, x_min=0, x_max=None, y_max=None, bare_
             pending = ""
         else:
             pending = full
+    return recs
+
+
+def parse(path, extra_pages=None, **opts):
+    """Main page (with its title line) plus optional continuation pages parsed without a title."""
+    recs = _parse_one(path, **opts)
+    rest = {k: v for k, v in opts.items() if k not in ("page", "title_re")}
+    for p in extra_pages or []:
+        recs += _parse_one(path, page=p, no_title=True, **rest)
     return recs

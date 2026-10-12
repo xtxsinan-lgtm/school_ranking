@@ -14,3 +14,7 @@ Bay Area public high school college matriculation data → SQLite with unified s
 Ingested so far (per-college counts only): Henry M. Gunn, Palo Alto, Lynbrook, Los Gatos, Leigh, Menlo-Atherton, Dublin, Northgate.
 Sources without per-college counts or that could not be fetched are listed in `data/LEADS_NOT_INGESTED.md`.
 Discovery tooling: `tools/discover.py`, `tools/deep_crawl.py`, `tools/probe_candidates.py`.
+
+Also imported: the user's spreadsheet (`data/user_data/bay_area_hs_sheet.xlsx`, sheet 原始升学) via
+`python -m ranking import-user-sheet`; those rows have `sources.origin = 'user_sheet'` and cover a curated subset of ~95 colleges.
+Private schools have `schools.sector = 'private'`.  Official sources: Marin Academy, Urban, Head-Royce, Menlo, Lick-Wilmerding, Branson.

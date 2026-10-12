@@ -58,3 +58,17 @@ Please send the original links for the "no counts found / not accessible" school
 - **Dougherty Valley** — profiles 2022-23, 2023-24, 2026-27 exist; they only give percentages (4-year / 2-year / other). Older profiles not found.
 - **Mountain View / Los Altos (MVLA)** — only the MVHS 2023-24 profile (thrillshare copy) is still downloadable; it has no college list. The older mvla.net PDFs (2017-18 … 2022-23, LAHS 2019-2023) return 404.
 - **Milpitas** — 2024-25 profile (Google doc) only has percentages.
+
+
+## E. Private schools (checked 2026-10-12)
+
+Ingested with per-college counts: Marin Academy (2023-26, 2026), Urban School of SF (2022-26), Head-Royce (2021-25),
+Menlo School (2024-26), Lick-Wilmerding (2023-26), Branson (2024-26).  The 13 private schools in the user's sheet
+(Nueva, Harker, Crystal Springs, Branson, SFUHS, LWHS, Menlo, Head-Royce, Quarry Lane, International HS/"SF International",
+Urban, Bellarmine, St. Francis) are also in the DB from the user's sheet (origin = user_sheet).
+
+Found but NOT ingested (no per-college counts):
+- Names only: SFUHS https://www.sfuhs.org/learning/college-counseling/college-matriculation ; Crystal Springs profile https://www.crystal.org/ftpimages/350/download/download_11136711.pdf ; Sacred Heart Prep profile https://shschools.myschoolapp.com/ftpimages/783/download/download_2023011.pdf ; Castilleja profile ; Pinewood profile ; Marin Catholic profile ; Valley Christian / San Domenico / Presentation / Quarry Lane / Harker "college acceptances" pages (acceptances, not matriculation).
+- Tiers only ("10 or more", "5 or more"): Nueva https://www.nuevaschool.org/fs/resource-manager/view/40e38c23-2bd7-486a-b402-33e68739b9fe
+- Acceptances with counts, matriculation only starred: Archbishop Mitty profile https://www.mitty.com/assets/files/academics/schoolprofile.pdf
+- Not machine-readable / not reachable: Woodside Priory lists (Adobe Acrobat share links on prioryca.org); Convent & Stuart Hall (issuu profiles); St. Francis HS profile https://www.sfhs.com/ams/SchoolProfile_202526-1206.pdf (HTTP 400); Bellarmine / SI profiles (no list with counts); College Prep, Athenian, Bishop O'Dowd, Drew, Kehillah, Notre Dame Belmont, Mercy Burlingame, De La Salle, Sacred Heart Cathedral: no college list found on their sites.
