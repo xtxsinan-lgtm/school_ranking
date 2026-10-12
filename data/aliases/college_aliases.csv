@@ -1,0 +1,250 @@
+alias,target,section
+Berkeley,ipeds:University of California-Berkeley,uc
+UCB,ipeds:University of California-Berkeley,uc
+UCB,ipeds:University of California-Berkeley,
+Davis,ipeds:University of California-Davis,uc
+UCD,ipeds:University of California-Davis,uc
+UCD,ipeds:University of California-Davis,
+Irvine,ipeds:University of California-Irvine,uc
+UCI,ipeds:University of California-Irvine,uc
+UCI,ipeds:University of California-Irvine,
+Los Angeles,ipeds:University of California-Los Angeles,uc
+UCLA,ipeds:University of California-Los Angeles,uc
+UCLA,ipeds:University of California-Los Angeles,
+Merced,ipeds:University of California-Merced,uc
+UCM,ipeds:University of California-Merced,uc
+UCM,ipeds:University of California-Merced,
+Riverside,ipeds:University of California-Riverside,uc
+UCR,ipeds:University of California-Riverside,uc
+UCR,ipeds:University of California-Riverside,
+San Diego,ipeds:University of California-San Diego,uc
+UCSD,ipeds:University of California-San Diego,uc
+UCSD,ipeds:University of California-San Diego,
+Santa Barbara,ipeds:University of California-Santa Barbara,uc
+UCSB,ipeds:University of California-Santa Barbara,uc
+UCSB,ipeds:University of California-Santa Barbara,
+Santa Cruz,ipeds:University of California-Santa Cruz,uc
+UCSC,ipeds:University of California-Santa Cruz,uc
+UCSC,ipeds:University of California-Santa Cruz,
+San Francisco,ipeds:University of California-San Francisco,uc
+UCSF,ipeds:University of California-San Francisco,uc
+UCSF,ipeds:University of California-San Francisco,
+UC Berkeley,ipeds:University of California-Berkeley,
+Cal Berkeley,ipeds:University of California-Berkeley,
+Bakersfield,ipeds:California State University-Bakersfield,csu
+Channel Islands,ipeds:California State University-Channel Islands,csu
+Chico,ipeds:California State University-Chico,csu
+Dominguez Hills,ipeds:California State University-Dominguez Hills,csu
+East Bay,ipeds:California State University-East Bay,csu
+Fresno,ipeds:California State University-Fresno,csu
+Fullerton,ipeds:California State University-Fullerton,csu
+Long Beach,ipeds:California State University-Long Beach,csu
+Los Angeles,ipeds:California State University-Los Angeles,csu
+Monterey Bay,ipeds:California State University-Monterey Bay,csu
+Northridge,ipeds:California State University-Northridge,csu
+Sacramento,ipeds:California State University-Sacramento,csu
+San Bernardino,ipeds:California State University-San Bernardino,csu
+San Marcos,ipeds:California State University-San Marcos,csu
+Stanislaus,ipeds:California State University-Stanislaus,csu
+Maritime,ipeds:California State University Maritime Academy,csu
+Maritime Academy,ipeds:California State University Maritime Academy,csu
+Cal Maritime,ipeds:California State University Maritime Academy,csu
+San Diego,ipeds:San Diego State University,csu
+San Francisco,ipeds:San Francisco State University,csu
+San Jose,ipeds:San Jose State University,csu
+Sonoma,ipeds:Sonoma State University,csu
+Humboldt,ipeds:California State Polytechnic University-Humboldt,csu
+Cal Poly Humboldt,ipeds:California State Polytechnic University-Humboldt,csu
+Pomona,ipeds:California State Polytechnic University-Pomona,csu
+Cal Poly Pomona,ipeds:California State Polytechnic University-Pomona,csu
+"Cal Poly, Pomona",ipeds:California State Polytechnic University-Pomona,csu
+San Luis Obispo,ipeds:California Polytechnic State University-San Luis Obispo,csu
+Cal Poly SLO,ipeds:California Polytechnic State University-San Luis Obispo,csu
+"Cal Poly, SLO",ipeds:California Polytechnic State University-San Luis Obispo,csu
+Cal Poly San Luis Obispo,ipeds:California Polytechnic State University-San Luis Obispo,csu
+SLO,ipeds:California Polytechnic State University-San Luis Obispo,csu
+Cal Poly SLO,ipeds:California Polytechnic State University-San Luis Obispo,
+"Cal Poly, SLO",ipeds:California Polytechnic State University-San Luis Obispo,
+Cal Poly San Luis Obispo,ipeds:California Polytechnic State University-San Luis Obispo,
+Cal Poly,ipeds:California Polytechnic State University-San Luis Obispo,
+Cal Poly Pomona,ipeds:California State Polytechnic University-Pomona,
+Cal Poly Humboldt,ipeds:California State Polytechnic University-Humboldt,
+SDSU,ipeds:San Diego State University,
+SJSU,ipeds:San Jose State University,
+SFSU,ipeds:San Francisco State University,
+MIT,ipeds:Massachusetts Institute of Technology,
+Caltech,ipeds:California Institute of Technology,
+CMU,ipeds:Carnegie Mellon University,
+NYU,ipeds:New York University,
+USC,ipeds:University of Southern California,
+Univ of Southern California,ipeds:University of Southern California,
+RISD,ipeds:Rhode Island School of Design,
+Georgia Tech,ipeds:Georgia Institute of Technology-Main Campus,
+Virginia Tech,ipeds:Virginia Polytechnic Institute and State University,
+UPenn,ipeds:University of Pennsylvania,
+Penn,ipeds:University of Pennsylvania,
+Univ of Pennsylvania,ipeds:University of Pennsylvania,
+UIUC,ipeds:University of Illinois Urbana-Champaign,
+"Univ of Illinois, Urbana-Champaign",ipeds:University of Illinois Urbana-Champaign,
+University of Illinois,ipeds:University of Illinois Urbana-Champaign,
+University of Illinois Urbana Champaign,ipeds:University of Illinois Urbana-Champaign,
+UT Austin,ipeds:The University of Texas at Austin,
+Texas A&M,ipeds:Texas A & M University-College Station,
+Texas A & M,ipeds:Texas A & M University-College Station,
+Texas A&M University,ipeds:Texas A & M University-College Station,
+Cornell,ipeds:Cornell University,
+Columbia,ipeds:Columbia University in the City of New York,
+Columbia University,ipeds:Columbia University in the City of New York,
+Northwestern,ipeds:Northwestern University,
+Union College NY,196866,
+Washington Univ in St Louis,ipeds:Washington University in St Louis,
+WashU,ipeds:Washington University in St Louis,
+Washington University in St. Louis,ipeds:Washington University in St Louis,
+Arizona State University,ipeds:Arizona State University Campus Immersion,
+ASU,ipeds:Arizona State University Campus Immersion,
+Arizona State,ipeds:Arizona State University Campus Immersion,
+University of Wisconsin,ipeds:University of Wisconsin-Madison,
+Univ of Wisconsin Madison,ipeds:University of Wisconsin-Madison,
+University of Wisconsin Madison,ipeds:University of Wisconsin-Madison,
+UW Madison,ipeds:University of Wisconsin-Madison,
+University of Washington,ipeds:University of Washington-Seattle Campus,
+Univ of Washington,ipeds:University of Washington-Seattle Campus,
+UW,ipeds:University of Washington-Seattle Campus,
+Rutgers University,ipeds:Rutgers University-New Brunswick,
+Rutgers,ipeds:Rutgers University-New Brunswick,
+Indiana University,ipeds:Indiana University-Bloomington,
+"Indiana U, Bloomington",ipeds:Indiana University-Bloomington,
+Univ of Minnesota,ipeds:University of Minnesota-Twin Cities,
+University of Minnesota,ipeds:University of Minnesota-Twin Cities,
+University of Pittsburgh,ipeds:University of Pittsburgh-Pittsburgh Campus,
+Univ of Pittsburgh,ipeds:University of Pittsburgh-Pittsburgh Campus,
+Pitt,ipeds:University of Pittsburgh-Pittsburgh Campus,
+University of Michigan,ipeds:University of Michigan-Ann Arbor,
+"Univ of Michigan, Ann Arbor",ipeds:University of Michigan-Ann Arbor,
+UMich,ipeds:University of Michigan-Ann Arbor,
+Michigan,ipeds:University of Michigan-Ann Arbor,
+University of Maryland College Park,ipeds:University of Maryland-College Park,
+Univ of Maryland College Park,ipeds:University of Maryland-College Park,
+University of Maryland,ipeds:University of Maryland-College Park,
+University of Massachusetts Amherst,ipeds:University of Massachusetts-Amherst,
+Univ of Massachusetts Amherst,ipeds:University of Massachusetts-Amherst,
+UMass Amherst,ipeds:University of Massachusetts-Amherst,
+University of Colorado Boulder,ipeds:University of Colorado Boulder,
+Univ of Colorado Boulder,ipeds:University of Colorado Boulder,
+CU Boulder,ipeds:University of Colorado Boulder,
+"Citadel Military, SC",ipeds:Citadel Military College of South Carolina,
+"The Citadel, Military",ipeds:Citadel Military College of South Carolina,
+The Citadel,ipeds:Citadel Military College of South Carolina,
+United States Air Force,ipeds:United States Air Force Academy,
+US Air Force Academy,ipeds:United States Air Force Academy,
+Air Force Academy,ipeds:United States Air Force Academy,
+West Point,ipeds:United States Military Academy,
+Naval Academy,ipeds:United States Naval Academy,
+Rensselaer Polytechnic,ipeds:Rensselaer Polytechnic Institute,
+RPI,ipeds:Rensselaer Polytechnic Institute,
+Fashion Institute of Tech,ipeds:Fashion Institute of Technology,
+FIT,ipeds:Fashion Institute of Technology,
+New Jersey Institute of Tech,ipeds:New Jersey Institute of Technology,
+Embry-Riddle Aeronautical,ipeds:Embry-Riddle Aeronautical University-Daytona Beach,
+San Francisco Conservatory,ipeds:San Francisco Conservatory of Music,
+Saint Mary’s College of CA,ipeds:Saint Mary's College of California,
+Saint Mary's College of CA,ipeds:Saint Mary's College of California,
+St. Mary's College of California,ipeds:Saint Mary's College of California,
+North Carolina State University,ipeds:North Carolina State University at Raleigh,
+NC State,ipeds:North Carolina State University at Raleigh,
+UNC,ipeds:University of North Carolina at Chapel Hill,
+University of North Carolina,ipeds:University of North Carolina at Chapel Hill,
+UNC Chapel Hill,ipeds:University of North Carolina at Chapel Hill,
+Johns Hopkins,ipeds:Johns Hopkins University,
+JHU,ipeds:Johns Hopkins University,
+BU,ipeds:Boston University,
+BC,ipeds:Boston College,
+UCSD,ipeds:University of California-San Diego,
+Univ of Texas Austin,ipeds:The University of Texas at Austin,
+University of Texas Austin,ipeds:The University of Texas at Austin,
+University of Texas,ipeds:The University of Texas at Austin,
+William and Mary,ipeds:William & Mary,
+College of William and Mary,ipeds:William & Mary,
+The New School,ipeds:The New School,
+Univ of the Pacific,ipeds:University of the Pacific,
+Harvey Mudd,ipeds:Harvey Mudd College,
+Pomona,ipeds:Pomona College,
+"Univ of Hawaii, Manoa",ipeds:University of Hawaii at Manoa,
+The Ohio State University,ipeds:Ohio State University-Main Campus,
+Ohio State,ipeds:Ohio State University-Main Campus,
+OSU,ipeds:Ohio State University-Main Campus,
+Texas A & M College,ipeds:Texas A & M University-College Station,
+Stony Brook Univ,ipeds:Stony Brook University,
+SUNY Stony Brook,ipeds:Stony Brook University,
+Univ of Virginia,ipeds:University of Virginia-Main Campus,
+UVA,ipeds:University of Virginia-Main Campus,
+Cal Institute of Technology,ipeds:California Institute of Technology,
+University of Oxford,intl:University of Oxford|United Kingdom,
+Univ of Oxford,intl:University of Oxford|United Kingdom,
+Oxford,intl:University of Oxford|United Kingdom,
+University of Cambridge,intl:University of Cambridge|United Kingdom,
+King's College London,intl:King's College London|United Kingdom,
+Queen Mary University of London,intl:Queen Mary University of London|United Kingdom,
+UCL (University College London),intl:University College London|United Kingdom,
+University College London,intl:University College London|United Kingdom,
+University of Glasgow,intl:University of Glasgow|United Kingdom,
+University of Glasglow,intl:University of Glasgow|United Kingdom,
+Aberystwyth University,intl:Aberystwyth University|United Kingdom,
+Rose Bruford College,intl:Rose Bruford College|United Kingdom,
+Imperial College London,intl:Imperial College London|United Kingdom,
+University of Edinburgh,intl:University of Edinburgh|United Kingdom,
+University of St Andrews,intl:University of St Andrews|United Kingdom,
+London School of Economics,intl:London School of Economics|United Kingdom,
+University of Warwick,intl:University of Warwick|United Kingdom,
+University of Manchester,intl:University of Manchester|United Kingdom,
+University of British Columbia,intl:University of British Columbia|Canada,
+Univ of British Columbia,intl:University of British Columbia|Canada,
+UBC,intl:University of British Columbia|Canada,
+University of Toronto,intl:University of Toronto|Canada,
+Univ of Toronto,intl:University of Toronto|Canada,
+University of Waterloo,intl:University of Waterloo|Canada,
+Univ of Waterloo,intl:University of Waterloo|Canada,
+McGill University,intl:McGill University|Canada,
+Simon Fraser University,intl:Simon Fraser University|Canada,
+University of Victoria,intl:University of Victoria|Canada,
+Univ of Victoria,intl:University of Victoria|Canada,
+Queen's University Kingston,intl:Queen's University Kingston|Canada,
+University of Alberta,intl:University of Alberta|Canada,
+University of Calgary,intl:University of Calgary|Canada,
+York University,intl:York University|Canada,
+Western University,intl:Western University|Canada,
+Tilburg University,intl:Tilburg University|Netherlands,
+University of Amsterdam,intl:University of Amsterdam|Netherlands,
+Universiteit van Amsterdam,intl:University of Amsterdam|Netherlands,
+Amsterdam University of Applied Sciences,intl:Amsterdam University of Applied Sciences|Netherlands,
+Technische Universitaet Muenchen,intl:Technical University of Munich|Germany,
+Technical University of Munich,intl:Technical University of Munich|Germany,
+National University of Singapore,intl:National University of Singapore|Singapore,
+NUS,intl:National University of Singapore|Singapore,
+IE University,intl:IE University|Spain,
+IE University – Segovia,intl:IE University|Spain,
+Universidad de Navarra,intl:Universidad de Navarra|Spain,
+Universidad Nacional de Colombia,intl:Universidad Nacional de Colombia|Colombia,
+Ritsumeikan University,intl:Ritsumeikan University|Japan,
+NEOMA Business School,intl:NEOMA Business School|France,
+Instituto Tecnológico de Monterrey,intl:Instituto Tecnológico de Monterrey|Mexico,
+Trinity College Dublin,intl:Trinity College Dublin|Ireland,
+University of Tokyo,intl:University of Tokyo|Japan,
+Peking University,intl:Peking University|China,
+Tsinghua University,intl:Tsinghua University|China,
+University of Hong Kong,intl:University of Hong Kong|Hong Kong,
+Hong Kong University of Science and Technology,intl:Hong Kong University of Science and Technology|Hong Kong,
+HKUST,intl:Hong Kong University of Science and Technology|Hong Kong,
+University of Melbourne,intl:University of Melbourne|Australia,
+University of Sydney,intl:University of Sydney|Australia,
+Seoul National University,intl:Seoul National University|South Korea,
+KAIST,intl:KAIST|South Korea,
+St. John’s University NY,195809,
+St. John's University NY,195809,
+Colorado State,126818,
+Colorado State University,126818,
+Univ of Texas Dallas,228787,
+University of Texas Dallas,228787,
+Emmanuel College - Massachusetts,165671,
+Universty of San Diego,122436,
+International Christian,intl:International Christian University|Japan,
