@@ -109,13 +109,20 @@ def main():
     ap.add_argument("db"); ap.add_argument("schools")
     ap.add_argument("--keep-academies", action="store_true")
     ap.add_argument("--out", default="data/wbt_ranking.csv")
+    ap.add_argument("--cap", type=float, default=0, help="cap each pair's effective sample size at this many students (0 = no cap)")
     a = ap.parse_args()
 
     drop = ["Trinity(DC)"] + ([] if a.keep_academies else ACADEMIES)
     sch = [r for r in csv.DictReader(open(a.schools, encoding="utf8")) if r["abbr"] not in drop]
     m = len(sch)
     P = load_pairs(a.db, sch)
-    print(f"{m} schools, {len(P)} pairs, {int(P[:, 3].sum())} students (estimated)")
+    if a.cap:
+        # keep each pair's observed share, but never let it count for more than `cap` students, so
+        # huge pairs (UCB-UCLA, ~3000 students) can't dominate and big schools get no advantage
+        share = P[:, 2] / P[:, 3]
+        P[:, 3] = np.minimum(P[:, 3], a.cap)
+        P[:, 2] = share * P[:, 3]
+    print(f"{m} schools, {len(P)} pairs, {int(P[:, 3].sum())} students counted (cap={a.cap or 'none'})")
 
     hs = [0.15, 0.25, 0.4, 0.6, 1.0, math.inf]
     print("cross-validation:")
