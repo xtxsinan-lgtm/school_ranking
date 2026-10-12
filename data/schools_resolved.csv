@@ -1,0 +1,278 @@
+name,category,usnews_rank_2027,parchment_id,parchment_name,match
+Princeton University,national-universities,2,1034,Princeton University,exact
+Massachusetts Institute of Technology,national-universities,1,762,Massachusetts Institute of Technology,exact
+Harvard University,national-universities,3,544,Harvard University,exact
+Yale University,national-universities,4,1737,Yale University,exact
+Stanford University,national-universities,5,3,Stanford University,exact
+University of Chicago,national-universities,9,1416,University of Chicago,exact
+University of Pennsylvania,national-universities,7,1519,University of Pennsylvania,exact
+Johns Hopkins University,national-universities,9,1325,Johns Hopkins University,exact
+California Institute of Technology,national-universities,5,178,Caltech,exact
+Duke University,national-universities,8,6,Duke University,exact
+Northwestern University,national-universities,9,945,Northwestern University,exact
+Dartmouth College,national-universities,12,361,Dartmouth College,exact
+Brown University,national-universities,16,165,Brown University,exact
+Vanderbilt University,national-universities,16,1624,Vanderbilt University,exact
+Washington University in St. Louis,national-universities,16,1655,Washington University in St. Louis,exact
+Rice University,national-universities,16,1058,Rice University,exact
+Cornell University,national-universities,14,342,Cornell University,exact
+Columbia University,national-universities,12,319,Columbia University in the City of New York,fuzzy
+University of Notre Dame,national-universities,20,1513,University of Notre Dame,exact
+University of California-Los Angeles,national-universities,20,1407,"University of California, Los Angeles",fuzzy
+University of California-Berkeley,national-universities,20,1404,"University of California, Berkeley",fuzzy
+Emory University,national-universities,23,436,Emory University,exact
+Georgetown University,national-universities,23,496,Georgetown University,exact
+Carnegie Mellon University,national-universities,14,211,Carnegie Mellon University,exact
+University of Michigan-Ann Arbor,national-universities,25,1474,University of Michigan - Ann Arbor,fuzzy
+University of Virginia,national-universities,26,1583,University of Virginia,exact
+University of Southern California,national-universities,27,1552,University of Southern California,exact
+New York University,national-universities,31,906,New York University,exact
+University of Florida,national-universities,34,1430,University of Florida,exact
+University of North Carolina-Chapel Hill,national-universities,27,1503,University of North Carolina at Chapel Hill,fuzzy
+Wake Forest University,national-universities,34,1642,Wake Forest University,exact
+Tufts University,national-universities,31,1373,Tufts University,exact
+University of California-Santa Barbara,national-universities,44,1410,"University of California, Santa Barbara",fuzzy
+University of California-San Diego,national-universities,29,1409,"University of California, San Diego",fuzzy
+University of California-Irvine,national-universities,34,1406,"University of California, Irvine",fuzzy
+University of Rochester,national-universities,49,1539,University of Rochester,exact
+Boston College,national-universities,31,147,Boston College,exact
+University of California-Davis,national-universities,34,1405,"University of California, Davis",fuzzy
+University of Texas-Austin,national-universities,34,1572,University of Texas at Austin,fuzzy
+University of Wisconsin-Madison,national-universities,34,1593,University of Wisconsin - Madison,fuzzy
+College of William and Mary,national-universities,52,1315,College of William and Mary,exact
+Boston University,national-universities,34,148,Boston University,exact
+University of Illinois-Urbana-Champaign,national-universities,34,1446,University of Illinois at Urbana-Champaign,fuzzy
+Georgia Institute of Technology,national-universities,29,499,Georgia Institute of Technology-Main Campus,fuzzy
+Brandeis University,national-universities,59,154,Brandeis University,exact
+Case Western Reserve University,national-universities,44,216,Case Western Reserve University,exact
+Tulane University,national-universities,59,1374,Tulane University of Louisiana,fuzzy
+Northeastern University,national-universities,42,929,Northeastern University,exact
+University of Georgia,national-universities,52,1431,University of Georgia,exact
+Ohio State University-Columbus,national-universities,44,1329,Ohio State University-Main Campus,exact
+Lehigh University,national-universities,44,682,Lehigh University,exact
+Purdue University,national-universities,55,1037,Purdue University-Main Campus,fuzzy
+Villanova University,national-universities,42,1630,Villanova University,exact
+Rensselaer Polytechnic Institute,national-universities,69,1053,Rensselaer Polytechnic Institute,exact
+Pepperdine University,national-universities,80,1004,Pepperdine University,exact
+Florida State University,national-universities,59,469,Florida State University,exact
+Santa Clara University,national-universities,55,1138,Santa Clara University,exact
+University of Miami,national-universities,55,1473,University of Miami,exact
+University of Maryland,national-universities,49,1466,"University of Maryland, College Park",exact
+University of Washington,national-universities,49,1585,University of Washington,exact
+Rutgers University-New Brunswick,national-universities,44,1093,Rutgers University-New Brunswick,exact
+Syracuse University,national-universities,72,1277,Syracuse University,exact
+University of Pittsburgh,national-universities,59,1524,"University of Pittsburgh, Pittsburgh Campus",exact
+George Washington University,national-universities,59,1324,George Washington University,exact
+University of Minnesota,national-universities,59,1480,University of Minnesota - Twin Cities,exact
+Virginia Polytechnic Institute and State University,national-universities,52,1634,Virginia Tech,fuzzy
+University of Connecticut,national-universities,73,1422,University of Connecticut,exact
+Worcester Polytechnic Institute,national-universities,73,1732,Worcester Polytechnic Institute,exact
+University of Massachusetts-Amherst,national-universities,59,1467,University of Massachusetts Amherst,fuzzy
+Yeshiva University,national-universities,90,1738,Yeshiva University,exact
+Fordham University,national-universities,85,471,Fordham University,exact
+Indiana University-Bloomington,national-universities,73,589,Indiana University - Bloomington,fuzzy
+Southern Methodist University,national-universities,85,1190,Southern Methodist University,exact
+American University,national-universities,95,37,American University,exact
+North Carolina State University,national-universities,73,918,North Carolina State University at Raleigh,fuzzy
+Pennsylvania State University-University Park,national-universities,55,1000,Penn State University,exact
+Baylor University,national-universities,90,107,Baylor University,exact
+Clemson University,national-universities,80,276,Clemson University,exact
+Loyola Marymount University,national-universities,109,712,Loyola Marymount University,exact
+Michigan State University,national-universities,69,2,Michigan State University,exact
+Stony Brook University,national-universities,59,1258,Stony Brook University,exact
+Gonzaga University,national-universities,90,510,Gonzaga University,exact
+Binghamton University,national-universities,73,1255,SUNY at Binghamton,exact
+Marquette University,national-universities,90,742,Marquette University,exact
+Stevens Institute of Technology,national-universities,59,1266,Stevens Institute of Technology,exact
+University of Iowa,national-universities,100,1448,University of Iowa,exact
+University of California-Santa Cruz,national-universities,109,1411,"University of California, Santa Cruz",fuzzy
+Brigham Young University,national-universities,116,162,Brigham Young University-Provo,fuzzy
+Colorado School of Mines,national-universities,80,309,Colorado School of Mines,exact
+Elon University,national-universities,100,428,Elon University,exact
+Howard University,national-universities,73,572,Howard University,exact
+Texas Christian University,national-universities,90,1295,Texas Christian University,exact
+University of California-Riverside,national-universities,80,1408,"University of California, Riverside",fuzzy
+University of Buffalo,national-universities,85,1256,University at Buffalo,exact
+University of Delaware,national-universities,85,1425,University of Delaware,exact
+University of California-Merced,national-universities,69,1745,"University of California, Merced",fuzzy
+University of San Diego,national-universities,100,1541,University of San Diego,exact
+Auburn University,national-universities,100,68,Auburn University,exact
+University of Colorado-Boulder,national-universities,109,1419,University of Colorado at Boulder,fuzzy
+Clark University,national-universities,133,270,Clark University,exact
+New Jersey Institute of Technology,national-universities,85,900,New Jersey Institute of Technology,exact
+University of Illinois-Chicago,national-universities,95,1444,University of Illinois at Chicago,fuzzy
+University of South Florida,national-universities,100,1551,University of South Florida,exact
+University of Denver,national-universities,121,1426,University of Denver,exact
+University of Oregon,national-universities,116,1516,University of Oregon,exact
+University of Utah,national-universities,179,1580,University of Utah,exact
+Drexel University,national-universities,80,400,Drexel University,exact
+Miami University,national-universities,133,787,Miami University - Oxford,fuzzy
+Saint Louis University,national-universities,100,1108,Saint Louis University,exact
+University of Arizona,national-universities,121,4,University of Arizona,exact
+University of San Francisco,national-universities,116,1542,University of San Francisco,exact
+Rochester Institute of Technology,national-universities,95,1071,Rochester Institute of Technology,exact
+Creighton University,national-universities,100,346,Creighton University,exact
+Loyola University Chicago,national-universities,121,714,Loyola University - Chicago,exact
+University of Tennessee,national-universities,109,1564,The University of Tennessee,fuzzy
+University of South Carolina,national-universities,121,1547,University of South Carolina-Columbia,exact
+Rutgers University-Newark,national-universities,73,1092,Rutgers University-Newark,exact
+Fairfield University,national-universities,109,444,Fairfield University,exact
+Temple University,national-universities,109,1283,Temple University,exact
+Arizona State University-Tempe,national-universities,121,1,Arizona State University,exact
+Chapman University,national-universities,100,241,Chapman University,exact
+University of Vermont,national-universities,133,1581,University of Vermont,exact
+University of Kansas,national-universities,148,1450,University of Kansas,exact
+University of Missouri,national-universities,95,1483,University of Missouri - Columbia,fuzzy
+Illinois Institute of Technology,national-universities,121,582,Illinois Institute of Technology,exact
+Iowa State University,national-universities,116,609,Iowa State University,exact
+Clarkson University,national-universities,137,273,Clarkson University,exact
+Gallaudet University,national-universities,179,489,Gallaudet University,exact
+University of Dayton,national-universities,121,1424,University of Dayton,exact
+University of Oklahoma,national-universities,116,1514,University of Oklahoma Norman Campus,fuzzy
+New School,national-universities,227,4437,The New School Lang,fuzzy
+Samford University,national-universities,191,1130,Samford University,exact
+Rutgers University-Camden,national-universities,95,1084,Rutgers University-Camden,exact
+Thomas Jefferson University,national-universities,133,1350,Thomas Jefferson University,exact
+DePaul University,national-universities,169,366,DePaul University,exact
+Seattle University,national-universities,179,1148,Seattle University,exact
+Seton Hall University,national-universities,156,1149,Seton Hall University,exact
+University of Kentucky,national-universities,148,1451,University of Kentucky,exact
+Drake University,national-universities,191,398,Drake University,exact
+University of New Hampshire,national-universities,109,1496,University of New Hampshire,exact
+University of St. Thomas,national-universities,156,1560,University of St. Thomas,exact
+University of Tulsa,national-universities,148,1579,University of Tulsa,exact
+George Mason University,national-universities,121,494,George Mason University,exact
+University of Alabama,national-universities,156,1338,The University of Alabama,fuzzy
+University of Central Florida,national-universities,121,1413,University of Central Florida,exact
+California State University-Long Beach,national-universities,137,190,"California State University, Long Beach",fuzzy
+University of Maryland-Baltimore County,national-universities,137,1462,University of Maryland Baltimore County,fuzzy
+Catholic University of America,national-universities,148,1306,Catholic University of America,exact
+Simmons University,national-universities,169,1163,Simmons College,exact
+University of La Verne,national-universities,208,1452,University of La Verne,exact
+University of Nebraska-Lincoln,national-universities,169,1491,"University of Nebraska, Lincoln",fuzzy
+University of Texas-Dallas,national-universities,121,1573,University of Texas at Dallas,fuzzy
+University of the Pacific,national-universities,121,1607,University of the Pacific,exact
+Colorado State University,national-universities,169,310,Colorado State University - Fort Collins,exact
+CUNY-City College,national-universities,156,258,CUNY City College,fuzzy
+Duquesne University,national-universities,156,402,Duquesne University,exact
+Michigan Technological University,national-universities,169,788,Michigan Technological University,exact
+Quinnipiac University,national-universities,156,1042,Quinnipiac University,exact
+San Diego State University,national-universities,137,1132,San Diego State University,exact
+University of Cincinnati,national-universities,179,1417,University of Cincinnati,exact
+University of Mississippi,national-universities,179,1481,University of Mississippi,exact
+Ohio University,national-universities,202,964,Ohio University,exact
+University of Arkansas,national-universities,191,1399,University of Arkansas,exact
+Washington State University,national-universities,191,1654,Washington State University,exact
+Williams College,national-liberal-arts,,1720,Williams College,exact
+Amherst College,national-liberal-arts,,40,Amherst College,exact
+Swarthmore College,national-liberal-arts,,1275,Swarthmore College,exact
+Wellesley College,national-liberal-arts,,1665,Wellesley College,exact
+Pomona College,national-liberal-arts,,1022,Pomona College,exact
+Bowdoin College,national-liberal-arts,,149,Bowdoin College,exact
+Claremont McKenna College,national-liberal-arts,,267,Claremont McKenna College,exact
+Carleton College,national-liberal-arts,,208,Carleton College,exact
+Middlebury College,national-liberal-arts,,792,Middlebury College,exact
+Barnard College,national-liberal-arts,,99,Barnard College,exact
+Grinnell College,national-liberal-arts,,528,Grinnell College,exact
+Haverford College,national-liberal-arts,,547,Haverford College,exact
+Hamilton College,national-liberal-arts,,533,Hamilton College,exact
+Colby College,national-liberal-arts,,285,Colby College,exact
+Smith College,national-liberal-arts,,1170,Smith College,exact
+Davidson College,national-liberal-arts,,364,Davidson College,exact
+Vassar College,national-liberal-arts,,1626,Vassar College,exact
+Colgate University,national-liberal-arts,,288,Colgate University,exact
+Bates College,national-liberal-arts,,104,Bates College,exact
+Washington and Lee University,national-liberal-arts,,1657,Washington and Lee University,exact
+Wesleyan University,national-liberal-arts,,1671,Wesleyan University,exact
+Harvey Mudd College,national-liberal-arts,,545,Harvey Mudd College,exact
+Colorado College,national-liberal-arts,,308,Colorado College,exact
+Macalester College,national-liberal-arts,,724,Macalester College,exact
+Oberlin College,national-liberal-arts,,959,Oberlin College,exact
+Bryn Mawr College,national-liberal-arts,,169,Bryn Mawr College,exact
+Kenyon College,national-liberal-arts,,646,Kenyon College,exact
+Scripps College,national-liberal-arts,,1146,Scripps College,exact
+University of Richmond,national-liberal-arts,,1537,University of Richmond,exact
+Occidental College,national-liberal-arts,,960,Occidental College,exact
+Trinity College,national-liberal-arts,,1363,Trinity College,exact
+Connecticut College,national-liberal-arts,,338,Connecticut College,exact
+Skidmore College,national-liberal-arts,,1168,Skidmore College,exact
+Franklin and Marshall College,national-liberal-arts,,478,Franklin & Marshall College,exact
+Sewanee: The University of the South,national-liberal-arts,,1610,Sewanee-The University of the South,fuzzy
+Whitman College,national-liberal-arts,,1704,Whitman College,exact
+Lafayette College,national-liberal-arts,,660,Lafayette College,exact
+Union College,national-liberal-arts,,1378,Union College,exact
+Dickinson College,national-liberal-arts,,389,Dickinson College,exact
+Bucknell University,national-liberal-arts,,170,Bucknell University,exact
+Gettysburg College,national-liberal-arts,,504,Gettysburg College,exact
+Furman University,national-liberal-arts,,488,Furman University,exact
+Denison University,national-liberal-arts,,384,Denison University,exact
+Centre College,national-liberal-arts,,236,Centre College,exact
+College of the Holy Cross,national-liberal-arts,,304,College of the Holy Cross,exact
+Reed College,national-liberal-arts,,1047,Reed College,exact
+St. Olaf College,national-liberal-arts,,1118,St Olaf College,exact
+Lewis & Clark College,national-liberal-arts,,685,Lewis & Clark College,exact
+DePauw University,national-liberal-arts,,367,DePauw University,exact
+Rhodes College,national-liberal-arts,,1057,Rhodes College,exact
+Kalamazoo College,national-liberal-arts,,633,Kalamazoo College,exact
+Berea College,national-liberal-arts,,124,Berea College,exact
+Wabash College,national-liberal-arts,,1640,Wabash College,exact
+Hobart and William Smith Colleges,national-liberal-arts,,560,Hobart and William Smith Colleges,exact
+St. Lawrence University,national-liberal-arts,,1228,St Lawrence University,exact
+Mount Holyoke College,national-liberal-arts,,865,Mount Holyoke College,exact
+Bard College,national-liberal-arts,,98,Bard College,exact
+Pitzer College,national-liberal-arts,,1015,Pitzer College,exact
+Sarah Lawrence College,national-liberal-arts,,1139,Sarah Lawrence College,exact
+Juniata College,national-liberal-arts,,632,Juniata College,exact
+Muhlenberg College,national-liberal-arts,,880,Muhlenberg College,exact
+Allegheny College,national-liberal-arts,,26,Allegheny College,exact
+Ursinus College,national-liberal-arts,,1614,Ursinus College,exact
+Beloit College,national-liberal-arts,,116,Beloit College,exact
+Lawrence University,national-liberal-arts,,674,Lawrence University,exact
+Hendrix College,national-liberal-arts,,553,Hendrix College,exact
+Knox College,national-liberal-arts,,652,Knox College,exact
+Austin College,national-liberal-arts,,76,Austin College,exact
+Gustavus Adolphus College,national-liberal-arts,,531,Gustavus Adolphus College,exact
+Hampden-Sydney College,national-liberal-arts,,535,Hampden-Sydney College,exact
+College of Wooster,national-liberal-arts,,1316,The College of Wooster,exact
+Illinois Wesleyan University,national-liberal-arts,,584,Illinois Wesleyan University,exact
+Albion College,national-liberal-arts,,20,Albion College,exact
+Hope College,national-liberal-arts,,567,Hope College,exact
+Randolph-Macon College,national-liberal-arts,,1045,Randolph-Macon College,exact
+Southwestern University,national-liberal-arts,,1208,Southwestern University,exact
+Agnes Scott College,national-liberal-arts,,12,Agnes Scott College,exact
+Thomas Aquinas College,national-liberal-arts,,1346,Thomas Aquinas College,exact
+Hillsdale College,national-liberal-arts,,558,Hillsdale College,exact
+Westmont College,national-liberal-arts,,1699,Westmont College,exact
+Ripon College,national-liberal-arts,,1063,Ripon College,exact
+Goucher College,national-liberal-arts,,513,Goucher College,exact
+Earlham College,national-liberal-arts,,403,Earlham College,exact
+Wofford College,national-liberal-arts,,1730,Wofford College,exact
+Millsaps College,national-liberal-arts,,801,Millsaps College,exact
+Sweet Briar College,national-liberal-arts,,1276,Sweet Briar College,exact
+Oglethorpe University,national-liberal-arts,,961,Oglethorpe University,exact
+Eckerd College,national-liberal-arts,,420,Eckerd College,exact
+Washington & Jefferson College,national-liberal-arts,,1656,Washington and Jefferson College,exact
+Saint Michael's College,national-liberal-arts,,1117,Saint Michael's College,exact
+Bennington College,national-liberal-arts,,122,Bennington College,exact
+Hollins University,national-liberal-arts,,563,Hollins University,exact
+Lake Forest College,national-liberal-arts,,662,Lake Forest College,exact
+Whittier College,national-liberal-arts,,1705,Whittier College,exact
+Mount Saint Mary's University,national-liberal-arts,,875,Mount Saint Mary's University,exact
+Willamette University,national-liberal-arts,,1712,Willamette University,exact
+Ohio Wesleyan University,national-liberal-arts,,966,Ohio Wesleyan University,exact
+Berry College,national-liberal-arts,,126,Berry College,exact
+Virginia Military Institute,national-liberal-arts,,1633,Virginia Military Institute,exact
+St. John's College,national-liberal-arts,,1224,St. John's College,exact
+Cornell College,national-liberal-arts,,341,Cornell College,exact
+Drew University,national-liberal-arts,,399,Drew University,exact
+Gordon College,national-liberal-arts,,511,Gordon College,exact
+Hanover College,national-liberal-arts,,539,Hanover College,exact
+Houghton University,national-liberal-arts,,569,Houghton College,exact
+Linfield University,national-liberal-arts,,697,Linfield College,exact
+Luther College,national-liberal-arts,,716,Luther College,exact
+Monmouth College,national-liberal-arts,,818,Monmouth College,exact
+Presbyterian College,national-liberal-arts,,1031,Presbyterian College,exact
+Siena College,national-liberal-arts,,1159,Siena College,exact
+Simpson College,national-liberal-arts,,1166,Simpson College,exact
+Susquehanna University,national-liberal-arts,,1274,Susquehanna University,exact
+Transylvania University,national-liberal-arts,,1357,Transylvania University,exact
