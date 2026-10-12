@@ -48,3 +48,13 @@ If you decide names-only sources are acceptable later, the first candidates are 
 | Milpitas | no counts found | profile (Google doc) only has 4yr/2yr/work percentages |
 
 Please send the original links for the "no counts found / not accessible" schools if you have them.
+
+
+## D. Follow-up: historical profiles checked (2026-10-12)
+
+- **Mission San Jose** — user-provided index page https://fremontunified.org/msjhs/students-community/student-support/counselors-overview/school-profiles/ is behind a Cloudflare interactive challenge ("Just a moment…"): HTTP 403 for curl, WebFetch and a real headless Chromium. Not bypassed. Needs a manual download of the profile PDFs (any year that lists colleges with counts) into the repo, then add a row to `data/sources.csv`. The same applies to Irvington / American / Washington / Kennedy (same district site).
+- **Saratoga** — only 2023-24 and 2026-27 profiles + the 2019-20 WASC self-study are published; none lists colleges.
+- **Leland** — only the 2024-25 profile is published (https://leland.sjusd.org/about/school-performance); no college list.
+- **Dougherty Valley** — profiles 2022-23, 2023-24, 2026-27 exist; they only give percentages (4-year / 2-year / other). Older profiles not found.
+- **Mountain View / Los Altos (MVLA)** — only the MVHS 2023-24 profile (thrillshare copy) is still downloadable; it has no college list. The older mvla.net PDFs (2017-18 … 2022-23, LAHS 2019-2023) return 404.
+- **Milpitas** — 2024-25 profile (Google doc) only has percentages.
