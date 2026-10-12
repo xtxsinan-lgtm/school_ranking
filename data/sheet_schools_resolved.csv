@@ -65,7 +65,7 @@ Purdue,Purdue University,Purdue University-Main Campus,exact
 UCD,"University of California, Davis","University of California, Davis",exact
 Berea,Berea College,Berea College,exact
 UCSD,"University of California, San Diego","University of California, San Diego",exact
-Trinity,Trinity College,Trinity College,exact
+Trinity(CT),Trinity College,Trinity College,exact
 Bates,Bates College,Bates College,exact
 Bucknell,Bucknell University,Bucknell University,exact
 Richmond,University of Richmond,University of Richmond,exact
@@ -98,3 +98,5 @@ FSU,Florida State University,Florida State University,exact
 BU,Boston University,Boston University,exact
 IU,Indiana University,Indiana University - Bloomington,exact
 Clemson,Clemson University,Clemson University,exact
+Trinity(DC),Trinity Washington University,Trinity Washington University,exact
+Trinity(TX),Trinity University,Trinity University,exact
