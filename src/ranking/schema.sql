@@ -72,3 +72,33 @@ CREATE TABLE IF NOT EXISTS cohort_sizes (
   graduates    REAL,
   PRIMARY KEY (source_id, period_start, period_end)
 );
+
+-- UC Information Center "Admissions by source school" (freshmen). Blank cells in the source (fewer than 3-5 students,
+-- or suppressed to avoid back-calculation) are stored as NULL / simply absent.
+CREATE TABLE IF NOT EXISTS uc_schools (
+  ceeb         TEXT PRIMARY KEY,     -- 6-digit CEEB/ACT code used by UC as the school key
+  name         TEXT NOT NULL,
+  city         TEXT,
+  region       TEXT,                 -- county (CA), state (other US) or country
+  school_type  TEXT,                 -- California public / private high school, Non-CA domestic, Foreign institution
+  school_id    INTEGER REFERENCES schools(school_id),   -- link to our schools table when matched
+  match_method TEXT
+);
+CREATE TABLE IF NOT EXISTS uc_ethnicity (
+  ceeb TEXT NOT NULL REFERENCES uc_schools(ceeb), fall_term INTEGER NOT NULL, campus TEXT NOT NULL,
+  measure TEXT NOT NULL,               -- App | Adm | Enr
+  ethnicity TEXT NOT NULL,             -- All, African American, American Indian, Hispanic/Latinx, Pacific Islander, Asian, White, Domestic Unknown, Int'l
+  count INTEGER,
+  PRIMARY KEY (ceeb, fall_term, campus, measure, ethnicity)
+) WITHOUT ROWID;
+CREATE TABLE IF NOT EXISTS uc_gender (
+  ceeb TEXT NOT NULL REFERENCES uc_schools(ceeb), fall_term INTEGER NOT NULL, campus TEXT NOT NULL,
+  measure TEXT NOT NULL, gender TEXT NOT NULL, count INTEGER,
+  PRIMARY KEY (ceeb, fall_term, campus, measure, gender)
+) WITHOUT ROWID;
+CREATE TABLE IF NOT EXISTS uc_gpa (
+  ceeb TEXT NOT NULL REFERENCES uc_schools(ceeb), fall_term INTEGER NOT NULL, campus TEXT NOT NULL,
+  measure TEXT NOT NULL,               -- App | Adm | Enrl  (mean unweighted? GPA as published by UC)
+  gpa REAL,
+  PRIMARY KEY (ceeb, fall_term, campus, measure)
+) WITHOUT ROWID;

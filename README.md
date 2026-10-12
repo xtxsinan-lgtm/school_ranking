@@ -18,3 +18,10 @@ Discovery tooling: `tools/discover.py`, `tools/deep_crawl.py`, `tools/probe_cand
 Also imported: the user's spreadsheet (`data/user_data/bay_area_hs_sheet.xlsx`, sheet 原始升学) via
 `python -m ranking import-user-sheet`; those rows have `sources.origin = 'user_sheet'` and cover a curated subset of ~95 colleges.
 Private schools have `schools.sector = 'private'`.  Official sources: Marin Academy, Urban, Head-Royce, Menlo, Lick-Wilmerding, Branson.
+
+## UC admissions by source school
+`tools/uc_fetch.py` downloads the UC Information Center "Admissions by source school" crosstabs (Tableau server, CSV export; sheets
+FREthbyYr = by race/ethnicity, FRGndbyYr = by gender, FRGPAbyYr = mean GPA) for every school type x fall term x UC campus into
+`data/raw_uc/` (git-ignored, re-runnable). `python -m ranking load-uc` loads them into `uc_schools`, `uc_ethnicity`, `uc_gender`, `uc_gpa`
+(keyed by 6-digit CEEB code; `uc_schools.school_id` links to our `schools` table when matched). Measures: App = applicants, Adm = admits,
+Enr = enrolled freshmen. Cells with too few students are blank in the source and not stored.
