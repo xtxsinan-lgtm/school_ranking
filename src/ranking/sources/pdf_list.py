@@ -26,7 +26,8 @@ def _words(path, page):
         r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="[\d.]+">(.*?)</word>', out)]
 
 
-def parse(path, page=None, title_re=None, x_min=0, **opts):
+def parse(path, page=None, title_re=None, x_min=0, x_max=None, y_max=None, bare_numbers=False, unnumbered=None,
+          y_min_offset=5, ignore=None, strip=None, period_start=None, period_end=None, **opts):
     pages = [int(page)] if page else range(1, 4)
     heading = re.compile(title_re, re.I) if title_re else HEADING_RE
     for pg in pages:
@@ -46,8 +47,11 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
     if not title:
         raise ValueError("matriculation heading not found")
     ytitle, ttext = title
-    m = re.search(r"((?:19|20)\d\d)\s*[-–]\s*((?:19|20)\d\d)", ttext)
-    ps, pe = (int(m.group(1)), int(m.group(2))) if m else (None, None)
+    m = re.search(r"((?:19|20)\d\d)\s*[-–—]\s*((?:19|20)?\d\d)", ttext.replace("O", "0"))
+    ps, pe = (None, None)
+    if m:
+        ps = int(m.group(1))
+        pe = int(m.group(2)) if len(m.group(2)) == 4 else int(m.group(1)[:2] + m.group(2))
     gy = None
     if not m:
         m1 = re.search(r"class of\s*((?:19|20)\d\d)", ttext, re.I)
@@ -55,7 +59,8 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
             ps = pe = gy = int(m1.group(1))
 
     junk = re.compile(r"(tt|ti|fi|ff|fl|tti|ffi|ft)+", re.I)  # stray ligature glyphs some PDFs emit as separate words
-    body = [(x0, y, x1, w) for x0, y, x1, w in words if y > ytitle + 5 and x0 >= float(x_min) and not junk.fullmatch(w)]
+    body = [(x0, y, x1, w) for x0, y, x1, w in words if y > ytitle + y_min_offset and x0 >= float(x_min)
+            and (x_max is None or x0 <= float(x_max)) and (y_max is None or y <= float(y_max)) and not junk.fullmatch(w)]
     # group into lines
     rows = {}
     for x0, y, x1, w in body:
@@ -76,6 +81,16 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
             else:
                 cur.append(a)
         segs.append((cur[0][0], y, " ".join(w for _, _, w in cur)))
+    if bare_numbers:  # "Name      12" -> one item "Name (12)"; the number sits in its own segment after a wide gap
+        merged = []
+        for sg in sorted(segs, key=lambda t: (round(t[1] / 3), t[0])):
+            if merged and re.fullmatch(r"\d{1,3}", sg[2]) and abs(merged[-1][1] - sg[1]) < 3 \
+                    and not re.search(r"\(\d+\)$", merged[-1][2]):
+                merged[-1] = (merged[-1][0], merged[-1][1], f"{merged[-1][2]} ({sg[2]})")
+            else:
+                merged.append(sg)
+        segs = merged
+        segs = [(x0, y, re.sub(r"\s+(\d{1,3})$", r" (\1)", t)) for x0, y, t in segs]  # "Stanford University 41"
     # cluster segment start x into columns
     xs = sorted({round(s[0]) for s in segs})
     cols = []
@@ -88,8 +103,22 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
     def col_of(x):
         return max(i for i, s in enumerate(starts) if s - 6 <= x)
     segs.sort(key=lambda s: (col_of(s[0]), s[1]))
+    if period_start:
+        ps, pe = int(period_start), int(period_end or period_start)
+        if ps == pe:
+            gy = ps
+    ignore_re = re.compile(ignore, re.I) if ignore else None
+    strip_re = re.compile(strip) if strip else None
     recs, section, pending = [], None, ""
     for x0, y, text in segs:
+        text = text.replace("*", "").replace("\u200b", "").strip()
+        if strip_re:
+            text = strip_re.sub("", text).strip()
+        if not text or (ignore_re and ignore_re.search(text)):
+            continue
+        if len(text) > 25 and (text.endswith(".") or ". " in text) and not re.search(r"\(\d+\)", text):
+            pending = ""  # prose sentence, not a college name
+            continue
         full = (pending + " " + text).strip()
         m = re.fullmatch(r"(.+?)\s*\((\d+)\)", full)
         if m and SECTION_RE.fullmatch(m.group(1).strip()):
@@ -102,6 +131,10 @@ def parse(path, page=None, title_re=None, x_min=0, **opts):
             continue
         elif SECTION_RE.fullmatch(text.strip()):
             section, pending = text.strip(), ""
+        elif unnumbered is not None and text[:1].isupper() and not text.endswith((",", "-")) and len(text) > 3:
+            recs.append(dict(college_raw=text, section=section, grad_year=gy, period_start=ps, period_end=pe,
+                             count=int(unnumbered)))
+            pending = ""
         else:
             pending = full
     return recs

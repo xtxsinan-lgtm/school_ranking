@@ -18,12 +18,19 @@ def ingest_all(force_fetch=False):
     with open(SOURCES_CSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for row in rows:
-        sch = con.execute("SELECT school_id,name FROM schools WHERE cds_code=?", (row["cds_code"],)).fetchone()
+        if row["cds_code"]:
+            sch = con.execute("SELECT school_id,name FROM schools WHERE cds_code=?", (row["cds_code"],)).fetchone()
+        else:  # private school: matched / created by name
+            nm = row.get("school_name")
+            sch = con.execute("SELECT school_id,name FROM schools WHERE name=? AND sector='private'", (nm,)).fetchone()
+            if not sch and nm:
+                con.execute("INSERT INTO schools(name,city,sector) VALUES (?,?, 'private')", (nm, row.get("city") or None))
+                sch = con.execute("SELECT school_id,name FROM schools WHERE name=? AND sector='private'", (nm,)).fetchone()
         if not sch:
-            print("SKIP unknown cds", row["cds_code"])
+            print("SKIP unknown school", row["cds_code"], row.get("school_name"))
             continue
         try:
-            path, sha, ts = fetch(row["url"], row["cds_code"], force=force_fetch)
+            path, sha, ts = fetch(row["url"], row["cds_code"] or "private_" + sch["name"].replace(" ", "_"), force=force_fetch)
         except Exception as e:
             print(f"FETCH FAILED {sch['name']}: {row['url']} ({e})")
             continue
