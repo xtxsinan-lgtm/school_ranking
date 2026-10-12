@@ -29,3 +29,22 @@ Saratoga (percent by sector only); Dougherty Valley, Acalanes/Miramonte/Campolin
 Piedmont, Alameda, Albany, Amador Valley, Livermore/Granada, Napa/Vintage, Redwood (profiles with rates only).
 
 If you decide names-only sources are acceptable later, the first candidates are Carlmont, Fremont High, Monta Vista, Aragon, Burlingame.
+
+
+## C. Status of the public schools in the user's sheet (湾区高中 / 升学) — updated
+
+| School in sheet | Status | Source / reason |
+|---|---|---|
+| Gunn, Palo Alto, Lynbrook, Los Gatos | ingested earlier | see README |
+| Leigh | ingested (pooled 2017-2026) | https://leigh.cuhsd.org/apps/pages/LeighGraduatesColleges (embedded published Google Sheet) |
+| Menlo-Atherton | ingested 2022-2025 | https://www.mabears.org/about-ma/school-profile/where-do-our-grads-go -> CollegeDestinations22-25.pdf (a *selected* list of colleges, not exhaustive) |
+| Dublin | ingested 2019-2022, 2024-2026 (no 2023 file found) | exit-survey PDFs on https://dhs.dublinusd.org (self-reported; unnumbered colleges counted as 1) |
+| Northgate | ingested 2018-2020 | Northgate Sentinel "College Destinations" articles (counts = number of names listed per college; names not stored). 2017 article https://northgatesentinel.com/1898/college-destinations/college-destinations/ returns 403 here; 2016 article has a different layout (not parsed) |
+| Mission San Jose, Irvington | NOT accessible | fremontunified.org returns 403 to this environment |
+| Saratoga | no counts found | profiles on lgsuhsd.org only have category percentages; no 2017 file found |
+| Dougherty Valley | no counts found | profiles (dvhs.srvusd.net / cloudfront) only have percentages; no per-year matriculation file on the college & career pages |
+| Los Altos, Mountain View | no counts found | mvla.net old profile PDFs are 404; current profile page is an embedded widget; 2017 "College Attendance Data" PDFs have rates only |
+| Leland | no counts found | https://leland.sjusd.org 2024-25 profile has no college list |
+| Milpitas | no counts found | profile (Google doc) only has 4yr/2yr/work percentages |
+
+Please send the original links for the "no counts found / not accessible" schools if you have them.
