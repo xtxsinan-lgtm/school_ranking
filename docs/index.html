@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>升学数据研究 · 湾区高中 & 美国大学</title>
+<meta name="description" content="用公开数据研究湾区高中升学结果与美国大学“互选”排名，并用通俗语言解释数据来源和分析方法。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="inner">
+  <a class="brand" href="./">升学数据<span>研究</span></a>
+  <nav class="topnav">
+    <a class="active" href="./">首页</a>
+    <a href="highschool.html">湾区高中研究</a>
+    <a href="college.html">大学排名研究</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="pill" style="--accent-soft:#eef0f3;--accent:#1d2433">原型 · Prototype</span>
+    <h1>用数据回答两个家长最关心的问题</h1>
+    <p class="lead">这个网站整理了我们在本仓库里做的两项独立研究。两项研究的数据来源、方法和结论都不一样，所以分开呈现；
+      每一页都会先讲清楚<b>数据从哪来</b>、<b>怎么算的</b>、<b>能信到什么程度</b>，再给出结果。</p>
+  </section>
+
+  <div class="choice">
+    <a class="card" href="highschool.html" style="--c:var(--hs)">
+      <div class="kicker" style="color:var(--hs)">研究一</div>
+      <h2>湾区高中研究</h2>
+      <p><b>问题：</b>湾区哪些公立高中的毕业生，更多去了“比伯克利更难进/更受青睐”的大学？</p>
+      <ul>
+        <li>数据：UC 官方按高中公布的申请/录取/入学人数（2021–2025）</li>
+        <li>校准：27 所学校公布的真实升学名单</li>
+        <li>结果：湾区公立高中 Top 50（全体口径 + 亚裔口径）</li>
+      </ul>
+      <span class="go">进入研究 →</span>
+    </a>
+    <a class="card" href="college.html" style="--c:var(--col)">
+      <div class="kicker" style="color:var(--col)">研究二</div>
+      <h2>大学排名研究</h2>
+      <p><b>问题：</b>同时被两所大学录取的学生，最后“用脚投票”选了哪一所？</p>
+      <ul>
+        <li>数据：Parchment 公开的“交叉录取”对决数据（3,350 组）</li>
+        <li>方法：Bradley-Terry 模型（类似国际象棋 Elo 等级分）</li>
+        <li>结果：97 所美国大学 / 文理学院的“学生偏好”排名</li>
+      </ul>
+      <span class="go">进入研究 →</span>
+    </a>
+  </div>
+
+  <section class="block" style="padding-top:20px">
+    <h2>两项研究怎么连在一起？</h2>
+    <p class="lead">它们是独立的，但有一个交汇点：高中研究里“好大学”的标准，直接借用了大学研究的结果。</p>
+    <div class="flow">
+      <div class="node" style="--accent:var(--col)"><b>大学排名研究</b>根据交叉录取数据给每所大学打分</div>
+      <div class="arrow">→</div>
+      <div class="node"><b>定义“顶尖去向”</b>得分高于 UC 伯克利、且不属于 UC 系统的 6 所大学：MIT、Stanford、Yale、Harvard、Princeton、Columbia</div>
+      <div class="arrow">→</div>
+      <div class="node" style="--accent:var(--hs)"><b>湾区高中研究</b>预测每所高中毕业生中去这些学校的比例</div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:20px">
+    <div class="card">
+      <h3 style="margin-top:0">使用前请注意</h3>
+      <ul style="margin:0;padding-left:1.2em">
+        <li>这是<b>研究原型</b>，数字带有误差；排名相邻的学校通常没有实质差别，请看区间而不是名次。</li>
+        <li>所有数据均来自公开来源（UC Information Center、学校官网、Parchment），我们没有任何学生个人数据。</li>
+        <li>“去了更好的大学”只是一个可量化的视角，不代表学校教育质量的全部。</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  数据与代码：<a href="https://github.com/xtxsinan-lgtm/school_ranking">github.com/xtxsinan-lgtm/school_ranking</a> ·
+  网页数据由 <code>tools/build_site_data.py</code> 从仓库中的 CSV 结果生成。
+</div></footer>
+</body>
+</html>

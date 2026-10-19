@@ -2,6 +2,10 @@
 
 Bay Area public high school college matriculation data → SQLite with unified school/college IDs.
 
+**Website (GitHub Pages):** https://xtxsinan-lgtm.github.io/school_ranking/ — static site in `docs/` with two parts
+(湾区高中研究 / 大学排名研究). After changing any result CSV, refresh the site data with
+`python3 tools/build_site_data.py` (stdlib only; writes `docs/data/*.json`). Preview locally: `python3 -m http.server -d docs`.
+
     pip install -r requirements.txt
     PYTHONPATH=src python3 -m ranking build-reference   # IPEDS colleges + CDE Bay Area public high schools
     PYTHONPATH=src python3 -m ranking ingest             # fetch (cached in data/raw) + parse + resolve all rows of data/sources.csv

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>湾区高中研究 · 升学数据研究</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="hs">
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="./">升学数据<span>研究</span></a>
+    <nav class="topnav">
+      <a href="./">首页</a>
+      <a class="active" href="highschool.html">湾区高中研究</a>
+      <a href="college.html">大学排名研究</a>
+    </nav>
+  </div>
+  <nav class="subnav">
+    <a href="#findings">主要发现</a><a href="#sources">数据来源</a><a href="#method">分析方法</a>
+    <a href="#calc">动手算一算</a><a href="#validation">准不准？</a><a href="#results">排名结果</a><a href="#limits">局限</a><a href="#glossary">名词解释</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="pill">研究一 · 湾区高中</span>
+    <h1>湾区哪些公立高中，毕业生更多去了顶尖私立名校？</h1>
+    <p class="lead">大多数高中不公布完整的升学名单，但加州大学（UC）每年都会公布<b>每所高中</b>有多少人申请、被录取、最终入学。
+      我们用这份官方数据，加上 27 所学校公开的真实升学名单做“校准”，估算湾区每所公立高中毕业生中，
+      去 <b>MIT、Stanford、Yale、Harvard、Princeton、Columbia</b> 这 6 所学校的比例。</p>
+    <div class="grid g4" style="margin-top:26px">
+      <div class="card stat"><div class="n" id="s-ca">—</div><div class="l">所加州高中有 UC 数据</div></div>
+      <div class="card stat"><div class="n">5 年</div><div class="l">合并 2021–2025 秋季入学数据</div></div>
+      <div class="card stat"><div class="n" id="s-val">—</div><div class="l">所学校有真实升学名单用于校准</div></div>
+      <div class="card stat"><div class="n" id="s-rho">—</div><div class="l">预测与真实的排序一致度（满分 1）</div></div>
+    </div>
+  </section>
+
+  <!-- ===================================================== findings -->
+  <section class="block" id="findings">
+    <div class="kicker">主要发现</div>
+    <h2>一句话：差距没有想象中大，前几名彼此难分高下</h2>
+    <ul class="takeaways" style="margin-top:16px">
+      <li><b>湾区公立高中里，大约 2%–7% 的毕业生会去这 6 所学校。</b>Saratoga、Gunn、Palo Alto、Los Altos 等校常年在前列；
+        私立学校（如 Harker、SF University High）明显更高，可达 14%–17%。</li>
+      <li><b>前几名的差距小于误差。</b>例如 Gunn（预测 5.1%）、Palo Alto（4.7%）、Los Altos（4.2%）相差不到 1 个百分点，而预测误差约 ±2.7 个百分点——<b>请看区间，别只看名次</b>。</li>
+      <li><b>“UC 录取了却没去 UC”是关键信号。</b>被 UC 录取后去了别处的学生，大多去了更难进的私校或外州名校；只看 UC 录取率会低估这类学校。</li>
+      <li><b>部分低收入学校排名靠前需要谨慎看待。</b>UC 对资源较少学校的学生有“情境加分”，这会抬高它们的录取率（例如 Mission High），网页中已用备注标出。</li>
+    </ul>
+  </section>
+
+  <!-- ===================================================== sources -->
+  <section class="block" id="sources">
+    <div class="kicker">数据来源</div>
+    <h2>三份数据，各管一件事</h2>
+    <p class="lead">只用公开数据。最主要的一份来自 UC 官方，覆盖所有加州高中；另外两份用来“教会”模型什么叫去了好学校。</p>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card src">
+        <h3><span class="icon">①</span>UC 按高中统计的录取数据</h3>
+        <p>UC Information Center 公布的“Admissions by source school”。对每所高中、每个 UC 校区、每一年，给出<b>申请人数、录取人数、入学人数</b>，还可以按族裔拆分。</p>
+        <dl><dt>覆盖</dt><dd>全部加州高中，9 个 UC 校区</dd><dt>年份</dt><dd>2021–2025 秋季（UC 取消 SAT 后的 5 届）</dd>
+          <dt>用途</dt><dd>计算每所学校的两个“信号”（见下文）</dd><dt>注意</dt><dd>少于 3 人的格子 UC 不公布，我们按 1 人估计</dd></dl>
+      </div>
+      <div class="card src">
+        <h3><span class="icon">②</span>学校公布的真实升学名单</h3>
+        <p>部分高中在官网、学校简介（School Profile）或毕业生调查里公布“每所大学去了几个人”。我们逐个抓取、解析，并把大学名称统一到联邦 IPEDS 编号。</p>
+        <dl><dt>覆盖</dt><dd id="src-val">27 所湾区高中（公立+私立）</dd><dt>记录</dt><dd id="src-rows">约 6,700 条“学校–大学–人数”</dd>
+          <dt>用途</dt><dd>作为“标准答案”，校准和检验模型</dd><dt>优先级</dt><dd>官方来源优先，其次是用户整理的表格</dd></dl>
+      </div>
+      <div class="card src">
+        <h3><span class="icon">③</span>“顶尖去向”名单</h3>
+        <p>什么叫“比伯克利更好”？我们没有用 US News，而是借用<a href="college.html">研究二</a>的结果：在交叉录取对决中得分高于伯克利、且不属于 UC 系统的大学。</p>
+        <dl><dt>名单</dt><dd>MIT、Stanford、Yale、Harvard、Princeton、Columbia</dd><dt>为何排除 UC</dt><dd>UCLA 也高于伯克利，但 UC 入学已在数据①里体现</dd>
+          <dt>用途</dt><dd>定义预测目标：去这 6 校的毕业生比例</dd></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== method -->
+  <section class="block" id="method">
+    <div class="kicker">分析方法</div>
+    <h2>六步，从 UC 数据推到“顶尖去向比例”</h2>
+    <p class="lead">核心思路：真实名单只有 27 所学校有，但 UC 数据所有学校都有。先在这 27 所学校上找出“UC 数据长什么样 → 顶尖去向比例是多少”的规律，再把规律套用到其他学校。</p>
+
+    <div class="flow">
+      <div class="node"><b>UC 数据</b>每所学校的申请/录取/入学</div><div class="arrow">→</div>
+      <div class="node"><b>两个信号</b>伯克利+UCLA 录取率<br>UC 入学率</div><div class="arrow">→</div>
+      <div class="node"><b>校准公式</b>用 27 所真实名单学校学出权重</div><div class="arrow">→</div>
+      <div class="node"><b>预测</b>湾区每所公立高中的顶尖去向比例 + 误差区间</div>
+    </div>
+
+    <div class="steps card" style="margin-top:8px">
+      <div class="step">
+        <h3>合并五年数据，让小学校也有足够样本</h3>
+        <p>单一年份里，一所学校可能只有几十个人申请伯克利，数字会大起大落。我们把 2021–2025 五届合并成一个总数。
+          UC 对少于 3 人的格子留空（保护隐私）；如果“申请”有数而“录取”留空，说明真实值是 0–2 人，我们按 1 人补上。</p>
+      </div>
+      <div class="step">
+        <h3>信号一：伯克利 + UCLA 的录取率</h3>
+        <p>伯克利和 UCLA 是 UC 里最难进的两个校区。一所学校的学生被这两校录取的比例越高，通常说明学生整体越强。</p>
+        <div class="formula">伯克利+UCLA 录取率 = 两校录取人数之和 ÷ 两校申请人数之和</div>
+        <p class="muted">为什么不用全部 9 个校区？我们试过——其他校区的录取率主要受“全校前 9% 保证录取”政策影响，跟学校强弱关系不大（与真实结果的相关性只有 0.10，而伯克利+UCLA 是 0.69）。</p>
+      </div>
+      <div class="step">
+        <h3>信号二：UC 入学率——“录取了却没来”反而是好事</h3>
+        <p>在被 UC 录取的学生中，最后真的去读 UC 的比例。对于强校，这个比例<b>越低越好</b>：没去 UC 的人，很多是去了 Stanford、MIT、常春藤或外州名校。</p>
+        <div class="analogy">一家餐厅的“预订后到店率”很低，可能不是因为它不好，而是客人同时订到了更难订的米其林三星。</div>
+        <div class="formula">UC 入学率 = 在任一 UC 入学的人数 ÷ 被任一 UC 录取的人数</div>
+        <div class="warnbox">⚠️ 这个逻辑对富裕学校成立，对低收入学校不一定：那里的学生没去 UC，更可能是去了州立大学（CSU）或社区大学。这是本模型的主要局限之一。</div>
+      </div>
+      <div class="step">
+        <h3>把两个比例换成“标准分”</h3>
+        <p>先做 logit 变换（让 5%→10% 和 45%→50% 这样的变化可以公平比较），再减去全州 1,460 所学校的平均值、除以标准差，得到类似考试“Z 分数”的标准分：0 表示全州平均，+1 表示比平均高一个标准差。</p>
+      </div>
+      <div class="step">
+        <h3>用 27 所真实名单学校“学”出公式</h3>
+        <p>对于有真实名单的学校，我们知道它们实际有多少比例去了那 6 所大学。用这些学校做一个加权回归，得到：</p>
+        <div class="formula" id="formula-all">预测 logit = b0 + b1 × 录取率标准分 + b2 × 入学率标准分</div>
+        <p>其中 b1 为正（录取率越高越好）、b2 为负（入学率越低越好）。由于样本只有 27 所，我们用了“岭回归”——给系数加一点“刹车”，避免模型过度迁就个别学校。</p>
+      </div>
+      <div class="step">
+        <h3>诚实地报告误差</h3>
+        <p>用“留一法”检验：每次拿掉一所学校，用其余 26 所学出公式再去预测它，看预测得准不准。结果写在下方“准不准？”一节。
+          表格中每所学校的区间是约 <b>80% 置信区间</b>：大致意思是，真实比例有八成把握落在这个范围内。</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">另一个视角：只看亚裔学生（“亚裔口径”）</h3>
+    <div class="card">
+      <p style="margin-top:0">湾区很多学校亚裔学生比例很高，但不同学校差异很大。如果家长想知道“<b>亚裔学生</b>在这所学校的升学表现”，全体口径可能有偏差。
+        UC 数据可以按族裔拆分，所以我们用<b>同样的方法</b>，只是两个信号改为只用亚裔申请者计算。</p>
+      <p><b>小样本怎么办？</b>有些学校亚裔申请者很少，比例会很不稳定。我们用“部分合并”（partial pooling）：亚裔样本越少，越多参考该校全体学生的数据；样本越多，越相信亚裔自己的数据。
+        伯克利+UCLA 亚裔申请人数少于 60 人的学校不参与排名。</p>
+      <div class="analogy">评价一家只有 3 条评论的新餐厅，你会把它的 5 星打个折，向同类餐厅的平均水平靠拢；评论有 300 条时，就基本相信它自己的分数。</div>
+    </div>
+  </section>
+
+  <!-- ===================================================== calculator -->
+  <section class="block" id="calc">
+    <div class="kicker">动手算一算</div>
+    <h2>拖动滑块，看模型如何把两个信号变成预测</h2>
+    <p class="lead">这就是排名背后的完整公式（全体口径），参数和网站表格完全一致。点击下方学校名可以载入它的真实数据。</p>
+    <div class="card calc" style="margin-top:16px">
+      <div class="slider">
+        <label>伯克利 + UCLA 录取率 <b id="v-r">—</b></label>
+        <input type="range" id="in-r" min="3" max="30" step="0.1" value="12">
+        <label>UC 入学率（录取后真的去读 UC 的比例） <b id="v-y">—</b></label>
+        <input type="range" id="in-y" min="15" max="70" step="0.1" value="35">
+        <div class="presets" id="presets"></div>
+        <p class="muted" style="font-size:.85rem;margin-bottom:0" id="calc-detail"></p>
+      </div>
+      <div class="bigout">
+        <div class="s">预测：毕业生去 6 所顶尖校的比例</div>
+        <div class="v" id="out-p">—</div>
+        <div class="s" id="out-ci">—</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== validation -->
+  <section class="block" id="validation">
+    <div class="kicker">准不准？</div>
+    <h2>预测 vs 真实：27 所有名单的学校</h2>
+    <p class="lead">每个点是一所学校。横轴是模型预测，纵轴是学校公布的真实比例。越靠近虚线越准。鼠标悬停可查看详情。</p>
+    <div class="grid g2" style="margin-top:16px;grid-template-columns:2fr 1fr">
+      <div class="card chart"><div id="scatter"></div>
+        <div class="legend"><span><i style="background:var(--hs)"></i>公立</span><span><i style="background:#8a3fb0"></i>私立</span><span>点越大＝名单人数越多</span></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">怎么读这张图</h3>
+        <p><b>排序基本对：</b>留一法下预测排序与真实排序的 Spearman 相关系数约 <b id="v-rho">—</b>（1 表示完全一致，0 表示毫无关系）。</p>
+        <p><b>私立学校误差更大：</b>紫色点离虚线更远，且两个方向都有——Harker、SF University High、Menlo 的真实比例明显高于预测，Marin Academy、Quarry Lane、Head-Royce 则低于预测。私立学校申请 UC 的学生只占一部分，UC 数据反映不全，所以 Top 50 只列公立学校。</p>
+        <p><b>个别公立偏差大：</b>例如 Los Gatos、Leigh、Northgate 真实比例低于预测；Los Altos 高于预测。小名单（如 Saratoga 只有 136 人）本身也有随机波动。</p>
+        <p class="muted" style="font-size:.88rem">因此，<b>有真实名单的学校应以真实比例为准</b>；模型主要用来估计没有公布名单的学校。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== results -->
+  <section class="block" id="results">
+    <div class="kicker">排名结果</div>
+    <h2>湾区公立高中 Top 50</h2>
+    <p class="lead">范围：湾区 9 县的公立高中，五年合计 UC 申请≥300 人（亚裔口径另有要求）。默认按预测比例排序，点击表头可换排序。
+      条形图中，<span style="color:var(--hs);font-weight:700">●</span> 为预测值，浅色条为 80% 区间，<span style="color:#e0592a;font-weight:700">|</span> 为真实值（如有）。</p>
+    <div class="toolbar">
+      <div class="tabs" id="tabs">
+        <button data-t="all" class="on">全体口径</button>
+        <button data-t="asian">亚裔口径</button>
+        <button data-t="bay">湾区全部高中 UC 指标</button>
+      </div>
+      <input class="search" id="q" placeholder="搜索学校 / 城市…">
+    </div>
+    <p class="muted" id="tabnote" style="font-size:.9rem;margin:4px 0 10px"></p>
+    <div class="tablewrap" id="table"></div>
+  </section>
+
+  <!-- ===================================================== limits -->
+  <section class="block" id="limits">
+    <div class="kicker">局限</div>
+    <h2>这些情况下，请对结果打个问号</h2>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3 style="margin-top:0">校准学校不够多元</h3><p>27 所校准学校几乎都是湾区较富裕的学校。对于低收入学校，“没去 UC”多半是去了 CSU 或社区大学，模型会误以为“去了更好的学校”，从而高估。</p></div>
+      <div class="card"><h3 style="margin-top:0">UC 情境加分</h3><p>UC 综合评审会考虑学生所在学校的资源。伯克利+UCLA 录取率超过 17% 的学校，预测可能偏高，已在“备注”列标出。</p></div>
+      <div class="card"><h3 style="margin-top:0">名次差 ≠ 实际差距</h3><p>预测误差约 ±2.7 个百分点，大于前十名之间的差距。相邻名次的学校应视为同一档。</p></div>
+      <div class="card"><h3 style="margin-top:0">真实名单本身不完美</h3><p>有的名单只列“部分大学”（如 Menlo-Atherton、Lynbrook 的名单并非全部），有的是多年合并；人数少的名单（如 Leland 106 人）波动较大。</p></div>
+      <div class="card"><h3 style="margin-top:0">只衡量一个维度</h3><p>“去 6 所顶尖校的比例”只是升学结果的一个侧面，不反映学生幸福感、课程质量、其他优秀大学（如 UCLA、伯克利本身）的去向等。</p></div>
+      <div class="card"><h3 style="margin-top:0">“顶尖”名单来自研究二早期版本</h3><p>6 所学校的名单基于交叉录取的普通 Bradley-Terry 结果（θ&gt;0.95，密歇根大学以 0.943 刚好落选）。研究二最终版（分档加权）中 Caltech、芝加哥、布朗也排在伯克利之上；若纳入，各校比例会整体上升，排序也可能变化（尚未重新测算）。</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="glossary">
+    <div class="kicker">名词解释</div>
+    <h2>看不懂的词，都在这里</h2>
+    <div class="card"><dl class="glossary">
+      <dt>录取率 / 入学率（Yield）</dt><dd>录取率 = 录取 ÷ 申请；入学率 = 入学 ÷ 录取。</dd>
+      <dt>Logit 变换</dt><dd>把 0–100% 的比例拉伸到整条数轴上，使“从 1% 到 2%”和“从 50% 到 51%”的意义区分开来。</dd>
+      <dt>标准分（Z 分数）</dt><dd>和平均值相比高/低几个标准差。0 = 平均。</dd>
+      <dt>岭回归</dt><dd>一种回归方法，会把系数往 0 方向轻轻拉，防止样本少时模型“死记硬背”。</dd>
+      <dt>留一法交叉验证</dt><dd>每次拿掉一个样本，用剩下的训练，再预测拿掉的那个，最能反映对“新学校”的预测能力。</dd>
+      <dt>Spearman 相关系数</dt><dd>衡量两组数据“排序”是否一致，1 = 完全一致，0 = 无关。</dd>
+      <dt>80% 区间</dt><dd>预测值 ± 1.28 × 留一法误差，约有八成把握真实值在其中。</dd>
+      <dt>部分合并（Partial pooling）</dt><dd>小样本向更大群体的平均水平靠拢，样本越大越相信自己。</dd>
+    </dl></div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  主要代码：<a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_rank.py">uc_rank.py</a>、
+  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_bay_top50.py">uc_bay_top50.py</a>、
+  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_bay_asian.py">uc_bay_asian.py</a>、
+  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_validate.py">uc_validate.py</a> ·
+  数据：UC Information Center；各校官网。
+</div></footer>
+<script src="assets/common.js"></script>
+<script src="assets/highschool.js"></script>
+</body>
+</html>
