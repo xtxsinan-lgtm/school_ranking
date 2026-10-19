@@ -1,0 +1,98 @@
+rank,abbr,parchment_name,theta,se,rank_lo,rank_hi,plain_bt_rank,effective_students,bandwidth
+1,MIT,Massachusetts Institute of Technology,2.247,0.158,1,1,1,1263,1.0
+2,Harvard,Harvard University,2.065,0.151,2,2,4,2565,1.0
+3,Stanford,Stanford University,1.932,0.151,3,4,2,2404,1.0
+4,Yale,Yale University,1.840,0.151,3,4,3,2553,1.0
+5,Princeton,Princeton University,1.558,0.152,5,6,6,1994,1.0
+6,Columbia,Columbia University in the City of New York,1.441,0.150,5,6,7,2438,1.0
+7,Caltech,Caltech,1.166,0.158,7,9,11,1056,1.0
+8,UCLA,"University of California, Los Angeles",1.160,0.145,7,8,5,11875,1.0
+9,Chicago,University of Chicago,1.036,0.151,8,10,12,2050,1.0
+10,Brown,Brown University,0.986,0.150,9,12,13,2389,1.0
+11,UCB,"University of California, Berkeley",0.934,0.145,10,12,9,12514,1.0
+12,Umich,University of Michigan - Ann Arbor,0.890,0.145,11,14,8,12019,1.0
+13,USC,University of Southern California,0.872,0.146,11,15,10,6609,1.0
+14,Dartmouth,Dartmouth College,0.849,0.152,11,16,14,1730,1.0
+15,Duke,Duke University,0.822,0.150,12,16,18,2494,1.0
+16,UPenn,University of Pennsylvania,0.795,0.150,13,18,17,2347,1.0
+17,Northwestern,Northwestern University,0.682,0.148,17,21,15,3379,1.0
+18,Notre Dame,University of Notre Dame,0.678,0.149,16,22,16,2754,1.0
+19,JHU,Johns Hopkins University,0.671,0.150,17,22,19,2354,1.0
+20,Harvey Mudd,Harvey Mudd College,0.618,0.162,16,23,20,820,1.0
+21,Rice,Rice University,0.618,0.150,17,22,22,2393,1.0
+22,Claremont,Claremont McKenna College,0.617,0.164,16,23,25,693,1.0
+23,Amherst,Amherst College,0.443,0.157,22,31,27,1069,1.0
+24,UT Austin,University of Texas at Austin,0.418,0.146,23,28,24,8069,1.0
+25,UVA,University of Virginia,0.414,0.146,23,28,21,8412,1.0
+26,WashU,Washington University in St. Louis,0.366,0.149,23,33,28,2716,1.0
+27,Swarthmore,Swarthmore College,0.358,0.158,23,34,29,967,1.0
+28,Cornell,Cornell University,0.356,0.148,24,33,31,3616,1.0
+29,Gatech,Georgia Institute of Technology-Main Campus,0.355,0.146,25,33,26,7326,1.0
+30,UIUC,University of Illinois at Urbana-Champaign,0.345,0.145,26,33,23,12071,1.0
+31,Vanderbilt,Vanderbilt University,0.338,0.149,24,34,33,2644,1.0
+32,Barnard,Barnard College,0.313,0.161,24,37,30,859,1.0
+33,Wellesley,Wellesley College,0.277,0.157,26,37,32,1134,1.0
+34,Pomona,Pomona College,0.239,0.159,27,39,35,944,1.0
+35,Williams,Williams College,0.227,0.156,29,39,34,1128,1.0
+36,Georgetown,Georgetown University,0.183,0.151,33,39,38,2131,1.0
+37,Bowdoin,Bowdoin College,0.147,0.158,33,40,37,956,1.0
+38,Pitzer,Pitzer College,0.142,0.164,32,41,36,709,1.0
+39,CMU,Carnegie Mellon University,0.126,0.149,35,40,41,2887,1.0
+40,Haverford,Haverford College,0.064,0.184,32,50,39,319,1.0
+41,Tufts,Tufts University,-0.046,0.154,40,50,44,1411,1.0
+42,Washington&Lee,Washington and Lee University,-0.054,0.153,40,51,43,1480,1.0
+43,UWM,University of Wisconsin - Madison,-0.056,0.145,41,47,40,11994,1.0
+44,Carleton,Carleton College,-0.057,0.156,40,52,42,1174,1.0
+45,Emory,Emory University,-0.068,0.148,41,49,49,3128,1.0
+46,UCSD,"University of California, San Diego",-0.102,0.145,43,50,55,16598,1.0
+47,UNC,University of North Carolina at Chapel Hill,-0.129,0.148,43,53,50,3191,1.0
+48,Hamilton,Hamilton College,-0.129,0.164,41,57,46,707,1.0
+49,UCI,"University of California, Irvine",-0.129,0.145,45,52,54,12621,1.0
+50,Davidson,Davidson College,-0.130,0.158,41,55,45,1005,1.0
+51,Wesleyan,Wesleyan University,-0.195,0.156,45,59,52,1138,1.0
+52,Tulane,Tulane University of Louisiana,-0.208,0.150,48,58,51,2193,1.0
+53,Vassar,Vassar College,-0.219,0.155,47,60,56,1200,1.0
+54,Trinity(CT),Trinity College,-0.231,0.185,41,70,48,306,1.0
+55,BC,Boston College,-0.242,0.151,50,61,53,1957,1.0
+56,Berea,Berea College,-0.251,0.177,43,69,47,394,1.0
+57,Bates,Bates College,-0.267,0.163,48,67,59,717,1.0
+58,Florida,University of Florida,-0.297,0.147,54,62,57,5756,1.0
+59,Grinnell,Grinnell College,-0.308,0.155,52,68,58,1227,1.0
+60,UG,University of Georgia,-0.321,0.146,56,63,61,6956,1.0
+61,NYU,New York University,-0.337,0.147,56,65,65,4568,1.0
+62,Smith,Smith College,-0.355,0.157,53,71,60,1073,1.0
+63,Purdue,Purdue University-Main Campus,-0.381,0.145,60,67,64,17435,1.0
+64,UCD,"University of California, Davis",-0.390,0.145,61,69,71,10043,1.0
+65,W&M,College of William and Mary,-0.402,0.147,60,70,69,4959,1.0
+66,Colby,Colby College,-0.425,0.167,56,77,62,601,1.0
+67,TAMU,Texas A & M University-College Station,-0.432,0.146,63,72,68,6866,1.0
+68,Scripps,Scripps College,-0.432,0.164,57,77,63,696,1.0
+69,Middlebury,Middlebury College,-0.442,0.162,57,77,67,780,1.0
+70,VT,Virginia Tech,-0.443,0.146,65,72,66,8480,1.0
+71,Lehigh,Lehigh University,-0.473,0.154,62,76,70,1399,1.0
+72,UCSB,"University of California, Santa Barbara",-0.481,0.145,68,74,80,11146,1.0
+73,Colgate,Colgate University,-0.514,0.159,64,80,75,933,1.0
+74,Richmond,University of Richmond,-0.522,0.152,67,78,72,1760,1.0
+75,Bucknell,Bucknell University,-0.571,0.163,67,82,73,704,1.0
+76,WFU,Wake Forest University,-0.575,0.154,70,81,74,1384,1.0
+77,Rochester,University of Rochester,-0.595,0.153,72,82,78,1672,1.0
+78,Santa Clara,Santa Clara University,-0.608,0.150,73,82,81,2340,1.0
+79,UW,University of Washington,-0.609,0.146,75,80,82,8353,1.0
+80,Macalester,Macalester College,-0.650,0.156,74,84,76,1188,1.0
+81,GWU,George Washington University,-0.675,0.149,77,84,83,2682,1.0
+82,Villanova,Villanova University,-0.701,0.156,76,85,79,1182,1.0
+83,Utah,University of Utah,-0.719,0.148,80,85,77,3497,1.0
+84,MSU,Michigan State University,-0.755,0.145,82,85,85,12884,1.0
+85,Brandeis,Brandeis University,-0.806,0.159,81,89,86,935,1.0
+86,Trinity(TX),Trinity University,-0.836,0.157,82,90,84,1087,1.0
+87,IU,Indiana University - Bloomington,-0.849,0.145,85,88,87,11396,1.0
+88,BU,Boston University,-0.933,0.148,87,92,91,3329,1.0
+89,Case Western,Case Western Reserve University,-0.947,0.149,87,93,92,2996,1.0
+90,Pepperdine,Pepperdine University,-0.964,0.152,87,93,89,1957,1.0
+91,FSU,Florida State University,-0.971,0.148,88,93,88,4024,1.0
+92,OSU,Ohio State University-Main Campus,-0.979,0.146,88,93,90,6745,1.0
+93,Northeastern,Northeastern University,-1.029,0.148,90,93,94,3336,1.0
+94,Clemson,Clemson University,-1.154,0.147,94,94,93,5153,1.0
+95,UCSC,"University of California, Santa Cruz",-1.368,0.148,95,97,97,4345,1.0
+96,ASU,Arizona State University,-1.392,0.146,95,97,95,6504,1.0
+97,Colorado,University of Colorado at Boulder,-1.434,0.147,95,97,96,4754,1.0

@@ -1,5 +1,8 @@
 __pycache__/
 *.pyc
-data/reference/
 *.db
+data/reference/
 data/raw_uc/
+uc_export/
+*.xlsx
+!data/user_data/*.xlsx
