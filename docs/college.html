@@ -3,195 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>大学排名研究 · 升学数据研究</title>
+<title>美国大学偏好排名与单校查询 · 升学数据研究</title>
+<meta name="description" content="97 所美国综合大学与文理学院交叉录取偏好排名、两校直接对决与单校全部对手记录查询。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23283891'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="col">
 <header class="topbar">
   <div class="inner">
-    <a class="brand" href="./">升学数据<span>研究</span></a>
+    <a class="brand" href="./">升学数据研究</a>
     <nav class="topnav">
-      <a href="./">首页</a>
-      <a href="highschool.html">湾区高中研究</a>
-      <a class="active" href="college.html">大学排名研究</a>
+      <a href="./">概览</a>
+      <a href="highschool.html">湾区高中排名</a>
+      <a href="highschool-analysis.html">高中数据分析</a>
+      <a class="active" href="college.html">美国大学排名</a>
+      <a href="college-analysis.html">大学数据分析</a>
     </nav>
   </div>
-  <nav class="subnav">
-    <a href="#findings">主要发现</a><a href="#sources">数据来源</a><a href="#method">分析方法</a>
-    <a href="#h2h">两校对决</a><a href="#ranking">排名结果</a><a href="#oldnew">新旧对比</a><a href="#limits">局限</a><a href="#glossary">名词解释</a>
-  </nav>
+  <div class="subnav-wrap"><nav class="subnav">
+    <a href="#ranking" class="on">01 97 校偏好主榜</a>
+    <a href="#h2h">02 两校直接对决 &amp; 单校全部对手档案</a>
+    <a href="college-analysis.html" style="margin-left:auto;color:var(--accent);font-weight:600">前往「大学数据分析（20×20 矩阵 · 四模型对比 · 新旧对比）」→</a>
+  </nav></div>
 </header>
 
-<main class="wrap">
-  <section class="hero">
-    <span class="pill">研究二 · 美国大学</span>
-    <h1>学生“用脚投票”：同时被录取时，他们选了谁？</h1>
-    <p class="lead">常见的大学排名靠专家打分和各种指标加权。我们换一个角度：<b>当一个学生同时拿到两所大学的录取，他最后去了哪一所？</b>
-      把成千上万次这样的“二选一”汇总起来，就能得到一个反映学生和家长真实偏好的排名。</p>
-    <div class="grid g4" style="margin-top:26px">
-      <div class="card stat"><div class="n" id="s-n">—</div><div class="l">所大学和文理学院参与排名</div></div>
-      <div class="card stat"><div class="n" id="s-p">—</div><div class="l">组两校“对决”数据</div></div>
-      <div class="card stat"><div class="n" id="s-s">—</div><div class="l">人次的录取选择（反推）</div></div>
-      <div class="card stat"><div class="n">95%</div><div class="l">每所学校都给出名次的置信区间</div></div>
+<section class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">US COLLEGE REVEALED PREFERENCE RANKING &amp; MATCHUP LOOKUP</div>
+    <h1>美国大学与文理学院偏好排名（97 校）</h1>
+    <p class="lead">基于 Parchment 3,350 组共同录取选择数据（292,956 人次）构建的 97 所美国综合大学与文理学院偏好排名。点击表中任意院校即可在下方查看其两校直接对决与全部实测对手档案。</p>
+  </div>
+</section>
+
+<!-- ============================================================ 01 ranking -->
+<section class="sec" id="ranking">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">01</span>97 所美国大学与文理学院偏好排名主表</h2>
+      <p class="sub">点击表头排序 · 点击任意院校行可跳转至下方「02 单校对决档案」</p>
     </div>
-  </section>
-
-  <!-- ===================================================== findings -->
-  <section class="block" id="findings">
-    <div class="kicker">主要发现</div>
-    <h2>结果和 US News 大体一致，但有几处有趣的不同</h2>
-    <ul class="takeaways" style="margin-top:16px" id="findings-list">
-      <li><b>MIT、哈佛、斯坦福、耶鲁稳居前四</b>，普林斯顿、哥伦比亚紧随其后。MIT（名次区间 1–1）和哈佛（2–2）的位置很确定，斯坦福和耶鲁则在第 3–4 名之间难分先后。</li>
-      <li><b>顶尖公立大学比 US News 排名更“抢手”。</b>UCLA（第 8）、伯克利（第 11）、密歇根（第 12）在学生实际选择中表现强于很多排名更高的私立名校，可能与学费、加州本地学生多有关。</li>
-      <li><b>一些名气大的学校在“对决”中相对吃亏</b>，例如康奈尔（第 28）、范德堡（第 31），被同时录取的学生常常选了别处。</li>
-      <li><b>文理学院（LAC）整体排在中段</b>，其中 Harvey Mudd、Claremont McKenna、Amherst、Swarthmore 表现最好。</li>
-    </ul>
-  </section>
-
-  <!-- ===================================================== sources -->
-  <section class="block" id="sources">
-    <div class="kicker">数据来源</div>
-    <h2>数据从哪里来？</h2>
-    <div class="grid g3" style="margin-top:18px">
-      <div class="card src">
-        <h3><span class="icon">①</span>Parchment 交叉录取数据</h3>
-        <p>Parchment 是美国常用的成绩单/申请平台，网站公开了“College A vs College B”的对比：在<b>同时被两校录取</b>的学生中，选择每所学校的百分比，并附上 95% 置信区间。</p>
-        <dl><dt>规模</dt><dd id="src-pairs">3,350 组两校对决</dd><dt>获取</dt><dd>脚本逐对抓取（<code>scrape_pairs.py</code>）</dd>
-          <dt>注意</dt><dd>只公布四舍五入的百分比，不公布人数</dd></dl>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div class="seg" id="ftabs">
+          <button data-f="all" class="on">全部院校 (97)</button>
+          <button data-f="University">综合大学 (69)</button>
+          <button data-f="LAC">文理学院 (28)</button>
+        </div>
+        <div class="search"><input id="q" placeholder="搜索学校缩写或英文全称…" aria-label="搜索"></div>
+        <div class="legend">
+          <span><i style="background:var(--col)"></i>名次点估计</span>
+          <span><i class="bar" style="background:var(--col)"></i>95% 名次区间</span>
+          <span class="count" id="count"></span>
+        </div>
       </div>
-      <div class="card src">
-        <h3><span class="icon">②</span>学校名单</h3>
-        <p>先以 US News 国立大学和文理学院榜单作为候选名单，再与 Parchment 的院校名称逐一匹配（处理同名、改名等问题，例如两所 “Wheaton College”）。最终保留 97 所数据充足的学校。</p>
-        <dl><dt>剔除</dt><dd>三所军校（免学费+服役承诺，选择逻辑不同）、名称有歧义的 Trinity (DC)</dd></dl>
-      </div>
-      <div class="card src">
-        <h3><span class="icon">③</span>早年手工整理的对决表</h3>
-        <p>用户此前手工整理的一张“美国大学 PK 排名”表格（约 65 所学校、<span id="src-old">2,000</span> 组对决），只有百分比、没有人数。用来和新抓取的数据做<b>新旧对比</b>。</p>
-        <dl><dt>用途</dt><dd>观察哪些学校的“受欢迎程度”上升或下降</dd></dl>
-      </div>
+      <div class="tablewrap" id="table" style="max-height:600px"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================================================== method -->
-  <section class="block" id="method">
-    <div class="kicker">分析方法</div>
-    <h2>从几千场“二选一”到一张排名表</h2>
-    <p class="lead">难点在于：并不是每两所学校之间都有足够的对决数据，而且对决人数有多有少。我们用体育比赛常用的评分方法来解决。</p>
-
-    <div class="steps card" style="margin-top:18px">
-      <div class="step">
-        <h3>把每一组对决看成一场“比赛”</h3>
-        <p id="ex-pair">例如：同时被哈佛和耶鲁录取的学生中，63% 选了哈佛、37% 选了耶鲁。可以理解为“哈佛 vs 耶鲁”这场比赛，哈佛赢了 63% 的回合。</p>
-      </div>
-      <div class="step">
-        <h3>从置信区间反推出“有多少人”</h3>
-        <p>Parchment 不公布人数，但公布了 95% 置信区间。区间越窄，说明人数越多。我们用统计公式（Wilson 区间）反过来搜索：<b>多少人、其中多少人选 A</b>，才能恰好得到网站上公布的百分比和区间。</p>
-        <p id="ex-n" class="muted"></p>
-        <div class="analogy">民调说“支持率 63%，误差 ±5%”，你大致就能猜出它调查了三四百人；误差 ±1% 则意味着调查了好几千人。</div>
-      </div>
-      <div class="step">
-        <h3>用 Bradley-Terry 模型给每所学校一个“实力分”</h3>
-        <p>这是国际象棋 Elo 等级分背后的同一类模型：每所学校有一个分数 θ，两校分差越大，高分学校被选中的概率越高。</p>
-        <div class="formula">P(A 被选中) = 1 / (1 + e<sup>−(θ<sub>A</sub> − θ<sub>B</sub>)</sup>)</div>
-        <p>分差为 0 → 五五开；分差 0.5 → 约 62%；分差 1 → 约 73%；分差 2 → 约 88%。模型会找到一组分数，使所有对决结果“最说得通”。人数多的对决权重更大。</p>
-        <div class="analogy">A 队常赢 B 队，B 队常赢 C 队，那么即使 A 和 C 没交过手，我们也能推断 A 大概率强于 C。</div>
-      </div>
-      <div class="step">
-        <h3>“同档对决”说了算：分档加权</h3>
-        <p>哈佛对某所州立大学几乎全胜，这只能说明哈佛远强于它，却不能帮我们分辨哈佛和耶鲁谁更强。所以我们让<b>实力相近的对决权重更高</b>，实力悬殊的对决权重更低：</p>
-        <div class="formula">权重 = e<sup>−(分差)² / (2h²)</sup>　　h = <span id="bw">1.0</span>（分差 1 时权重约 0.61，分差 2 时约 0.14）</div>
-        <p>h 取多少不是拍脑袋：我们用 <b>5 折交叉验证</b>——把对决数据分成 5 份，轮流拿 1 份当“考题”，看哪个 h 能最准确地预测同档对决的结果。</p>
-      </div>
-      <div class="step">
-        <h3>防止“小样本学校”分数乱跳</h3>
-        <p>对决很少的学校，分数容易被一两场结果带偏。模型加了一个轻微的“岭惩罚”，把这些学校的分数往中间拉一点。我们还做了一个稳健性检查：把每组对决最多按 50 人计算，避免 UCLA–伯克利这种上千人的大对决“一家独大”（表格中的“封顶版名次”）。</p>
-      </div>
-      <div class="step">
-        <h3>给出名次区间，而不只是一个名次</h3>
-        <p>根据分数的统计误差，模拟 2,000 次可能的排名，取中间 95% 的范围作为名次区间。区间重叠很多的两所学校，不应认为谁明显更好。</p>
-      </div>
+<!-- ============================================================ 02 head to head & single school all opponents -->
+<section class="sec" id="h2h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">02</span>两校直接对决与单校全部对手档案</h2>
+      <p class="sub">上方：学校 A vs 学校 B 共同录取去向对比 · 下方：学校 A 在 Parchment 中的全部实测对手记录</p>
     </div>
-  </section>
-
-  <!-- ===================================================== head to head -->
-  <section class="block" id="h2h">
-    <div class="kicker">两校对决</div>
-    <h2>选两所学校，看看真实数据和模型预测</h2>
-    <p class="lead">“真实数据”来自 Parchment；“模型预测”用两校的实力分按上面的公式计算。即使两校没有直接对决数据，模型也能给出预测。</p>
-    <div class="card" style="margin-top:16px">
-      <div class="h2h">
-        <select class="sel" id="sa"></select><span class="vs">VS</span><select class="sel" id="sb"></select>
+    <div class="panel">
+      <div class="h2h-pick">
+        <select class="sel" id="sa" aria-label="学校 A"></select>
+        <span class="vs">VS</span>
+        <select class="sel" id="sb" aria-label="学校 B"></select>
       </div>
+      <div class="suggest" id="suggest"><span>典型对决：</span></div>
       <div class="duel" id="duel"></div>
     </div>
-  </section>
 
-  <!-- ===================================================== ranking -->
-  <section class="block" id="ranking">
-    <div class="kicker">排名结果</div>
-    <h2>97 所大学的“学生偏好”排名</h2>
-    <p class="lead">默认按分档加权模型的实力分排序。条形图显示 95% 名次区间：条越短，名次越确定。点击表头可换排序。</p>
-    <div class="toolbar">
-      <div class="tabs" id="ftabs">
-        <button data-f="all" class="on">全部</button><button data-f="University">综合大学</button><button data-f="LAC">文理学院</button>
+    <div class="panel flush" style="margin-top:14px">
+      <div class="toolbar">
+        <div>
+          <h3 id="opp-title" style="margin:0">单校全部实测对手明细</h3>
+        </div>
+        <div class="search"><input id="oq" placeholder="在对手列表中搜索…" aria-label="搜索对手"></div>
+        <div class="legend">
+          <span class="mono" id="opp-summary"></span>
+          <span class="count" id="opp-count"></span>
+        </div>
       </div>
-      <input class="search" id="q" placeholder="搜索学校…">
+      <div class="tablewrap" id="opp-table" style="max-height:520px"></div>
     </div>
-    <div class="tablewrap" id="table"></div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===================================================== old vs new -->
-  <section class="block" id="oldnew">
-    <div class="kicker">新旧对比</div>
-    <h2>早年手工数据 vs 新抓取数据：谁更受欢迎了？</h2>
-    <p class="lead">为了公平比较，两份数据用<b>完全相同的算法</b>：只保留两边都有的 95 所学校，每组对决都按 40 人计算（因为旧表没有人数），再换算成标准分。
-      图中每个点是一所学校：在虚线上方 = 新数据中名次上升。</p>
-    <div class="grid g2" style="margin-top:16px;grid-template-columns:3fr 2fr">
-      <div class="card chart"><div id="scatter"></div>
-        <div class="legend"><span><i style="background:var(--col)"></i>综合大学</span><span><i style="background:#d08a1f"></i>文理学院</span></div></div>
-      <div class="card">
-        <h3 style="margin-top:0">名次上升最多</h3><div id="risers"></div>
-        <h3>名次下降最多</h3><div id="fallers"></div>
-        <p class="muted" style="font-size:.85rem">旧表的收集年份和样本未知，变化可能部分来自数据口径不同，请当作参考。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================== limits -->
-  <section class="block" id="limits">
-    <div class="kicker">局限</div>
-    <h2>这个排名不能告诉你什么</h2>
-    <div class="grid g2" style="margin-top:16px">
-      <div class="card"><h3 style="margin-top:0">Parchment 用户不代表全体</h3><p>数据来自使用 Parchment 并自愿报告结果的学生，可能偏向某些地区或类型的申请者。</p></div>
-      <div class="card"><h3 style="margin-top:0">“选择”受很多因素影响</h3><p>奖学金、学费、离家远近、专业、早申绑定（ED）都会影响选择。被 ED 录取的学生通常不会出现在交叉录取里。</p></div>
-      <div class="card"><h3 style="margin-top:0">人数是反推的</h3><p>Parchment 只公布四舍五入的百分比和区间，反推的人数是“最吻合”的估计，可能有小误差。</p></div>
-      <div class="card"><h3 style="margin-top:0">偏好 ≠ 教育质量</h3><p>这个排名衡量的是“学生更想去哪里”，不直接衡量教学、研究或就业质量，也不适合每个人的具体情况。</p></div>
-    </div>
-  </section>
-
-  <section class="block" id="glossary">
-    <div class="kicker">名词解释</div>
-    <h2>名词解释</h2>
-    <div class="card"><dl class="glossary">
-      <dt>交叉录取（Cross-admit）</dt><dd>同一个学生同时被两所学校录取。</dd>
-      <dt>Bradley-Terry 模型</dt><dd>根据大量两两比较结果，为每个参与者估计一个实力分的统计模型；Elo 等级分是它的近亲。</dd>
-      <dt>实力分 θ</dt><dd>只有差值有意义。平均学校为 0，分差 1 约等于 73% : 27% 的选择比例。</dd>
-      <dt>Wilson 置信区间</dt><dd>一种计算比例误差范围的公式，区间宽度取决于人数。</dd>
-      <dt>分档加权 / 带宽 h</dt><dd>实力越接近的对决权重越高；h 越小，越只看“同档对决”。h = ∞ 时就是普通 Bradley-Terry。</dd>
-      <dt>交叉验证</dt><dd>把数据分成几份轮流当考题，用来客观地选参数，防止“自己考自己”。</dd>
-      <dt>有效人次</dt><dd>按分档权重折算后，参与该校排名计算的对决人次。越多越可靠。</dd>
-      <dt>普通 BT 名次</dt><dd>不做分档加权时的名次，用于对比。</dd>
-    </dl></div>
-  </section>
-</main>
-
-<footer><div class="wrap">
-  主要代码：<a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/scrape_pairs.py">scrape_pairs.py</a>、
-  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/bradley_terry.py">bradley_terry.py</a>、
-  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/weighted_bt.py">weighted_bt.py</a>、
-  <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/compare_old_new.py">compare_old_new.py</a> ·
-  数据：Parchment College Matchups。
-</div></footer>
 <script src="assets/common.js"></script>
 <script src="assets/college.js"></script>
 </body>

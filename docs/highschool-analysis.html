@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>湾区高中数据分析与模型校准 · 升学数据研究</title>
+<meta name="description" content="27 所湾区高中实测名校去向矩阵、全体与亚裔口径对比、经验贝叶斯收缩及岭回归校准分析。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230f6b58'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="hs">
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="./">升学数据研究</a>
+    <nav class="topnav">
+      <a href="./">概览</a>
+      <a href="highschool.html">湾区高中排名</a>
+      <a class="active" href="highschool-analysis.html">高中数据分析</a>
+      <a href="college.html">美国大学排名</a>
+      <a href="college-analysis.html">大学数据分析</a>
+    </nav>
+  </div>
+  <div class="subnav-wrap"><nav class="subnav">
+    <a href="#matric" class="on">01 27 校实测去向矩阵</a>
+    <a href="#asian-cmp">02 亚裔 vs 全体口径对比</a>
+    <a href="#validation">03 校准散点与公式验算</a>
+    <a href="#spec">04 模型方程与参数表</a>
+    <a href="highschool.html" style="margin-left:auto;color:var(--accent);font-weight:600">← 返回「湾区高中排名与单校查询」</a>
+  </nav></div>
+</header>
+
+<section class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">ANALYSIS 01 · HIGH SCHOOL CALIBRATION, SHRINKAGE &amp; REGRESSION</div>
+    <h1>湾区高中升学数据分析与模型校准</h1>
+    <p class="lead">本页汇总高中排名背后的底层分析数据：(1) <b>27 所校准高中的实测名校录取人数矩阵</b>（6,752 条毕业去向记录）；(2) <b>亚裔口径 vs 全体口径的名次位移与经验贝叶斯收缩（K = 50）明细</b>；(3) <b>留一法（LOO）校准散点图与回归验算器</b>；(4) <b>岭回归与先验方程的全部拟合参数</b>。</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n" id="s-ca">1,460<span>校</span></div><div class="l">加州全州标准化基准池</div></div>
+      <div class="kpi"><div class="n" id="s-val">27<span>校 / 6,752 条</span></div><div class="l">实测大学毕业去向校准集</div></div>
+      <div class="kpi"><div class="n" id="s-rho">0.74<span>/ 0.78</span></div><div class="l">留一法 Spearman ρ（全体 / 亚裔）</div></div>
+      <div class="kpi"><div class="n" id="s-rmse">0.55<span>/ 0.50</span></div><div class="l">留一法 RMSE（logit 尺度）</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 01 27-school matriculation matrix -->
+<section class="sec" id="matric">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">01</span>27 所校准高中实测毕业去向人数矩阵</h2>
+      <p class="sub">数据源：各校官方 School Profile (official) 或汇总去向表 (user_sheet) · 点击表头按任意目标大学人数或比例排序</p>
+    </div>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div class="seg" id="v-tabs">
+          <button data-vf="all" class="on">全部 27 校</button>
+          <button data-vf="public">公立高中 (17)</button>
+          <button data-vf="private">私立高中 (10)</button>
+        </div>
+        <div class="search"><input id="vq" placeholder="搜索校准学校…" aria-label="搜索校准学校"></div>
+        <div class="legend">
+          <span><b>6校合计</b> = MIT + Stanford + Yale + Harvard + Princeton + Columbia</span>
+          <span class="count" id="v-count"></span>
+        </div>
+      </div>
+      <div class="tablewrap" id="val-table" style="max-height:580px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 02 Asian vs All-student comparison -->
+<section class="sec" id="asian-cmp">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">02</span>亚裔口径 vs 全体口径：经验贝叶斯收缩与名次位移明细</h2>
+      <p class="sub">候选池：湾区五年亚裔 B+L 申请 ≥ 60 人的 131 所公立高中 · 展示原始比例、全校先验比例与 Beta(K=50) 收缩后比例</p>
+    </div>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div class="search"><input id="aq" placeholder="搜索学校或城市…" aria-label="搜索亚裔口径学校"></div>
+        <div class="legend">
+          <span class="mono">r̂ = (a_adm + 50·r₀) / (a_app + 50) · ŷ = (a_uenr + 50·y₀) / (a_uadm + 50)</span>
+          <span class="count" id="a-count"></span>
+        </div>
+      </div>
+      <div class="tablewrap" id="asian-table" style="max-height:540px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 03 validation scatter + calculator -->
+<section class="sec" id="validation">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">03</span>留一法校准散点图与回归方程实时验算</h2>
+      <p class="sub">左：27 校预测比例 vs 实测比例（对数坐标） · 右：全体口径与亚裔口径回归方程实时验算</p>
+    </div>
+    <div class="grid g-12">
+      <div class="panel chart">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+          <h3>27 校预测比例 vs 实测比例 (Log-Log)</h3>
+          <span class="mono muted" style="font-size:.75rem">LOO RMSE = <span id="v-rmse">0.55</span> logit · ρ = <span id="v-rho">0.74</span></span>
+        </div>
+        <div id="scatter" style="margin-top:6px"></div>
+        <div class="legend" style="margin-top:6px;justify-content:flex-start">
+          <span><i style="background:var(--hs)"></i>公立高中 (17)</span>
+          <span><i style="background:var(--pri)"></i>私立高中 (10)</span>
+          <span><i class="bar" style="background:var(--hs)"></i>±1.28·RMSE 区间带</span>
+          <span>圆面积 ∝ 样本人数 N</span>
+        </div>
+      </div>
+
+      <div class="panel calc-box">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+          <h3 style="margin:0">回归方程验算器</h3>
+          <div class="seg" id="calc-mode">
+            <button data-cm="all" class="on">全体口径参数</button>
+            <button data-cm="asian">亚裔口径参数</button>
+          </div>
+        </div>
+        <div class="eq-bar" id="formula-all"></div>
+        <div class="presets" id="presets"><span class="pl">载入学校参数：</span></div>
+        <div class="slider">
+          <div class="lab"><span>UCB + UCLA 合并录取率 r = Adm_BL / App_BL</span><b id="v-r">—</b></div>
+          <input type="range" id="in-r" min="2" max="32" step="0.1" value="12.4" aria-label="UCB+UCLA 录取率">
+        </div>
+        <div class="slider">
+          <div class="lab"><span>UC 全系统入学率 y = Enr_UC / Adm_UC</span><b id="v-y">—</b></div>
+          <input type="range" id="in-y" min="12" max="75" step="0.1" value="33.1" aria-label="UC 入学率">
+        </div>
+        <div class="calc-out">
+          <div class="calc-out-row">
+            <div>
+              <div class="muted" style="font-size:.74rem">预测进入 6 所目标校比例 p̂</div>
+              <div class="v" id="out-p">—</div>
+            </div>
+            <div style="text-align:right">
+              <div class="ci" id="out-ci">—</div>
+              <div class="muted" style="font-size:.74rem;margin-top:2px" id="out-rank"></div>
+            </div>
+          </div>
+          <div class="strip">
+            <div class="cap"><span>湾区公立高中预测值分布 (n = 247)</span><span>0% → 10%+</span></div>
+            <div class="chart" id="strip"></div>
+          </div>
+        </div>
+        <div class="calc-detail" id="calc-detail"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 04 mathematical specification & parameters -->
+<section class="sec" id="spec">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">04</span>模型方程、拟合参数与变量定义</h2>
+      <p class="sub">岭回归参数表（全体口径 vs 亚裔口径）与原始数据字段定义</p>
+    </div>
+    <div class="grid g2">
+      <div class="panel flush">
+        <div class="toolbar"><h3>模型拟合参数表 (bay_public_model_params.csv / bay_public_asian_params.csv)</h3></div>
+        <table class="spec" id="param-table"></table>
+      </div>
+      <div class="panel flush">
+        <div class="toolbar"><h3>数学方程与字段口径说明</h3></div>
+        <table class="spec">
+          <thead><tr><th>项目 / 变量</th><th>数学定义与计算规则</th></tr></thead>
+          <tbody>
+            <tr><td><b>五年合并与插补</b></td><td class="mono">合并 2021–2025 秋季学期；UC 原始表中 &lt;3 人留空，若 App 非空而 Adm 留空（或 Adm 非空而 Enr 留空），按 1 人插补。</td></tr>
+            <tr><td><b>经验贝叶斯先验 (亚裔口径)</b></td><td class="mono">logit(r₀) = a₀ + a₁·logit(r_all)，收缩后比例 r̂ = (a_adm + K·r₀) / (a_app + K)，其中 K_rate = K_yield = 50。</td></tr>
+            <tr><td><b>标准化特征 z₁, z₂</b></td><td class="mono">x₁ = ln(r/(1−r)), x₂ = ln(y/(1−y))；z₁ = (x₁ − μ₁)/σ₁, z₂ = (x₂ − μ₂)/σ₂（全体按全州 1,460 校标准化；亚裔按 a_app ≥ 60 池标准化）。</td></tr>
+            <tr><td><b>岭回归目标与求解</b></td><td class="mono">y_i = logit(actual_i + 0.005)，最小化 ‖X b − y‖² + λ(b₁² + b₂²)（λ = 3.0）；预测 p̂ = 1 / (1 + exp(−(b₀ + b₁z₁ + b₂z₂)))。</td></tr>
+            <tr><td><b>加州全州 UC 原始分</b></td><td class="mono">r̂, ŷ 先向全州均值做 Beta(K=50) 收缩，再算 S = z_r − clip(z_r, 0, 1)·z_y；90% 名次区间由 2,000 次 Beta 后验抽样得出。</td></tr>
+            <tr><td><b>开源脚本与数据表</b></td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_rank.py">uc_rank.py</a> · <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_bay_top50.py">uc_bay_top50.py</a> · <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_bay_asian.py">uc_bay_asian.py</a> · <a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/uc_validate.py">uc_validate.py</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/common.js"></script>
+<script src="assets/highschool-analysis.js"></script>
+</body>
+</html>

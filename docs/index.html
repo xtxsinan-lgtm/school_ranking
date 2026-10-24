@@ -3,80 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>升学数据研究 · 湾区高中 & 美国大学</title>
-<meta name="description" content="用公开数据研究湾区高中升学结果与美国大学“互选”排名，并用通俗语言解释数据来源和分析方法。">
+<title>升学数据研究 · 湾区公立高中 & 美国大学排名</title>
+<meta name="description" content="湾区公立高中顶尖名校升学排名与美国大学交叉录取偏好排名。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23141413'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23f6f5f0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="home">
 <header class="topbar"><div class="inner">
-  <a class="brand" href="./">升学数据<span>研究</span></a>
+  <a class="brand" href="./">升学数据研究</a>
   <nav class="topnav">
-    <a class="active" href="./">首页</a>
-    <a href="highschool.html">湾区高中研究</a>
-    <a href="college.html">大学排名研究</a>
+    <a class="active" href="./">概览</a>
+    <a href="highschool.html">湾区高中排名</a>
+    <a href="highschool-analysis.html">高中数据分析</a>
+    <a href="college.html">美国大学排名</a>
+    <a href="college-analysis.html">大学数据分析</a>
   </nav>
 </div></header>
 
-<main class="wrap">
-  <section class="hero">
-    <span class="pill" style="--accent-soft:#eef0f3;--accent:#1d2433">原型 · Prototype</span>
-    <h1>用数据回答两个家长最关心的问题</h1>
-    <p class="lead">这个网站整理了我们在本仓库里做的两项独立研究。两项研究的数据来源、方法和结论都不一样，所以分开呈现；
-      每一页都会先讲清楚<b>数据从哪来</b>、<b>怎么算的</b>、<b>能信到什么程度</b>，再给出结果。</p>
-  </section>
-
-  <div class="choice">
-    <a class="card" href="highschool.html" style="--c:var(--hs)">
-      <div class="kicker" style="color:var(--hs)">研究一</div>
-      <h2>湾区高中研究</h2>
-      <p><b>问题：</b>湾区哪些公立高中的毕业生，更多去了“比伯克利更难进/更受青睐”的大学？</p>
-      <ul>
-        <li>数据：UC 官方按高中公布的申请/录取/入学人数（2021–2025）</li>
-        <li>校准：27 所学校公布的真实升学名单</li>
-        <li>结果：湾区公立高中 Top 50（全体口径 + 亚裔口径）</li>
-      </ul>
-      <span class="go">进入研究 →</span>
-    </a>
-    <a class="card" href="college.html" style="--c:var(--col)">
-      <div class="kicker" style="color:var(--col)">研究二</div>
-      <h2>大学排名研究</h2>
-      <p><b>问题：</b>同时被两所大学录取的学生，最后“用脚投票”选了哪一所？</p>
-      <ul>
-        <li>数据：Parchment 公开的“交叉录取”对决数据（3,350 组）</li>
-        <li>方法：Bradley-Terry 模型（类似国际象棋 Elo 等级分）</li>
-        <li>结果：97 所美国大学 / 文理学院的“学生偏好”排名</li>
-      </ul>
-      <span class="go">进入研究 →</span>
-    </a>
+<section class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">EMPIRICAL ADMISSIONS &amp; REVEALED PREFERENCE</div>
+    <h1>湾区公立高中升学与美国大学偏好排名</h1>
+    <p class="lead">两项榜单分别设有<b>学校主页面</b>（展示完整学校排名、单校各校区/对手档案查询）与<b>独立分析页面</b>（展示实测去向矩阵、20×20 交叉录取胜率矩阵、多模型对比、新旧数据对比及回归校准参数）。</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">307<span>所湾区高中</span></div><div class="l">全加州 1,460 校 UC 2021–2025 九校区生源数据</div></div>
+      <div class="kpi"><div class="n">27<span>所实测高中</span></div><div class="l">官方/公开毕业去向明细 · 6,752 条大学录取记录</div></div>
+      <div class="kpi"><div class="n">97<span>所美国大学</span></div><div class="l">综合大学 (69) 与文理学院 (28) 交叉录取偏好排名</div></div>
+      <div class="kpi"><div class="n">3,350<span>组院校对决</span></div><div class="l">Parchment 共同录取选择 · 反推 292,956 人次</div></div>
+    </div>
   </div>
+</section>
 
-  <section class="block" style="padding-top:20px">
-    <h2>两项研究怎么连在一起？</h2>
-    <p class="lead">它们是独立的，但有一个交汇点：高中研究里“好大学”的标准，直接借用了大学研究的结果。</p>
-    <div class="flow">
-      <div class="node" style="--accent:var(--col)"><b>大学排名研究</b>根据交叉录取数据给每所大学打分</div>
-      <div class="arrow">→</div>
-      <div class="node"><b>定义“顶尖去向”</b>得分高于 UC 伯克利、且不属于 UC 系统的 6 所大学：MIT、Stanford、Yale、Harvard、Princeton、Columbia</div>
-      <div class="arrow">→</div>
-      <div class="node" style="--accent:var(--hs)"><b>湾区高中研究</b>预测每所高中毕业生中去这些学校的比例</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="panel home-card" style="--c:var(--hs);--accent:var(--hs)">
+        <div class="home-card-head">
+          <div>
+            <div class="eyebrow">RANKING 01 · BAY AREA PUBLIC HIGH SCHOOLS</div>
+            <h2><a href="highschool.html" style="color:inherit;text-decoration:none">湾区公立高中排名 Top 20</a></h2>
+          </div>
+          <div class="seg" id="home-hs-tabs">
+            <button data-t="top50" class="on">全体口径</button>
+            <button data-t="asian50">亚裔口径</button>
+          </div>
+        </div>
+        <div class="tablewrap" id="home-hs" style="max-height:540px"></div>
+        <div class="home-card-foot">
+          <a href="highschool.html">进入高中主榜与单校 9 校区查询 →</a>
+          <a href="highschool-analysis.html" style="color:var(--ink-2)">27 校实测矩阵与回归分析 →</a>
+        </div>
+      </div>
+
+      <div class="panel home-card" style="--c:var(--col);--accent:var(--col)">
+        <div class="home-card-head">
+          <div>
+            <div class="eyebrow">RANKING 02 · US COLLEGES &amp; LIBERAL ARTS</div>
+            <h2><a href="college.html" style="color:inherit;text-decoration:none">美国大学偏好排名 Top 20</a></h2>
+          </div>
+          <div class="seg" id="home-col-tabs">
+            <button data-f="all" class="on">全部院校</button>
+            <button data-f="University">综合大学</button>
+            <button data-f="LAC">文理学院</button>
+          </div>
+        </div>
+        <div class="tablewrap" id="home-col" style="max-height:540px"></div>
+        <div class="home-card-foot">
+          <a href="college.html">进入 97 校主榜与单校对决查询 →</a>
+          <a href="college-analysis.html" style="color:var(--ink-2)">20×20 胜率矩阵与多模型分析 →</a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block" style="padding-top:20px">
-    <div class="card">
-      <h3 style="margin-top:0">使用前请注意</h3>
-      <ul style="margin:0;padding-left:1.2em">
-        <li>这是<b>研究原型</b>，数字带有误差；排名相邻的学校通常没有实质差别，请看区间而不是名次。</li>
-        <li>所有数据均来自公开来源（UC Information Center、学校官网、Parchment），我们没有任何学生个人数据。</li>
-        <li>“去了更好的大学”只是一个可量化的视角，不代表学校教育质量的全部。</li>
-      </ul>
-    </div>
-  </section>
-</main>
+<script src="assets/common.js"></script>
+<script>
+(async () => {
+  try {
+    const [H, C] = await Promise.all([loadJSON("data/highschool.json"), loadJSON("data/college.json")]);
+    const shortHS = (s) => s.replace(/^The /, "").replace(/^Henry M\.? /, "").replace(/ Senior High School$| High School$| Senior High Schl$| High$| School$/, "");
 
-<footer><div class="wrap">
-  数据与代码：<a href="https://github.com/xtxsinan-lgtm/school_ranking">github.com/xtxsinan-lgtm/school_ranking</a> ·
-  网页数据由 <code>tools/build_site_data.py</code> 从仓库中的 CSV 结果生成。
-</div></footer>
+    function renderHS(mode) {
+      const isAs = mode === "asian50";
+      const cols = isAs ? [
+        { key: "rank", label: "#", num: true, fmt: rankBadge },
+        { key: "name", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(shortHS(v))}</b><small>${esc(r.city)}</small>` },
+        { key: "pred", label: "预测%", num: true, fmt: (v) => `<b>${pct(v)}</b>` },
+        { key: "lo", label: "80% 区间", num: true, fmt: (v, r) => `<span class="muted">${pct(r.lo)}–${pct(r.hi)}</span>`, hideSm: true },
+        { key: "actual", label: "实测%", num: true, fmt: (v) => (v == null ? `<span class="muted">—</span>` : `<span class="truth">${pct(v)}</span>`) },
+        { key: "asian_share", label: "亚裔%", num: true, fmt: (v) => pct(v, 0) },
+        { key: "rate", label: "亚裔B+L", num: true, fmt: (v) => pct(v) },
+        { key: "yield", label: "UC入学", num: true, fmt: (v) => pct(v), hideSm: true },
+      ] : [
+        { key: "rank", label: "#", num: true, fmt: rankBadge },
+        { key: "name", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(shortHS(v))}</b><small>${esc(r.city)}</small>` },
+        { key: "pred", label: "预测%", num: true, fmt: (v) => `<b>${pct(v)}</b>` },
+        { key: "lo", label: "80% 区间", num: true, fmt: (v, r) => `<span class="muted">${pct(r.lo)}–${pct(r.hi)}</span>`, hideSm: true },
+        { key: "actual", label: "实测%", num: true, fmt: (v) => (v == null ? `<span class="muted">—</span>` : `<span class="truth">${pct(v)}</span>`) },
+        { key: "ucb_rate", label: "UCB%", num: true, fmt: (v) => pct(v) },
+        { key: "ucla_rate", label: "UCLA%", num: true, fmt: (v) => pct(v), hideSm: true },
+        { key: "uc_yield", label: "UC入学%", num: true, fmt: (v) => pct(v), hideSm: true },
+      ];
+      makeTable($("#home-hs"), cols, H[mode].slice(0, 20), {
+        sortKey: "rank", asc: true, dense: true,
+        onRowClick: (r) => { location.href = `highschool.html?ceeb=${r.ceeb}`; },
+      });
+      $$("#home-hs-tabs button").forEach((b) => b.classList.toggle("on", b.dataset.t === mode));
+    }
+    $$("#home-hs-tabs button").forEach((b) => (b.onclick = () => renderHS(b.dataset.t)));
+    renderHS("top50");
+
+    function renderCol(ft) {
+      const rows = C.ranking.filter((r) => ft === "all" || r.type === ft).slice(0, 20);
+      makeTable($("#home-col"), [
+        { key: "rank", label: "#", num: true, fmt: rankBadge },
+        { key: "abbr", label: "学校", cls: "name", fmt: (v) => `<b>${esc(v)}</b>` },
+        { key: "type", label: "类型", fmt: (v) => (v === "LAC" ? `<span class="tag lac">LAC</span>` : `<span class="tag uni">Univ</span>`), hideSm: true },
+        { key: "theta", label: "实力分 θ", num: true, fmt: (v, r) => `<b>${fix(v, 2)}</b> <small>±${fix(r.se, 2)}</small>` },
+        { key: "lo", label: "95% 区间", num: true, fmt: (v, r) => `${r.lo}–${r.hi}` },
+        { key: "wins", label: "胜-负-平", num: true, fmt: (v, r) => `${r.wins}-${r.losses}-${r.ties}`, hideSm: true },
+        { key: "tot_n", label: "样本人次", num: true, fmt: int, hideSm: true },
+      ], rows, {
+        sortKey: "rank", asc: true, dense: true,
+        onRowClick: (r) => { location.href = `college.html?school=${encodeURIComponent(r.abbr)}`; },
+      });
+      $$("#home-col-tabs button").forEach((b) => b.classList.toggle("on", b.dataset.f === ft));
+    }
+    $$("#home-col-tabs button").forEach((b) => (b.onclick = () => renderCol(b.dataset.f)));
+    renderCol("all");
+  } catch (e) { console.error(e); }
+})();
+</script>
 </body>
 </html>
