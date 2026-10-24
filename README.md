@@ -2,8 +2,8 @@
 
 Bay Area public high school college matriculation data → SQLite with unified school/college IDs.
 
-**Website (GitHub Pages):** https://xtxsinan-lgtm.github.io/school_ranking/ — static site in `docs/` with two parts
-(湾区高中研究 / 大学排名研究). After changing any result CSV, refresh the site data with
+**Website (GitHub Pages):** https://xtxsinan-lgtm.github.io/school_ranking/ — static site in `docs/` with three parts
+(湾区高中研究 / 美国大学排名研究 / 中国大学高考分数排名研究). After changing any result CSV, refresh the site data with
 `python3 tools/build_site_data.py` (stdlib only; writes `docs/data/*.json`). Preview locally: `python3 -m http.server -d docs`.
 
     pip install -r requirements.txt
@@ -57,3 +57,17 @@ Set `SSL_CERT_FILE=/root/.ccr/ca-bundle.crt` when running inside the sandbox.
 - Pairs without enough overlap return an empty page -> stored with `has_data=0`.
 - Duplicate institution names exist (two "Wheaton College"), so those are excluded.
 - Only a rounded percent and a 95% Wilson CI are published (no sample size); n can be backed out of the CI.
+
+## China university Gaokao score ranking (2006–2012)
+
+Transcribed and verified from the 10 tables in https://www.zhihu.com/question/28340072/answer/85457689:
+- `data/cn_2011_top30.csv` – Top 30 summary table (`img_01`)
+- `data/cn_2007_top20_freq.csv` – 2007 Science cutoff Top-20 appearance matrix across 30 provinces × 26 schools (`img_02`)
+- `data/cn_2006_2007_3prov.csv` – 2006–2007 3-province (山东/江苏/广东) Science average score Top 50 (`img_03`)
+- `data/cn_2006_2007_4prov.csv` – 2006–2007 4-province (江苏/河北/湖北/广东, with 广东06 converted via $\sqrt{x}\times 22.5$) Top 50 (`img_04`)
+- `data/cn_2010_sichuan_raw_sample.csv` – 2010 Sichuan raw Sina Education scrape sample (`img_05`)
+- `data/cn_2011_raw_cutoff_23prov.csv` – 2010/2011 raw Science batch-1 cutoff scores across 23 provinces for 50 schools (`img_06`)
+- `data/cn_2011_std_top100.csv` – 2011 equal-variance standardized & enrollment-weighted Top 100 (+2 medical faculties) across 23 provinces in 6 tiers (`img_07`)
+- `data/cn_2011_city_bias.csv` – 23 provinces × 29 university cities regional attractiveness bias matrix (`img_08`)
+- `data/cn_2012_sci_top50.csv` – 2012 5-province (河南/广东/山东/四川/安徽) Science average score Top 50 (`img_09`)
+- `data/cn_2012_arts_top50.csv` – 2012 5-province (河南/广东/山东/四川/安徽) Liberal Arts average score Top 50 (`img_10`)

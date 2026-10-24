@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国大学高考数据分析与方法论演进 · 升学数据研究</title>
+<meta name="description" content="中国大学23省标准化分数矩阵、23省×29城地域吸引力偏差热力矩阵、2006–2012跨期与文理科对比及完整四阶段方法论演进。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%239e2a2b'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="cn">
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="./">升学数据研究</a>
+    <nav class="topnav">
+      <a href="./">概览</a>
+      <a href="highschool.html">湾区高中排名</a>
+      <a href="highschool-analysis.html">高中数据分析</a>
+      <a href="college.html">美国大学排名</a>
+      <a href="college-analysis.html">大学数据分析</a>
+      <a href="cn-college.html">中国大学排名</a>
+      <a class="active" href="cn-college-analysis.html">中国大学分析</a>
+    </nav>
+  </div>
+  <div class="subnav-wrap"><nav class="subnav">
+    <a href="#matrices" class="on">01 102×23 录取全矩阵</a>
+    <a href="#citybias">02 23省×29城吸引力偏差</a>
+    <a href="#evolution">03 跨期演进与文理对比</a>
+    <a href="#methodology">04 方法论演进与数学规范</a>
+    <a href="cn-college.html" style="margin-left:auto;color:var(--accent);font-weight:600">← 返回「中国大学百强主榜与选校性价比查询」</a>
+  </nav></div>
+</header>
+
+<section class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">ANALYSIS 03 · GAOKAO STANDARDIZED MATRICES, REGIONAL BIAS &amp; METHODOLOGY</div>
+    <h1>中国大学高考录取数据分析与方法论演进（2007–2012）</h1>
+    <p class="lead">本页完整还原并结构化呈现知乎答主「鱼非鱼」在《中国大学排名是怎样的？》（回答 85457689）中的全部 <b>10 张原始数据大图</b>与<b>四阶段方法论演进</b>：(1) <b>2011 年 102 校 × 23 省标准化分数全矩阵、原始最低分矩阵与 2007 年 30 省 × 26 校前 20 名露脸矩阵</b>；(2) <b>23 省考生对 29 座高校城市的地域吸引力偏差热力矩阵</b>；(3) <b>2006–2007 vs 2012 跨期演进与文理科偏好对比</b>；(4) <b>从最低分频次、平均分、标准分换算到平行志愿等方差标准化加权及遗漏变量反思的完整数学规范</b>。</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">2,262<span>个省校单元格</span></div><div class="l">2011 年 102 校在 23 省平行志愿标准化录取分实测值</div></div>
+      <div class="kpi"><div class="n">667<span>个省城偏差值</span></div><div class="l">23 个生源省 × 29 座大学城市的考生分数投票偏差</div></div>
+      <div class="kpi"><div class="n">30×26<span>露脸矩阵</span></div><div class="l">2007 年 30 省理科最低分前 20 名高频高校分布</div></div>
+      <div class="kpi"><div class="n">10<span>张原图全量识别</span></div><div class="l">所有行列均值经数学交叉校验 100% 精确吻合</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 01 full multi-province matrices -->
+<section class="sec" id="matrices">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">01</span>多省高考录取分数与名次全矩阵（切换浏览原文 4 张核心大表）</h2>
+      <p class="sub">悬浮单元格查看省内偏差与原始分 · 点击任意学校行可跳转至单校 23 省档案</p>
+    </div>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div class="seg" id="mat-tabs">
+          <button data-m="std100" class="on">2011 标准化百强全矩阵 (102校×23省 · 图7)</button>
+          <button data-m="raw11">2010/11 原始最低分矩阵 (50校×23省 · 图6)</button>
+          <button data-m="freq07">2007 各省前20露脸矩阵 (30省×26校 · 图2)</button>
+          <button data-m="sc10">2010 四川原始抓取样本 (20校 · 图5)</button>
+        </div>
+        <div class="search" id="mat-search-wrap"><input id="mq" placeholder="筛选矩阵中的学校或城市…" aria-label="筛选矩阵"></div>
+        <div class="legend" id="mat-legend">
+          <span><i style="background:rgba(17,122,67,.35);border-radius:2px"></i>高于该校全国均值</span>
+          <span><i style="background:rgba(200,75,21,.35);border-radius:2px"></i>低于该校全国均值（性价比高）</span>
+        </div>
+      </div>
+      <div class="tabnote" id="mat-note"></div>
+      <div class="matrix-wrap" id="mat-box" style="max-height:640px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 02 23 provinces x 29 cities attractiveness bias matrix -->
+<section class="sec" id="citybias">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">02</span>不同高校所在城市对不同省份考生的吸引力偏差矩阵（23 省 × 29 城 · 图8）</h2>
+      <p class="sub">正值（红字）表示该省考生对该城市大学给予的「分数投票结果」高于全国平均（分值代表高出多少标准化分），负值（蓝字）代表更低</p>
+    </div>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div>
+          <h3 style="margin:0">23 个生源省份（行）× 29 座大学所在城市（列）吸引力偏差热力表</h3>
+        </div>
+        <div class="legend">
+          <span><b style="color:#c81e1e">+正值 (红)</b> = 该省考生偏爱该城高校</span>
+          <span><b style="color:#1d4ed8">−负值 (蓝)</b> = 该省考生相对冷落该城高校</span>
+          <span class="mono muted">点击生源省可跳转至该省性价比选校器</span>
+        </div>
+      </div>
+      <div class="matrix-wrap" id="bias-box" style="max-height:620px"></div>
+    </div>
+
+    <div class="panel flush" style="margin-top:14px">
+      <div class="toolbar">
+        <h3 style="margin:0">29 座高校城市吸引力特征汇总表（最青睐省份 vs 最冷落省份）</h3>
+        <div class="search"><input id="cq" placeholder="搜索城市或省份…" aria-label="搜索城市"></div>
+        <span class="count" id="city-count"></span>
+      </div>
+      <div class="tablewrap" id="city-table" style="max-height:420px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 03 cross-period & sci vs arts comparison -->
+<section class="sec" id="evolution">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">03</span>跨时期演进（2006–2007 vs 2012）与文理科偏好对比</h2>
+      <p class="sub">对比 06–07 四省均分 (图4)、2011 标准化百强 (图7)、2012 五省理科均分 (图9) 与 2012 五省文科均分 (图10)</p>
+    </div>
+    <div class="grid g-32">
+      <div class="panel chart">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+          <h3 id="sc-title" style="margin:0">2006–07 四省理科均分 vs 2012 五省理科均分</h3>
+          <div class="seg" id="ev-tabs">
+            <button data-ev="period" class="on">06–07 vs 2012 理科演进</button>
+            <button data-ev="stream">2012 理科 vs 文科对比</button>
+          </div>
+        </div>
+        <div id="scatter"></div>
+        <div class="legend" style="margin-top:6px;justify-content:flex-start" id="sc-legend"></div>
+      </div>
+
+      <div class="panel flush">
+        <div class="toolbar">
+          <h3 id="ev-table-title" style="margin:0">共有高校名次与均分对比明细</h3>
+          <div class="search"><input id="eq" placeholder="搜索高校…" aria-label="搜索对比高校"></div>
+          <span class="count" id="ev-count"></span>
+        </div>
+        <div class="tablewrap" id="ev-table" style="max-height:460px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 04 methodology & mathematical specification -->
+<section class="sec" id="methodology">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">04</span>回答方法论演进、数学原理与全量识别数据表</h2>
+      <p class="sub">从 2007 年初探到 2012 年五省文理平均分回归的四次迭代及优缺点剖析</p>
+    </div>
+
+    <div class="panel" style="margin-bottom:16px">
+      <h3>核心哲学：千万高考生「用分数投票」的显示性偏好与「省内低估套利」选校法</h3>
+      <p style="color:var(--ink-2);margin-top:6px">
+        不同于武书连等依赖论文数量、博导规模的科研体量榜单，本系列排名以<b>全国上千万高考生用分数投票的录取结果</b>作为衡量高校综合实力的客观标尺。考生的志愿选择天然且高维地综合了<b>科研实力、教学水平、校园氛围、就业前景与地域环境</b>。
+        在实际高考志愿填报中，最有价值的策略是<b>「选择相对于全国平均水平，在自己所在省份被低估的学校」</b>——例如山东考生报考距离较远的广东高校（如中山大学、华南理工大学），因距离因素在山东录取分相对其全国均值偏低，而广深经济发达、就业机会多且本地名校稀缺，从而形成极高的报考「性价比」。
+      </p>
+    </div>
+
+    <div class="grid g2">
+      <div class="panel flush">
+        <div class="toolbar"><h3>四阶段方法论演进与痛点修正（2007–2012）</h3></div>
+        <table class="spec">
+          <thead><tr><th style="width:135px">研究阶段</th><th>统计方法、发现缺陷与改进措施</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>阶段一 (2007)<br>各省最低分频次</b></td>
+              <td>
+                <b>方法：</b>统计 2007 年 30 个省区理科录取最低分排名前 20 榜单上露脸次数最多的 26 所高校（只用理科是因为许多理工名校不招文科，而人大等文科名校均招理科）。<br>
+                <b>缺陷：</b>2007 年除江苏外尚未实行平行志愿，最低分存在严重的<b>「大小年」</b>随机波动，且受单省招生名额影响大。
+              </td>
+            </tr>
+            <tr>
+              <td><b>阶段二 (2006–07)<br>三省/四省平均分</b></td>
+              <td>
+                <b>第 1 版（鲁苏粤 3 省）：</b>取当时高考人数最多的山东、江苏、广东 2006–2007 两年理科录取<b>平均分</b>（不受大小年与招生人数影响；若第 <i>n</i> 与 <i>n</i> + 1 名并列则均记为 <i>n</i> + 0.5 名）。<br>
+                <b>发现两大问题：</b>(1) 鲁苏粤均处东南沿海，存在明显地域偏向；(2) 广东 2006 年采用 900 分制标准分，分差远大于 750 分制省份，导致广东 06 年权重畸高。<br>
+                <b>第 2 版（苏冀鄂粤 4 省）：</b>去除山东、加入河北与湖北以均衡人口地域分布；将广东 2006 标准分按经验公式 <code>x′ = 22.5√x</code> 换算（相比乘以 5/6 更贴近其他省分差结构）。
+              </td>
+            </tr>
+            <tr>
+              <td><b>阶段三 (2011)<br>23 省平行志愿<br>等方差标准化</b></td>
+              <td>
+                <b>背景：</b>全国普及平行志愿后，录取最低分不确定性大幅消除。抓取新浪教育 23 个省区理科一批最低分（剔除江苏会考等级不可比、北京估分报志愿等省区），使用 VBA 编程处理：<br>
+                <b>1. 等方差标准化：</b>计算全部省份全部高校录取分总体均值 μ<sub>all</sub> 与总体标准差 σ<sub>all</sub>，将各省 <i>p</i> 的原始分 s<sub>i,p</sub> 统一线性标准化为 <code>s̃<sub>i,p</sub> = μ<sub>all</sub> + σ<sub>all</sub> · (s<sub>i,p</sub> − μ<sub>p</sub>) / σ<sub>p</sub></code>，消除各省试卷区分度差异。<br>
+                <b>2. 招生人数加权与 6 档划分：</b>按各省录取规模计算加权均值（并给出简单均值对照），以 <b>665、645、625、605、585 分</b>为界将百强高校划分为六档（剔除提前批的外交学院、中青政、国关与二批的上海海关学院）。<br>
+                <b>3. 城市吸引力偏差矩阵：</b>利用标准化分数与学校标注城市，计算 23 省考生对 29 座大学城市的投票溢价/折价偏差。
+              </td>
+            </tr>
+            <tr>
+              <td><b>阶段四 (2012)<br>局限性反思与<br>五省文理平均分</b></td>
+              <td>
+                <b>平行志愿最低分的两大局限：</b>(1) <b>大校吃亏：</b>招生规模大的学校平均分与最低分差距更大，若两校最低分相同，招生多者真实生源平均水平更高；(2) <b>遗漏变量 (Omitted Variable)：</b>部分学校在若干省份不招生，简单忽略缺失省份会遗漏「是否在该省招生」本身所反映的知名度与生源水平信息。<br>
+                <b>2012 改进：</b>选取招生人数最多且地域分布均衡的<b>河南、山东、安徽、广东、四川 5 省</b>，回归公布的<b>录取平均分</b>分别计算理科前 50 名与文科前 50 名，清晰捕捉到如上海交大医学院相对 06–07 年显著走强等趋势。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel flush">
+        <div class="toolbar"><h3>原文 10 张图片识别对照与 CSV 数据文件清单</h3></div>
+        <table class="spec">
+          <thead><tr><th>原图序号</th><th>图表内容描述</th><th>规模</th><th>识别输出文件</th></tr></thead>
+          <tbody>
+            <tr><td class="mono"><b>图 1</b></td><td>全国高校排名前 30 名简表</td><td class="mono">30 校 × 2 列</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2011_top30.csv">cn_2011_top30.csv</a></td></tr>
+            <tr><td class="mono"><b>图 2</b></td><td>2007 各省理科最低分前 20 名高频高校分布</td><td class="mono">30 省 × 26 校</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2007_top20_freq.csv">cn_2007_top20_freq.csv</a></td></tr>
+            <tr><td class="mono"><b>图 3</b></td><td>2006–2007 鲁苏粤 3 省两年理科平均分前 50</td><td class="mono">50 校 × 8 列</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2006_2007_3prov.csv">cn_2006_2007_3prov.csv</a></td></tr>
+            <tr><td class="mono"><b>图 4</b></td><td>2006–2007 苏冀鄂粤 4 省两年理科平均分前 50</td><td class="mono">50 校 × 10 列</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2006_2007_4prov.csv">cn_2006_2007_4prov.csv</a></td></tr>
+            <tr><td class="mono"><b>图 5</b></td><td>新浪教育抓取原始数据样例（2010 四川理科）</td><td class="mono">20 校 × 10 列</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2010_sichuan_raw_sample.csv">cn_2010_sichuan_raw_sample.csv</a></td></tr>
+            <tr><td class="mono"><b>图 6</b></td><td>2010/11 处理后 23 省各校原始理科录取最低分</td><td class="mono">50 校 × 23 省</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2011_raw_cutoff_23prov.csv">cn_2011_raw_cutoff_23prov.csv</a></td></tr>
+            <tr><td class="mono"><b>图 7</b></td><td>2011 标准化处理后全国百强主榜（6 档着色）</td><td class="mono">102 校 × 23 省</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2011_std_top100.csv">cn_2011_std_top100.csv</a></td></tr>
+            <tr><td class="mono"><b>图 8</b></td><td>高校所在城市对各省考生的吸引力偏差表</td><td class="mono">23 省 × 29 城</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2011_city_bias.csv">cn_2011_city_bias.csv</a></td></tr>
+            <tr><td class="mono"><b>图 9</b></td><td>2012 豫粤鲁川皖 5 省理科录取平均分前 50 名</td><td class="mono">52 校 × 5 省</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2012_sci_top50.csv">cn_2012_sci_top50.csv</a></td></tr>
+            <tr><td class="mono"><b>图 10</b></td><td>2012 豫粤鲁川皖 5 省文科录取平均分前 50 名</td><td class="mono">50 校 × 5 省</td><td class="mono"><a href="https://github.com/xtxsinan-lgtm/school_ranking/blob/main/data/cn_2012_arts_top50.csv">cn_2012_arts_top50.csv</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/common.js"></script>
+<script src="assets/cn-college-analysis.js"></script>
+</body>
+</html>

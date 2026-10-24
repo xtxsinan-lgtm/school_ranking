@@ -173,13 +173,15 @@ function scatter(el, pts, o) {
 /* ---------- minimal page chrome ---------- */
 function footerHTML() {
   return `<footer><div class="wrap f-inner">
-    <span>数据源：UC Information Center (2021–2025) · 27 校官方升学去向表 · Parchment Cross-Admit (3,350 组)</span>
+    <span>数据源：UC Information Center (2021–2025) · 27 校官方升学去向表 · Parchment Cross-Admit (3,350 组) · 新浪教育各省高考录取线 (2006–2012)</span>
     <div class="f-links">
       <a href="./">概览</a>
       <a href="highschool.html">湾区高中排名</a>
       <a href="highschool-analysis.html">高中数据分析</a>
       <a href="college.html">美国大学排名</a>
       <a href="college-analysis.html">大学数据分析</a>
+      <a href="cn-college.html">中国大学排名</a>
+      <a href="cn-college-analysis.html">中国大学分析</a>
       <a href="${REPO}">GitHub 仓库</a>
     </div>
   </div></footer>`;

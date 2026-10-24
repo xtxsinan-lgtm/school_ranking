@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国大学高考录取分数排名与单校查询 · 升学数据研究</title>
+<meta name="description" content="基于千万高考生分数投票的中国大学排名（2011年23省标准化百强、2012五省文理50强、2006–2007三省/四省50强）、单校23省档案与本省高性价比选校查询器。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%239e2a2b'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="cn">
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="./">升学数据研究</a>
+    <nav class="topnav">
+      <a href="./">概览</a>
+      <a href="highschool.html">湾区高中排名</a>
+      <a href="highschool-analysis.html">高中数据分析</a>
+      <a href="college.html">美国大学排名</a>
+      <a href="college-analysis.html">大学数据分析</a>
+      <a class="active" href="cn-college.html">中国大学排名</a>
+      <a href="cn-college-analysis.html">中国大学分析</a>
+    </nav>
+  </div>
+  <div class="subnav-wrap"><nav class="subnav">
+    <a href="#ranking" class="on">01 中国大学多期主榜</a>
+    <a href="#profile">02 单校 23 省分数档案</a>
+    <a href="#bargain">03 本省「高性价比被低估名校」选校器</a>
+    <a href="cn-college-analysis.html" style="margin-left:auto;color:var(--accent);font-weight:600">前往「中国大学分析（102×23 矩阵 · 23×29 城市偏差 · 方法论演进）」→</a>
+  </nav></div>
+</header>
+
+<section class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">CHINA UNIVERSITY RANKINGS BY GAOKAO SCORES (2006–2012)</div>
+    <h1>中国大学高考录取分数排名与志愿性价比查询</h1>
+    <p class="lead">基于知乎答主「鱼非鱼」整理的新浪教育各省区高考录取分数数据：以千万高考生<b>「用分数投票」的显示性偏好</b>衡量高校综合实力（综合科研、教学、校园氛围、就业前景与地域环境）。涵盖 <b>2011 年 23 省平行志愿标准化百强（6 档）</b>、<b>2012 年五省理科/文科平均分 50 强</b>及 <b>2006–2007 年三省/四省平均分 50 强</b>。点击表中任意院校即可查看其 23 省录取分数档案。</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">100<span>+2 校</span></div><div class="l">2011 全国标准化百强 + 北大医学部 / 上交医学院</div></div>
+      <div class="kpi"><div class="n">23<span>个省区</span></div><div class="l">平行志愿理科一批最低分等方差标准化与招生加权</div></div>
+      <div class="kpi"><div class="n">6<span>档梯队</span></div><div class="l">以 665 / 645 / 625 / 605 / 585 分为界划分六档</div></div>
+      <div class="kpi"><div class="n">5<span>省文理均分</span></div><div class="l">2012 河南/广东/山东/四川/安徽 理科与文科 Top 50</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 01 main ranking tables -->
+<section class="sec" id="ranking">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">01</span>中国大学高考录取分数排名主表（2006–2012 多期榜单切换）</h2>
+      <p class="sub">点击表头排序 · 点击任意高校行可跳转至下方「02 单校 23 省分数档案」</p>
+    </div>
+    <div class="panel flush">
+      <div class="toolbar">
+        <div class="seg" id="rtabs">
+          <button data-m="std100" class="on">2011 标准化百强 (23省·6档)</button>
+          <button data-m="top30">全国前 30 简榜</button>
+          <button data-m="sci12">2012 理科 Top 50 (5省均分)</button>
+          <button data-m="arts12">2012 文科 Top 50 (5省均分)</button>
+          <button data-m="p07_4">2006–07 四省 Top 50 (换算后)</button>
+          <button data-m="p07_3">2006–07 三省 Top 50 (鲁苏粤)</button>
+        </div>
+        <div class="search"><input id="q" placeholder="搜索大学名称或所在城市…" aria-label="搜索大学"></div>
+        <div class="legend">
+          <span class="count" id="count"></span>
+        </div>
+      </div>
+      <div class="toolbar" id="tier-bar" style="padding-top:6px;padding-bottom:6px;background:#f4f2ec">
+        <span class="mono muted" style="font-size:.74rem">分档筛选：</span>
+        <div class="seg" id="ttabs">
+          <button data-t="0" class="on">全部 (102)</button>
+          <button data-t="1">一档 ≥665 (2)</button>
+          <button data-t="2">二档 645–665 (6)</button>
+          <button data-t="3">三档 625–645 (8)</button>
+          <button data-t="4">四档 605–625 (13)</button>
+          <button data-t="5">五档 585–605 (29)</button>
+          <button data-t="6">六档 &lt;585 (44)</button>
+        </div>
+        <span class="mono muted" id="mode-note" style="margin-left:auto;font-size:.74rem"></span>
+      </div>
+      <div class="tablewrap" id="table" style="max-height:620px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 02 single school 23-province profile -->
+<section class="sec" id="profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">02</span>单校 23 省录取分数透视与多期历史档案</h2>
+      <p class="sub">查看任意高校在 23 个省区的标准化分、2010 原始最低分、相对全国均值溢价/折价及历年文理科表现</p>
+    </div>
+    <div class="panel">
+      <div style="display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:12px;align-items:center">
+        <select class="sel" id="sel-school" aria-label="选择大学"></select>
+        <div class="presets" id="school-presets"><span class="pl">典型高校：</span></div>
+      </div>
+      <div id="school-summary" style="margin-top:12px"></div>
+    </div>
+
+    <div class="panel flush" style="margin-top:14px">
+      <div class="toolbar">
+        <h3 id="prov-title" style="margin:0">单校 23 省录取分数明细</h3>
+        <div class="search"><input id="pq" placeholder="搜索省份…" aria-label="搜索省份"></div>
+        <div class="legend">
+          <span><b class="up">+正值</b> = 该省比全国高看该校</span>
+          <span><b class="down">−负值</b> = 该省相对低估该校（性价比高）</span>
+          <span class="count" id="prov-count"></span>
+        </div>
+      </div>
+      <div class="tablewrap" id="prov-table" style="max-height:500px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 03 province bargain finder -->
+<section class="sec" id="bargain">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="sec-label">03</span>省份视角：「相对于全国平均水平，在本省被低估的大学」选校查询器</h2>
+      <p class="sub">复现回答中的志愿填报策略：对比各校在本省标准化分与全国加权均值，寻找在本省因距离或习惯被低估的高性价比名校</p>
+    </div>
+    <div class="panel">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <label for="sel-prov" style="font-weight:650;font-size:.86rem">选择生源省份：</label>
+          <select class="sel" id="sel-prov" style="width:180px" aria-label="选择生源省份"></select>
+          <div class="seg" id="bg-tier">
+            <button data-bt="all" class="on">全部百强高校</button>
+            <button data-bt="top30">一至三档名校 (≥625分)</button>
+            <button data-bt="top56">一至五档高校 (≥585分)</button>
+          </div>
+        </div>
+        <div class="search"><input id="bq" placeholder="在结果中搜索学校或城市…" aria-label="搜索性价比高校"></div>
+      </div>
+      <div class="presets" id="prov-presets" style="margin-top:10px"><span class="pl">快速切换省份：</span></div>
+      <div id="prov-city-summary" class="eq-bar" style="margin-top:10px"></div>
+    </div>
+
+    <div class="panel flush" style="margin-top:14px">
+      <div class="toolbar">
+        <h3 id="bg-title" style="margin:0">本省报考性价比排行（默认按「本省分 − 全国加权均值」由低到高排序）</h3>
+        <div class="legend">
+          <span class="mono">差值越负 = 在本省录取位次越低于其全国实力（性价比越高）</span>
+          <span class="count" id="bg-count"></span>
+        </div>
+      </div>
+      <div class="tablewrap" id="bg-table" style="max-height:540px"></div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/common.js"></script>
+<script src="assets/cn-college.js"></script>
+</body>
+</html>

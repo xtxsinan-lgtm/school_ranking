@@ -5,6 +5,7 @@ Inputs are the committed result CSVs in data/ (see README); outputs go to docs/d
 
   docs/data/highschool.json  Bay Area public HS Top-50 (all-student and Asian basis), Bay Area UC metrics, validation set
   docs/data/college.json     tier-weighted Bradley-Terry ranking, head-to-head pairs, old-sheet vs new-scrape comparison
+  docs/data/cn_college.json  China university Gaokao score rankings (2007–2012), 23-prov matrices, city bias matrix
 """
 import csv
 import gzip
@@ -413,9 +414,321 @@ def old_pair_count():
                 if v.strip().isdigit() and row[0].strip() != c})
 
 
+# ------------------------------------------------------------------ China universities (Gaokao score rankings 2007-2012)
+CN_SHORT2FULL = {
+    "清华": "清华大学", "北大": "北京大学", "北大医学部": "北京大学医学部", "复旦": "复旦大学",
+    "上交": "上海交通大学", "浙大": "浙江大学", "中大": "中山大学", "科大": "中国科学技术大学",
+    "中科大": "中国科学技术大学", "人大": "中国人民大学", "北外": "北京外国语大学", "南大": "南京大学",
+    "北航": "北京航空航天大学", "同济": "同济大学", "城大": "香港城市大学", "中财": "中央财经大学",
+    "上财": "上海财经大学", "南开": "南开大学", "对外经贸": "对外经济贸易大学", "北师": "北京师范大学",
+    "华科": "华中科技大学", "北邮": "北京邮电大学", "政法": "中国政法大学", "上外": "上海外国语大学",
+    "西交": "西安交通大学", "哈工大": "哈尔滨工业大学", "中山": "中山大学", "武大": "武汉大学",
+    "厦大": "厦门大学", "天大": "天津大学", "北理": "北京理工大学", "东大": "东南大学",
+    "华东理工": "华东理工大学", "北科": "北京科技大学", "大工": "大连理工大学", "南航": "南京航空航天大学",
+    "华工": "华南理工大学", "北交": "北京交通大学", "北语": "北京语言大学", "南理": "南京理工大学",
+    "吉大": "吉林大学", "华东师大": "华东师范大学", "国医": "中国医科大学", "山大": "山东大学",
+    "川大": "四川大学", "首都经贸": "首都经济贸易大学", "民大": "中央民族大学", "华电": "华北电力大学",
+    "中南财法": "中南财经政法大学", "电子科大": "电子科技大学", "华东政法": "华东政法大学",
+    "国防科大": "国防科学技术大学", "中南": "中南大学",
+    "中国科技大学": "中国科学技术大学", "华北电力大学(北京)": "华北电力大学",
+}
+
+EXTRA_CITIES = {
+    "外交学院": "北京", "中国青年政治学院": "北京", "上海海关学院": "上海", "国际关系学院": "北京",
+    "南京财经大学": "南京", "天津外国语大学": "天津", "上海立信会计学院": "上海", "西安外国语大学": "西安",
+    "香港城市大学": "香港", "国防科学技术大学": "长沙",
+}
+
+
+def norm_cn_school(s):
+    return CN_SHORT2FULL.get(s, s)
+
+
+def build_cn_college():
+    std_rows = rows(D("cn_2011_std_top100.csv"))
+    provs_std = [k for k in std_rows[0].keys() if k not in ("rank", "city", "school", "tier", "weighted_mean", "mean")]
+
+    raw_rows = rows(D("cn_2011_raw_cutoff_23prov.csv"))
+    provs_raw = [k for k in raw_rows[0].keys() if k not in ("order", "school")]
+    raw_map = {r["school"]: {p: int(r[p]) if r[p] else None for p in provs_raw} for r in raw_rows}
+
+    sci12_rows = rows(D("cn_2012_sci_top50.csv"))
+    arts12_rows = rows(D("cn_2012_arts_top50.csv"))
+    p07_4_rows = rows(D("cn_2006_2007_4prov.csv"))
+    p07_3_rows = rows(D("cn_2006_2007_3prov.csv"))
+    freq07_rows = rows(D("cn_2007_top20_freq.csv"))
+    sc10_rows = rows(D("cn_2010_sichuan_raw_sample.csv"))
+    bias_rows = rows(D("cn_2011_city_bias.csv"))
+    top30_rows = rows(D("cn_2011_top30.csv"))
+
+    city_of = dict(EXTRA_CITIES)
+    for r in std_rows:
+        city_of[r["school"]] = r["city"]
+        city_of[norm_cn_school(r["school"])] = r["city"]
+
+    sci12_map = {norm_cn_school(r["school"]): r for r in sci12_rows}
+    arts12_map = {norm_cn_school(r["school"]): r for r in arts12_rows}
+    p07_4_map = {norm_cn_school(r["school"]): r for r in p07_4_rows}
+    p07_3_map = {norm_cn_school(r["school"]): r for r in p07_3_rows}
+    std_map = {norm_cn_school(r["school"]): r for r in std_rows}
+
+    std100 = []
+    for idx, r in enumerate(std_rows, 1):
+        sch = r["school"]
+        nsch = norm_cn_school(sch)
+        rk_str = r["rank"]
+        num_rk = int(rk_str) if rk_str.isdigit() else None
+        wm = float(r["weighted_mean"])
+        m = int(r["mean"])
+        pvals = {p: int(r[p]) if r[p] else None for p in provs_std}
+        valid_p = [(p, v) for p, v in pvals.items() if v is not None]
+        max_p = max(valid_p, key=lambda x: x[1]) if valid_p else (None, None)
+        min_p = min(valid_p, key=lambda x: x[1]) if valid_p else (None, None)
+        s12 = sci12_map.get(nsch)
+        a12 = arts12_map.get(nsch)
+        p4 = p07_4_map.get(nsch)
+        std100.append({
+            "order": idx,
+            "rank": rk_str,
+            "num_rank": num_rk,
+            "city": r["city"],
+            "school": sch,
+            "tier": int(r["tier"]),
+            "weighted_mean": wm,
+            "mean": m,
+            "n_provs": len(valid_p),
+            "max_prov": max_p[0], "max_score": max_p[1],
+            "min_prov": min_p[0], "min_score": min_p[1],
+            "sci12_rank": s12["rank"] if s12 else None,
+            "sci12_avg": num(s12["avg_score"], 2) if s12 else None,
+            "arts12_rank": int(a12["rank"]) if a12 else None,
+            "arts12_avg": num(a12["avg_score"], 2) if a12 else None,
+            "p07_4_rank": int(p4["rank"]) if p4 else None,
+            "p07_4_avg": num(p4["avg_score"], 1) if p4 else None,
+            "scores": [pvals[p] for p in provs_std],
+            "raw_scores": [raw_map[sch][p] for p in provs_std] if sch in raw_map else None,
+        })
+
+    top30 = []
+    for r in top30_rows:
+        sch = r["school"]
+        st = std_map.get(sch, {})
+        s12 = sci12_map.get(sch, {})
+        a12 = arts12_map.get(sch, {})
+        p4 = p07_4_map.get(sch, {})
+        top30.append({
+            "rank": int(r["rank"]),
+            "school": sch,
+            "city": city_of.get(sch, ""),
+            "tier": int(st["tier"]) if st.get("tier") else 1,
+            "weighted_mean": num(st.get("weighted_mean"), 1),
+            "mean": int(st["mean"]) if st.get("mean") else None,
+            "sci12_rank": s12.get("rank"),
+            "sci12_avg": num(s12.get("avg_score"), 1),
+            "arts12_rank": int(a12["rank"]) if a12.get("rank") else None,
+            "arts12_avg": num(a12.get("avg_score"), 1),
+            "p07_4_rank": int(p4["rank"]) if p4.get("rank") else None,
+            "p07_4_avg": num(p4.get("avg_score"), 1),
+        })
+
+    provs_5 = ["河南", "广东", "山东", "四川", "安徽"]
+    sci12 = []
+    for idx, r in enumerate(sci12_rows, 1):
+        sch = r["school"]
+        nsch = norm_cn_school(sch)
+        st = std_map.get(nsch, {})
+        p4 = p07_4_map.get(nsch, {})
+        a12 = arts12_map.get(nsch, {})
+        rk_s = r["rank"]
+        sci12.append({
+            "order": idx,
+            "rank": rk_s,
+            "num_rank": int(rk_s) if rk_s.isdigit() else None,
+            "school": sch,
+            "city": city_of.get(nsch, ""),
+            "avg_score": num(r["avg_score"], 2),
+            "河南": int(r["河南"]), "广东": int(r["广东"]), "山东": int(r["山东"]),
+            "四川": int(r["四川"]), "安徽": int(r["安徽"]),
+            "std11_rank": st.get("rank"),
+            "std11_wm": num(st.get("weighted_mean"), 1),
+            "p07_4_rank": int(p4["rank"]) if p4.get("rank") else None,
+            "p07_4_avg": num(p4.get("avg_score"), 1),
+            "arts12_rank": int(a12["rank"]) if a12.get("rank") else None,
+            "arts12_avg": num(a12.get("avg_score"), 2),
+        })
+
+    arts12 = []
+    for r in arts12_rows:
+        sch = r["school"]
+        nsch = norm_cn_school(sch)
+        st = std_map.get(nsch, {})
+        s12 = sci12_map.get(nsch, {})
+        pvals = {p: int(r[p]) if r[p] else None for p in provs_5}
+        arts12.append({
+            "rank": int(r["rank"]),
+            "school": sch,
+            "city": city_of.get(nsch, ""),
+            "avg_score": num(r["avg_score"], 2),
+            "n_provs": sum(1 for v in pvals.values() if v is not None),
+            "河南": pvals["河南"], "广东": pvals["广东"], "山东": pvals["山东"],
+            "四川": pvals["四川"], "安徽": pvals["安徽"],
+            "sci12_rank": s12.get("rank"),
+            "sci12_avg": num(s12.get("avg_score"), 2),
+            "std11_rank": st.get("rank"),
+            "std11_wm": num(st.get("weighted_mean"), 1),
+        })
+
+    cols_07_4 = ["江苏07", "江苏06", "河北07", "河北06", "湖北07", "湖北06", "广东07", "广东06"]
+    p07_4 = []
+    for r in p07_4_rows:
+        sch = r["school"]
+        nsch = norm_cn_school(sch)
+        st = std_map.get(nsch, {})
+        s12 = sci12_map.get(nsch, {})
+        item = {
+            "rank": int(r["rank"]),
+            "school": sch,
+            "norm_school": nsch,
+            "city": city_of.get(nsch, ""),
+            "avg_score": num(r["avg_score"], 1),
+            "avg_rank": num(r["avg_rank"], 2),
+            "std11_rank": st.get("rank"),
+            "std11_wm": num(st.get("weighted_mean"), 1),
+            "sci12_rank": s12.get("rank"),
+            "sci12_avg": num(s12.get("avg_score"), 2),
+        }
+        for c in cols_07_4:
+            item[c] = int(r[c]) if r[c] else None
+        p07_4.append(item)
+
+    cols_07_3 = ["山东07", "山东06", "江苏07", "江苏06", "广东07", "广东06"]
+    p07_3 = []
+    for r in p07_3_rows:
+        sch = r["school"]
+        nsch = norm_cn_school(sch)
+        item = {
+            "rank": int(r["rank"]),
+            "school": sch,
+            "full_school": nsch,
+            "city": city_of.get(nsch, ""),
+            "avg_score": num(r["avg_score"], 1),
+            "avg_rank": num(r["avg_rank"], 2),
+        }
+        for c in cols_07_3:
+            item[c] = int(r[c]) if r[c] else None
+        p07_3.append(item)
+
+    special_notes = {
+        "外交学院": "提前批（未计入百强主榜）",
+        "中国青年政治学院": "提前批（未计入百强主榜）",
+        "国际关系学院": "提前批（未计入百强主榜）",
+        "上海海关学院": "本科二批（未计入百强主榜）",
+    }
+    raw11 = []
+    for r in raw_rows:
+        sch = r["school"]
+        st = std_map.get(sch, {})
+        scores = [int(r[p]) if r[p] else None for p in provs_raw]
+        valid = [v for v in scores if v is not None]
+        raw11.append({
+            "order": int(r["order"]),
+            "school": sch,
+            "city": city_of.get(sch, ""),
+            "std_rank": st.get("rank", "—"),
+            "std_wm": num(st.get("weighted_mean"), 1),
+            "note": special_notes.get(sch, ""),
+            "n_provs": len(valid),
+            "raw_mean": round(sum(valid) / len(valid), 1) if valid else None,
+            "scores": scores,
+        })
+
+    schools_07 = [k for k in freq07_rows[0].keys() if k != "province"]
+    freq_matrix = []
+    for r in freq07_rows:
+        freq_matrix.append({
+            "province": r["province"],
+            "ranks": [int(r[s]) if r[s] and r[s] != "NA" else None for s in schools_07],
+        })
+    freq_summary = []
+    for si, s in enumerate(schools_07):
+        rks = [row["ranks"][si] for row in freq_matrix if row["ranks"][si] is not None]
+        nsch = norm_cn_school(s)
+        freq_summary.append({
+            "order": si + 1,
+            "abbr": s,
+            "school": nsch,
+            "city": city_of.get(nsch, ""),
+            "top20_count": len(rks),
+            "top10_count": sum(1 for x in rks if x <= 10),
+            "top5_count": sum(1 for x in rks if x <= 5),
+            "mean_rank": round(sum(rks) / len(rks), 2) if rks else None,
+        })
+
+    cities = [k for k in bias_rows[0].keys() if k != "province"]
+    bias_matrix = []
+    for r in bias_rows:
+        bias_matrix.append({
+            "province": r["province"],
+            "vals": [num(r[c], 1) if r[c] != "" else None for c in cities],
+        })
+    city_summary = []
+    for ci, c in enumerate(cities):
+        pvals = [(row["province"], row["vals"][ci]) for row in bias_matrix if row["vals"][ci] is not None]
+        vs = [v for _, v in pvals]
+        hi = max(pvals, key=lambda x: x[1])
+        lo = min(pvals, key=lambda x: x[1])
+        city_summary.append({
+            "city": c,
+            "mean_bias": round(sum(vs) / len(vs), 2),
+            "pos_provs": sum(1 for v in vs if v > 0),
+            "neg_provs": sum(1 for v in vs if v < 0),
+            "max_prov": hi[0], "max_val": hi[1],
+            "min_prov": lo[0], "min_val": lo[1],
+        })
+
+    sc10 = [{
+        "rank": i,
+        "school": r["school"],
+        "category": r["category"],
+        "province": r["province"],
+        "min_score": int(r["min_score"]),
+        "avg_score": int(r["avg_score"]),
+        "year": int(r["year"]),
+        "admitted": int(r["admitted"]),
+        "stream": r["stream"],
+        "batch": r["batch"],
+    } for i, r in enumerate(sc10_rows, 1)]
+
+    return {
+        "provs_std": provs_std,
+        "provs_raw": provs_raw,
+        "provs_5": provs_5,
+        "cols_07_4": cols_07_4,
+        "cols_07_3": cols_07_3,
+        "schools_07": schools_07,
+        "cities": cities,
+        "std100": std100,
+        "top30": top30,
+        "sci12": sci12,
+        "arts12": arts12,
+        "p07_4": p07_4,
+        "p07_3": p07_3,
+        "raw11": raw11,
+        "freq07": {"provinces": [r["province"] for r in freq_matrix], "matrix": freq_matrix, "summary": freq_summary},
+        "city_bias": {"matrix": bias_matrix, "summary": city_summary},
+        "sichuan10": sc10,
+        "counts": {
+            "std_schools": len(std100),
+            "provs_std": len(provs_std),
+            "cities_bias": len(cities),
+            "tables": 10,
+        },
+    }
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    for name, fn in [("highschool", build_highschool), ("college", build_college)]:
+    for name, fn in [("highschool", build_highschool), ("college", build_college), ("cn_college", build_cn_college)]:
         data = fn()
         with open(os.path.join(OUT, name + ".json"), "w", encoding="utf8") as f:
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))

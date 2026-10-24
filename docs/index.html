@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>升学数据研究 · 湾区公立高中 & 美国大学排名</title>
-<meta name="description" content="湾区公立高中顶尖名校升学排名与美国大学交叉录取偏好排名。">
+<title>升学数据研究 · 湾区公立高中 · 美国大学 · 中国大学排名</title>
+<meta name="description" content="湾区公立高中顶尖名校升学排名、美国大学交叉录取偏好排名与中国大学高考录取分数排名。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23141413'/%3E%3Cpath d='M16 46h8V30h-8zM28 46h8V18h-8zM40 46h8V25h-8z' fill='%23f6f5f0'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
@@ -19,19 +19,21 @@
     <a href="highschool-analysis.html">高中数据分析</a>
     <a href="college.html">美国大学排名</a>
     <a href="college-analysis.html">大学数据分析</a>
+    <a href="cn-college.html">中国大学排名</a>
+    <a href="cn-college-analysis.html">中国大学分析</a>
   </nav>
 </div></header>
 
 <section class="masthead">
   <div class="wrap">
-    <div class="eyebrow">EMPIRICAL ADMISSIONS &amp; REVEALED PREFERENCE</div>
-    <h1>湾区公立高中升学与美国大学偏好排名</h1>
-    <p class="lead">两项榜单分别设有<b>学校主页面</b>（展示完整学校排名、单校各校区/对手档案查询）与<b>独立分析页面</b>（展示实测去向矩阵、20×20 交叉录取胜率矩阵、多模型对比、新旧数据对比及回归校准参数）。</p>
+    <div class="eyebrow">EMPIRICAL ADMISSIONS &amp; REVEALED PREFERENCE · THREE STUDIES</div>
+    <h1>湾区公立高中升学、中美大学显示性偏好排名</h1>
+    <p class="lead">三项实证榜单分别设有<b>学校主页面</b>（展示完整学校排名、单校各校区/对手/各省录取档案查询）与<b>独立分析页面</b>（展示实测去向矩阵、20×20 交叉录取胜率矩阵、23 省×100 校标准化高考分数矩阵、23 省×29 城地域吸引力偏差热力矩阵及完整方法论演进）。</p>
     <div class="kpis">
-      <div class="kpi"><div class="n">307<span>所湾区高中</span></div><div class="l">全加州 1,460 校 UC 2021–2025 九校区生源数据</div></div>
-      <div class="kpi"><div class="n">27<span>所实测高中</span></div><div class="l">官方/公开毕业去向明细 · 6,752 条大学录取记录</div></div>
-      <div class="kpi"><div class="n">97<span>所美国大学</span></div><div class="l">综合大学 (69) 与文理学院 (28) 交叉录取偏好排名</div></div>
-      <div class="kpi"><div class="n">3,350<span>组院校对决</span></div><div class="l">Parchment 共同录取选择 · 反推 292,956 人次</div></div>
+      <div class="kpi"><div class="n">307<span>所湾区高中</span></div><div class="l">全加州 1,460 校 UC 2021–2025 九校区生源与 27 校实测去向</div></div>
+      <div class="kpi"><div class="n">97<span>所美国大学</span></div><div class="l">Parchment 3,350 组共同录取对决 · 反推 292,956 人次</div></div>
+      <div class="kpi"><div class="n">102<span>所中国高校</span></div><div class="l">23 省平行志愿标准化百强 (6档) · 2006–2012 多期文理均分</div></div>
+      <div class="kpi"><div class="n">23×29<span>省城矩阵</span></div><div class="l">中国 23 省考生对 29 座高校城市的录取分数投票吸引力偏差</div></div>
     </div>
   </div>
 </section>
@@ -76,6 +78,26 @@
         </div>
       </div>
     </div>
+
+    <div class="panel home-card" style="--c:var(--cn);--accent:var(--cn);margin-top:16px">
+      <div class="home-card-head">
+        <div>
+          <div class="eyebrow">RANKING 03 · CHINA UNIVERSITIES (GAOKAO SCORE REVEALED PREFERENCE, 2006–2012)</div>
+          <h2><a href="cn-college.html" style="color:inherit;text-decoration:none">中国大学高考录取分数排名 Top 25</a></h2>
+        </div>
+        <div class="seg" id="home-cn-tabs">
+          <button data-m="std100" class="on">2011 标准化百强 (23省)</button>
+          <button data-m="sci12">2012 理科50强 (5省均分)</button>
+          <button data-m="arts12">2012 文科50强 (5省均分)</button>
+          <button data-m="p07_4">2006–07 四省50强</button>
+        </div>
+      </div>
+      <div class="tablewrap" id="home-cn" style="max-height:520px"></div>
+      <div class="home-card-foot">
+        <a href="cn-college.html">进入中国大学百强主榜、单校 23 省档案与「本省性价比被低估名校」查询器 →</a>
+        <a href="cn-college-analysis.html" style="color:var(--ink-2)">102×23 矩阵 · 23省×29城地域吸引力偏差 · 四阶段方法论演进 →</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -83,7 +105,11 @@
 <script>
 (async () => {
   try {
-    const [H, C] = await Promise.all([loadJSON("data/highschool.json"), loadJSON("data/college.json")]);
+    const [H, C, CN] = await Promise.all([
+      loadJSON("data/highschool.json"),
+      loadJSON("data/college.json"),
+      loadJSON("data/cn_college.json"),
+    ]);
     const shortHS = (s) => s.replace(/^The /, "").replace(/^Henry M\.? /, "").replace(/ Senior High School$| High School$| Senior High Schl$| High$| School$/, "");
 
     function renderHS(mode) {
@@ -134,6 +160,72 @@
     }
     $$("#home-col-tabs button").forEach((b) => (b.onclick = () => renderCol(b.dataset.f)));
     renderCol("all");
+
+    const tierNames = { 1: "一档 ≥665", 2: "二档 ≥645", 3: "三档 ≥625", 4: "四档 ≥605", 5: "五档 ≥585", 6: "六档 <585" };
+    const tierBadge = (t) => `<span class="tag tier${t}">${tierNames[t] || t}</span>`;
+    function renderCN(mode) {
+      let cols, rows;
+      if (mode === "std100") {
+        rows = CN.std100.slice(0, 25);
+        cols = [
+          { key: "order", label: "#", num: true, fmt: (v, r) => r.num_rank ? rankBadge(r.num_rank) : `<span class="mono muted">—</span>` },
+          { key: "school", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(v)}</b><small>${esc(r.city)}</small>` },
+          { key: "tier", label: "分档", fmt: tierBadge, hideSm: true },
+          { key: "weighted_mean", label: "23省加权均值", num: true, fmt: (v) => `<b>${fix(v, 1)}</b>` },
+          { key: "mean", label: "简单均值", num: true },
+          { key: "n_provs", label: "招生省数", num: true, fmt: (v) => `${v}/23`, hideSm: true },
+          { key: "sci12_avg", label: "12理科均分", num: true, fmt: (v, r) => v ? `${fix(v, 1)} <small>(#${r.sci12_rank})</small>` : `<span class="muted">—</span>`, hideSm: true },
+          { key: "arts12_avg", label: "12文科均分", num: true, fmt: (v, r) => v ? `${fix(v, 1)} <small>(#${r.arts12_rank})</small>` : `<span class="muted">—</span>`, hideSm: true },
+          { key: "p07_4_avg", label: "06-07四省均分", num: true, fmt: (v, r) => v ? `${fix(v, 1)} <small>(#${r.p07_4_rank})</small>` : `<span class="muted">—</span>`, hideSm: true },
+        ];
+      } else if (mode === "sci12") {
+        rows = CN.sci12.slice(0, 25);
+        cols = [
+          { key: "order", label: "#", num: true, fmt: (v, r) => r.num_rank ? rankBadge(r.num_rank) : `<span class="mono muted">—</span>` },
+          { key: "school", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(v)}</b><small>${esc(r.city)}</small>` },
+          { key: "avg_score", label: "五省理科均分", num: true, fmt: (v) => `<b>${fix(v, 1)}</b>` },
+          { key: "河南", label: "河南", num: true },
+          { key: "广东", label: "广东", num: true },
+          { key: "山东", label: "山东", num: true },
+          { key: "四川", label: "四川", num: true, hideSm: true },
+          { key: "安徽", label: "安徽", num: true, hideSm: true },
+          { key: "std11_wm", label: "11标准化分", num: true, fmt: (v, r) => v ? `${fix(v, 1)} <small>(#${r.std11_rank})</small>` : `<span class="muted">—</span>`, hideSm: true },
+        ];
+      } else if (mode === "arts12") {
+        rows = CN.arts12.slice(0, 25);
+        cols = [
+          { key: "rank", label: "#", num: true, fmt: rankBadge },
+          { key: "school", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(v)}</b><small>${esc(r.city)}</small>` },
+          { key: "avg_score", label: "五省文科均分", num: true, fmt: (v) => `<b>${fix(v, 2)}</b>` },
+          { key: "河南", label: "河南", num: true, fmt: (v) => v ?? "—" },
+          { key: "广东", label: "广东", num: true, fmt: (v) => v ?? "—" },
+          { key: "山东", label: "山东", num: true, fmt: (v) => v ?? "—" },
+          { key: "四川", label: "四川", num: true, fmt: (v) => v ?? "—", hideSm: true },
+          { key: "安徽", label: "安徽", num: true, fmt: (v) => v ?? "—", hideSm: true },
+          { key: "sci12_avg", label: "12理科均分", num: true, fmt: (v, r) => v ? `${fix(v, 1)} <small>(#${r.sci12_rank})</small>` : `<span class="muted">—</span>`, hideSm: true },
+        ];
+      } else {
+        rows = CN.p07_4.slice(0, 25);
+        cols = [
+          { key: "rank", label: "#", num: true, fmt: rankBadge },
+          { key: "school", label: "学校", cls: "name", fmt: (v, r) => `<b>${esc(v)}</b><small>${esc(r.city)}</small>` },
+          { key: "avg_score", label: "四省两年均分", num: true, fmt: (v) => `<b>${fix(v, 1)}</b>` },
+          { key: "avg_rank", label: "平均名次", num: true, fmt: (v) => fix(v, 2) },
+          { key: "江苏07", label: "江苏07", num: true, hideSm: true },
+          { key: "河北07", label: "河北07", num: true, hideSm: true },
+          { key: "湖北07", label: "湖北07", num: true, hideSm: true },
+          { key: "广东07", label: "广东07", num: true, hideSm: true },
+          { key: "广东06", label: "广东06(换算)", num: true, hideSm: true },
+        ];
+      }
+      makeTable($("#home-cn"), cols, rows, {
+        sortKey: cols[0].key, asc: true, dense: true,
+        onRowClick: (r) => { location.href = `cn-college.html?school=${encodeURIComponent(r.school)}`; },
+      });
+      $$("#home-cn-tabs button").forEach((b) => b.classList.toggle("on", b.dataset.m === mode));
+    }
+    $$("#home-cn-tabs button").forEach((b) => (b.onclick = () => renderCN(b.dataset.m)));
+    renderCN("std100");
   } catch (e) { console.error(e); }
 })();
 </script>
